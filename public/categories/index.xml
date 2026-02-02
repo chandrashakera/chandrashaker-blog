@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.155.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Feb 2026 15:52:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 03 Feb 2026 01:07:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Investment</title>
+      <link>http://localhost:1313/categories/investment/</link>
+      <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/investment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Market Analysis</title>
+      <link>http://localhost:1313/categories/market-analysis/</link>
+      <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/market-analysis/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Finance</title>
       <link>http://localhost:1313/categories/finance/</link>
@@ -25,13 +39,6 @@
       <link>http://localhost:1313/categories/india/</link>
       <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
       <guid>http://localhost:1313/categories/india/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Technology</title>
-      <link>http://localhost:1313/categories/technology/</link>
-      <pubDate>Mon, 02 Feb 2026 10:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/categories/technology/</guid>
       <description></description>
     </item>
   </channel>

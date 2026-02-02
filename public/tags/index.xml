@@ -11,8 +11,50 @@
     </image>
     <generator>Hugo -- 0.155.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Feb 2026 15:52:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 03 Feb 2026 01:07:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gold Price India</title>
+      <link>http://localhost:1313/tags/gold-price-india/</link>
+      <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/gold-price-india/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Investment Strategy</title>
+      <link>http://localhost:1313/tags/investment-strategy/</link>
+      <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/investment-strategy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCX Gold Silver</title>
+      <link>http://localhost:1313/tags/mcx-gold-silver/</link>
+      <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/mcx-gold-silver/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Precious Metals India</title>
+      <link>http://localhost:1313/tags/precious-metals-india/</link>
+      <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/precious-metals-india/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Silver Price MCX</title>
+      <link>http://localhost:1313/tags/silver-price-mcx/</link>
+      <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/silver-price-mcx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Union Budget 2026</title>
+      <link>http://localhost:1313/tags/union-budget-2026/</link>
+      <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/union-budget-2026/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Budget Analysis</title>
       <link>http://localhost:1313/tags/budget-analysis/</link>
@@ -39,34 +81,6 @@
       <link>http://localhost:1313/tags/tax-planning/</link>
       <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
       <guid>http://localhost:1313/tags/tax-planning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Union Budget 2026</title>
-      <link>http://localhost:1313/tags/union-budget-2026/</link>
-      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
-      <guid>http://localhost:1313/tags/union-budget-2026/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
-      <pubDate>Mon, 02 Feb 2026 10:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Machine Learning</title>
-      <link>http://localhost:1313/tags/machine-learning/</link>
-      <pubDate>Mon, 02 Feb 2026 10:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tech News</title>
-      <link>http://localhost:1313/tags/tech-news/</link>
-      <pubDate>Mon, 02 Feb 2026 10:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/tags/tech-news/</guid>
       <description></description>
     </item>
   </channel>
