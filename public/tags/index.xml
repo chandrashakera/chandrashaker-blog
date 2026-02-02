@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
+    <image>
+      <title>Chandra Shaker - Tech, Finance &amp; Career Insights</title>
+      <url>http://localhost:1313/images/profile.jpg</url>
+      <link>http://localhost:1313/images/profile.jpg</link>
+    </image>
+    <generator>Hugo -- 0.155.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Feb 2026 15:52:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Budget Analysis</title>
+      <link>http://localhost:1313/tags/budget-analysis/</link>
+      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/budget-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Finance India</title>
+      <link>http://localhost:1313/tags/finance-india/</link>
+      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/finance-india/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Investment</title>
+      <link>http://localhost:1313/tags/investment/</link>
+      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/investment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tax Planning</title>
+      <link>http://localhost:1313/tags/tax-planning/</link>
+      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/tax-planning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Union Budget 2026</title>
+      <link>http://localhost:1313/tags/union-budget-2026/</link>
+      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/union-budget-2026/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Mon, 02 Feb 2026 10:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+      <pubDate>Mon, 02 Feb 2026 10:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tech News</title>
+      <link>http://localhost:1313/tags/tech-news/</link>
+      <pubDate>Mon, 02 Feb 2026 10:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/tech-news/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>India on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
+    <link>http://localhost:1313/categories/india/</link>
+    <description>Recent content in India on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
+    <image>
+      <title>Chandra Shaker - Tech, Finance &amp; Career Insights</title>
+      <url>http://localhost:1313/images/profile.jpg</url>
+      <link>http://localhost:1313/images/profile.jpg</link>
+    </image>
+    <generator>Hugo -- 0.155.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Feb 2026 15:52:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/india/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Union Budget 2026 Explained: What&#39;s Getting Cheaper, What&#39;s Getting Costlier &amp; What It All Means for You</title>
+      <link>http://localhost:1313/posts/union-budget-2026-complete-guide/</link>
+      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/union-budget-2026-complete-guide/</guid>
+      <description>Union Budget 2026 complete breakdown - cancer drugs free, phones cheaper, F&amp;amp;O trading costlier. What does this budget mean for salaried employees, investors, students, and common people? Real analysis from an engineering professor.</description>
+    </item>
+  </channel>
+</rss>

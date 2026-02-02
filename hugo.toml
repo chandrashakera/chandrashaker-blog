@@ -1,3 +1,146 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://chandrashaker.in/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Chandra Shaker - Tech, Finance & Career Insights'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  title = "Chandra Shaker"
+  description = "Technology news, US stock market analysis, and engineering career guidance"
+  keywords = ["AI", "Machine Learning", "US Stocks", "Engineering Jobs", "IoT"]
+  author = "Chandra Shaker"
+  
+  # Analytics
+  googleAnalytics = "G-XXXXXXXXXX"  # Add your GA4 ID later
+  
+  # Social
+  images = ["/images/profile.jpg"]
+  
+  # Blog settings
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  # Ad optimization
+  [params.assets]
+    disableHLJS = false
+    disableFingerprinting = false
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+
+  # Home page info
+  [params.homeInfoParams]
+    Title = "Welcome to Tech & Finance Insights"
+    Content = """
+    Latest technology news, US stock market analysis for Indian investors, 
+    and career guidance for engineering students.
+    
+    📊 Weekly market updates | 🤖 AI advancements | 💼 Job opportunities
+    """
+
+  # Social links
+  [[params.socialIcons]]
+    name = "youtube"
+    url = "https://youtube.com/@chandrasedu"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/chandrashaker"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/yourusername"
+
+# Menu
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "tech-news"
+    name = "Tech News"
+    url = "/tags/tech-news/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "us-stocks"
+    name = "US Stocks"
+    url = "/tags/us-stocks/"
+    weight = 30
+  
+  [[menu.main]]
+    identifier = "jobs"
+    name = "Jobs"
+    url = "/tags/jobs/"
+    weight = 40
+  
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 50
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 60
+
+# Taxonomies
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# Privacy
+[privacy]
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+# Outputs
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Markup
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    lineNos = true
+    style = "monokai"

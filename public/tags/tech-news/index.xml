@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tech News on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
+    <link>http://localhost:1313/tags/tech-news/</link>
+    <description>Recent content in Tech News on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
+    <image>
+      <title>Chandra Shaker - Tech, Finance &amp; Career Insights</title>
+      <url>http://localhost:1313/images/profile.jpg</url>
+      <link>http://localhost:1313/images/profile.jpg</link>
+    </image>
+    <generator>Hugo -- 0.155.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Feb 2026 10:00:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tech-news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top AI Breakthroughs This Week - February 2026</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Mon, 02 Feb 2026 10:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>Weekly roundup of significant AI advancements including GPT-5 benchmarks, Google&amp;#39;s Gemini updates, and new research from DeepMind</description>
+    </item>
+  </channel>
+</rss>

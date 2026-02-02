@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
+    <image>
+      <title>Chandra Shaker - Tech, Finance &amp; Career Insights</title>
+      <url>http://localhost:1313/images/profile.jpg</url>
+      <link>http://localhost:1313/images/profile.jpg</link>
+    </image>
+    <generator>Hugo -- 0.155.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Feb 2026 15:52:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finance</title>
+      <link>http://localhost:1313/categories/finance/</link>
+      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/finance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>India</title>
+      <link>http://localhost:1313/categories/india/</link>
+      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/india/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>http://localhost:1313/categories/technology/</link>
+      <pubDate>Mon, 02 Feb 2026 10:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/technology/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
