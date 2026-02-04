@@ -2,11 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/ai-impact/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/anthropic-cowork/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/anthropic-cowork-indian-it-stocks-crash/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-02-03T01:07:00+05:30</lastmod>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-02-03T01:07:00+05:30</lastmod>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/indian-it-stocks/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/indian-markets/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/saas-industry/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tcs-infosys-wipro/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/technology/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/technology/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/gold-silver-crash-india-analysis/</loc>
     <lastmod>2026-02-03T01:07:00+05:30</lastmod>
@@ -26,16 +59,10 @@
     <loc>http://localhost:1313/tags/mcx-gold-silver/</loc>
     <lastmod>2026-02-03T01:07:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-02-03T01:07:00+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/precious-metals-india/</loc>
     <lastmod>2026-02-03T01:07:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/silver-price-mcx/</loc>
-    <lastmod>2026-02-03T01:07:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-02-03T01:07:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/union-budget-2026/</loc>
