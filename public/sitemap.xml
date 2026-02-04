@@ -35,6 +35,9 @@
     <loc>http://localhost:1313/tags/tcs-infosys-wipro/</loc>
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/tech-news/</loc>
+    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/technology/</loc>
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
@@ -48,6 +51,9 @@
     <lastmod>2026-02-03T01:07:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/investment/</loc>
+    <lastmod>2026-02-03T01:07:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/investment/</loc>
     <lastmod>2026-02-03T01:07:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/investment-strategy/</loc>
@@ -78,9 +84,6 @@
     <lastmod>2026-02-02T15:52:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/india/</loc>
-    <lastmod>2026-02-02T15:52:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/investment/</loc>
     <lastmod>2026-02-02T15:52:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/tax-planning/</loc>

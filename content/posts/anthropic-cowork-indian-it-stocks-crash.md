@@ -9,6 +9,7 @@ tags:
   - TCS Infosys Wipro
   - SaaS Industry
   - Technology
+  - Tech News
 categories:
   - Technology
   - Indian Markets

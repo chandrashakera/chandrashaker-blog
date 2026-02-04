@@ -7,7 +7,7 @@ tags:
   - Budget Analysis
   - Finance India
   - Tax Planning
-  - Investment
+  - Investments
 categories:
   - Finance
   - India
