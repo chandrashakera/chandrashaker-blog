@@ -3,11 +3,11 @@ title: "Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Cost
 date: 2026-02-02T15:52:00+05:30
 draft: false
 tags:
-  - Union Budget 2026
-  - Budget Analysis
-  - Finance India
-  - Tax Planning
-  - Investments
+  - union-budget-2026
+  - budget-analysis
+  - finance-india
+  - tax-planning
+  - investments
 categories:
   - Finance
   - India

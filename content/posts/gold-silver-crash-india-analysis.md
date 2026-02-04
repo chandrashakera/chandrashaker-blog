@@ -3,13 +3,13 @@ title: "Gold Crashed ₹50,000, Silver Down 39%: What Happened in Indian Markets
 date: 2026-02-03T01:07:00+05:30
 draft: false
 tags:
-  - Gold Price India
-  - Silver Price MCX
-  - Investment Strategy
-  - MCX Gold Silver
-  - Precious Metals India
-  - Union Budget 2026
-  - Investments
+  - gold-price-india
+  - silver-price-mCX
+  - investment-strategy
+  - mcx-gold-silver
+  - precious-metals-india
+  - union-budget-2026
+  - investments
 categories:
   - Investments
   - Market Analysis
