@@ -9,8 +9,9 @@ tags:
   - tax-planning
   - investments
 categories:
-  - Finance
-  - India
+  - finance
+  - investments
+  - india
 author: "Chandra Shaker"
 description: "Union Budget 2026 complete breakdown - cancer drugs free, phones cheaper, F&O trading costlier. What does this budget mean for salaried employees, investors, students, and common people? Real analysis from an engineering professor."
 ShowToc: true

@@ -4,15 +4,15 @@ date: 2026-02-03T01:07:00+05:30
 draft: false
 tags:
   - gold-price-india
-  - silver-price-mCX
+  - silver-price-mcx
   - investment-strategy
   - mcx-gold-silver
   - precious-metals-india
   - union-budget-2026
   - investments
 categories:
-  - Investments
-  - Market Analysis
+  - investments
+  - market-analysis
 author: "Chandra Shaker"
 description: "Gold fell ₹50,000 per 10g in 3 days. Silver crashed 39%. Here's what triggered India's biggest precious metals crash, why it happened despite Budget duty cut, and how to respond as an investor."
 ShowToc: true

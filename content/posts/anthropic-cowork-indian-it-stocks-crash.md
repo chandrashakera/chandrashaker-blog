@@ -13,9 +13,9 @@ tags:
   - saas-industry
   - market-analysis
 categories:
-  - Technology
-  - Investments
-  - Indian Markets
+  - technology
+  - tech-news
+  - indian-markets
 author: "Chandra Shaker"
 description: "Nifty IT crashed 6% today - worst fall since March 2020. TCS, Infosys, Wipro down 5-8%. Here's what Anthropic's Cowork AI agent actually does, why Indian IT companies are worried, and whether your job is safe."
 ShowToc: true
