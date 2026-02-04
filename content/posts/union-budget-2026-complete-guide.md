@@ -575,10 +575,6 @@ Got questions? Comments? Disagree with my analysis? Drop a comment below. I actu
 
 **Last updated:** February 2, 2026, 3:30 PM IST
 
-**Related Articles:**
-- Coming Soon: Gold & Silver Investment Strategy Post-Budget 2026
-- Coming Soon: Semiconductor Stocks to Watch in 2026
-
 Peace out!  
 - Chandra
 

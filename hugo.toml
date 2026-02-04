@@ -93,9 +93,9 @@ enableEmoji = true
     weight = 20
   
   [[menu.main]]
-    identifier = "us-stocks"
-    name = "US Stocks"
-    url = "/tags/us-stocks/"
+    identifier = "investments"
+    name = "Investments"
+    url = "/tags/investments/"
     weight = 30
   
   [[menu.main]]
