@@ -20,7 +20,7 @@ TocOpen: false
 
 ## Today Was Brutal for Indian IT Stocks
 
-**February 4, 2026, 10:30 AM:** I opened my trading app. Nifty IT was down 5.9%.
+**February 4, 2026, 10:30 AM:** Nifty IT was down 5.9%.
 
 **By noon:** Down 6.3%.
 
