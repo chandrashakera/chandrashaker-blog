@@ -8,10 +8,17 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 enableEmoji = true
+googleAnalytics = 'G-BFT23S4QJ3'
+copyright = "© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Disclaimer](/disclaimer/) · [Contact](/contact/)"
+
 
 [minify]
   disableXML = true
   minifyOutput = true
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-BFT23S4QJ3'
 
 [params]
   env = "production"
@@ -21,7 +28,7 @@ enableEmoji = true
   author = "Chandra Shaker"
   
   # Analytics
-  googleAnalytics = "G-XXXXXXXXXX"  # Add your GA4 ID later
+  googleAnalytics = "G-BFT23S4QJ3"  
   
   # Social
   images = ["/images/profile.jpg"]
@@ -76,7 +83,7 @@ enableEmoji = true
 
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/yourusername"
+    url = "https://github.com/chandrashakera"
 
 # Menu
 [menu]
@@ -133,22 +140,3 @@ enableEmoji = true
     lineNos = true
     style = "monokai"
 
-[services]
-  [services.googleAnalytics]
-    ID = 'G-BFT23S4QJ3' 
-
-# Footer menu
-[[menu.footer]]
-  name = "Privacy Policy"
-  url = "/privacy-policy/"
-  weight = 10
-  
-[[menu.footer]]
-  name = "Disclaimer"
-  url = "/disclaimer/"
-  weight = 20
-  
-[[menu.footer]]
-  name = "Contact"
-  url = "/contact/"
-  weight = 30
