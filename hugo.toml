@@ -132,3 +132,7 @@ enableEmoji = true
     guessSyntax = false
     lineNos = true
     style = "monokai"
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-BFT23S4QJ3' 
