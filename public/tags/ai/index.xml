@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>AI on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
+    <title>Ai on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
     <link>http://localhost:1313/tags/ai/</link>
-    <description>Recent content in AI on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
+    <description>Recent content in Ai on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
     <image>
       <title>Chandra Shaker - Tech, Finance &amp; Career Insights</title>
       <url>http://localhost:1313/images/profile.jpg</url>
@@ -11,14 +11,14 @@
     </image>
     <generator>Hugo -- 0.155.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Feb 2026 10:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 04 Feb 2026 14:22:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Top AI Breakthroughs This Week - February 2026</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Mon, 02 Feb 2026 10:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>Weekly roundup of significant AI advancements including GPT-5 benchmarks, Google&amp;#39;s Gemini updates, and new research from DeepMind</description>
+      <title>Anthropic&#39;s AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can&#39;t &amp; Why TCS, Infosys Are Panicking</title>
+      <link>http://localhost:1313/posts/anthropic-cowork-indian-it-stocks-crash/</link>
+      <pubDate>Wed, 04 Feb 2026 14:22:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/anthropic-cowork-indian-it-stocks-crash/</guid>
+      <description>Nifty IT crashed 6% today - worst fall since March 2020. TCS, Infosys, Wipro down 5-8%. Here&amp;#39;s what Anthropic&amp;#39;s Cowork AI agent actually does, why Indian IT companies are worried, and whether your job is safe.</description>
     </item>
   </channel>
 </rss>

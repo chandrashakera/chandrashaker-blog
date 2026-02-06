@@ -1,5 +1,5 @@
 ---
-title: "About Chandra Shaker"
+title: "About"
 url: "/about/"
 summary: "Professor, Researcher, Investor"
 ShowReadingTime: false

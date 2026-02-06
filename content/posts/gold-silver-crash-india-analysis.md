@@ -13,6 +13,7 @@ tags:
 categories:
   - investments
   - market-analysis
+  - gold
 author: "Chandra Shaker"
 description: "Gold fell ₹50,000 per 10g in 3 days. Silver crashed 39%. Here's what triggered India's biggest precious metals crash, why it happened despite Budget duty cut, and how to respond as an investor."
 ShowToc: true

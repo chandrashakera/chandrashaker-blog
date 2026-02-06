@@ -1,4 +1,4 @@
-cd\baseURL = 'https://chandrashaker.in/'
+baseURL = 'https://chandrashaker.in/'
 languageCode = 'en-us'
 title = 'Chandra Shaker - Tech, Finance & Career Insights'
 theme = 'PaperMod'
@@ -81,41 +81,29 @@ enableEmoji = true
 # Menu
 [menu]
   [[menu.main]]
-    identifier = "blog"
     name = "Blog"
     url = "/posts/"
     weight = 10
-  
+
   [[menu.main]]
-    identifier = "tech-news"
-    name = "Tech News"
+    name = "Tech Upates"
     url = "/tags/tech-news/"
     weight = 20
-  
+
   [[menu.main]]
-    identifier = "investments"
-    name = "Investments"
+    name = "Finance"
     url = "/tags/investments/"
     weight = 30
-  
+
   [[menu.main]]
-    identifier = "jobs"
-    name = "Jobs"
+    name = "Careers"
     url = "/tags/jobs/"
     weight = 40
-  
+
   [[menu.main]]
-    identifier = "about"
     name = "About"
     url = "/about/"
     weight = 50
-
-  [[menu.main]]
-    identifier = "search"
-    name = "Search"
-    url = "/search/"
-    weight = 60
-
 # Taxonomies
 [taxonomies]
   category = "categories"
