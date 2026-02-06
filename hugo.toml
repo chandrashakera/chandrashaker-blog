@@ -136,3 +136,19 @@ enableEmoji = true
 [services]
   [services.googleAnalytics]
     ID = 'G-BFT23S4QJ3' 
+
+# Footer menu
+[[menu.footer]]
+  name = "Privacy Policy"
+  url = "/privacy-policy/"
+  weight = 10
+  
+[[menu.footer]]
+  name = "Disclaimer"
+  url = "/disclaimer/"
+  weight = 20
+  
+[[menu.footer]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 30
