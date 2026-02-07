@@ -2,16 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/technology/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ai-proof-skills-freshers-2026/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/freshers/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/jobs/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/skills/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/students/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/contact/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/disclaimer/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/privacy-policy/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/indian-markets/</loc>
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/tech-news/</loc>
-    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/technology/</loc>
-    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ai-impact/</loc>
@@ -23,25 +59,13 @@
     <loc>http://localhost:1313/posts/anthropic-cowork-indian-it-stocks-crash/</loc>
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/indian-it-stocks/</loc>
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/market-analysis/</loc>
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/saas-industry/</loc>
-    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/tcs-infosys-wipro/</loc>
