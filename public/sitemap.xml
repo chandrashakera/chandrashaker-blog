@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/finance/</loc>
+    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/bitcoin/</loc>
+    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/bitcoin-dip-accumulation-india-2026/</loc>
+    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cryptocurrency/</loc>
+    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/india/</loc>
+    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/investments/</loc>
+    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/technology/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,28 +41,16 @@
     <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/freshers/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/jobs/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/skills/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/students/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
@@ -95,9 +113,6 @@
     <loc>http://localhost:1313/tags/investment-strategy/</loc>
     <lastmod>2026-02-03T01:07:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/investments/</loc>
-    <lastmod>2026-02-03T01:07:00+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/mcx-gold-silver/</loc>
     <lastmod>2026-02-03T01:07:00+05:30</lastmod>
   </url><url>
@@ -109,9 +124,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/union-budget-2026/</loc>
     <lastmod>2026-02-03T01:07:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/finance/</loc>
-    <lastmod>2026-02-02T15:52:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/india/</loc>
     <lastmod>2026-02-02T15:52:00+05:30</lastmod>
