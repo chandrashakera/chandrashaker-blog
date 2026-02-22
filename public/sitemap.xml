@@ -3,18 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/finance/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/technology/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/career/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/careers/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/india-ai-summit-2026/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/india-ai-summit/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/indian-it-stocks/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tech-news/</loc>
+    <lastmod>2026-02-21T10:00:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/bitcoin/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/bitcoin-dip-accumulation-india-2026/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cryptocurrency/</loc>
@@ -26,19 +56,7 @@
     <loc>http://localhost:1313/tags/investments/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/technology/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/ai-proof-skills-freshers-2026/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/freshers/</loc>
@@ -77,9 +95,6 @@
     <loc>http://localhost:1313/posts/anthropic-cowork-indian-it-stocks-crash/</loc>
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/indian-it-stocks/</loc>
-    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/market-analysis/</loc>
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
@@ -87,9 +102,6 @@
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/tcs-infosys-wipro/</loc>
-    <lastmod>2026-02-04T14:22:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tech-news/</loc>
     <lastmod>2026-02-04T14:22:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/technology/</loc>

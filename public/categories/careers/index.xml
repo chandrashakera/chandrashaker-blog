@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tech-News on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
-    <link>http://localhost:1313/tags/tech-news/</link>
-    <description>Recent content in Tech-News on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
+    <title>Careers on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
+    <link>http://localhost:1313/categories/careers/</link>
+    <description>Recent content in Careers on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
     <image>
       <title>Chandra Shaker - Tech, Finance &amp; Career Insights</title>
       <url>http://localhost:1313/images/profile.jpg</url>
@@ -13,20 +13,13 @@
     <language>en-us</language>
     <copyright>2026 Chandra Shaker · Privacy Policy · Disclaimer · Contact</copyright>
     <lastBuildDate>Sat, 21 Feb 2026 10:00:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tech-news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/careers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>India AI Summit 2026: US Partnerships &amp; Made-in-India AI Launches</title>
       <link>http://localhost:1313/posts/india-ai-summit-2026/</link>
       <pubDate>Sat, 21 Feb 2026 10:00:00 +0530</pubDate>
       <guid>http://localhost:1313/posts/india-ai-summit-2026/</guid>
       <description>India AI Summit 2026: TCS-OpenAI, Infosys-Anthropic partnerships revealed. Plus Sarvam Kaze smartglasses &amp;amp; Indian AI models launched. What it means for tech jobs.</description>
-    </item>
-    <item>
-      <title>Anthropic&#39;s AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can&#39;t &amp; Why TCS, Infosys Are Panicking</title>
-      <link>http://localhost:1313/posts/anthropic-cowork-indian-it-stocks-crash/</link>
-      <pubDate>Wed, 04 Feb 2026 14:22:00 +0530</pubDate>
-      <guid>http://localhost:1313/posts/anthropic-cowork-indian-it-stocks-crash/</guid>
-      <description>Nifty IT crashed 6% today - worst fall since March 2020. TCS, Infosys, Wipro down 5-8%. Here&amp;#39;s what Anthropic&amp;#39;s Cowork AI agent actually does, why Indian IT companies are worried, and whether your job is safe.</description>
     </item>
   </channel>
 </rss>
