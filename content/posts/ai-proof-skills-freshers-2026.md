@@ -1,4 +1,4 @@
-\---
+---
 
 title: "5 Skills AI Cannot Replace: Career Survival Guide for 2026 Freshers"
 

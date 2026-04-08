@@ -1,4 +1,4 @@
-\---
+---
 
 title: "Bitcoin Crashed 48% From Peak: Is This the Time Indian Investors Should Buy?"
 
