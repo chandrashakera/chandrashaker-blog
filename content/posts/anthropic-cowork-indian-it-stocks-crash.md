@@ -2,22 +2,10 @@
 title: "Anthropic's AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can't & Why TCS, Infosys Are Panicking"
 date: 2026-02-04T14:22:00+05:30
 draft: false
-tags:
-  - tech-news
-  - technology
-  - ai
-  - indian-it-stocks
-  - anthropic-cowork
-  - ai-impact
-  - tcs-infosys-wipro
-  - saas-industry
-  - market-analysis
-categories:
-  - technology
-  - tech-news
-  - indian-markets
 author: "Chandra Shaker"
 description: "Nifty IT crashed 6% today - worst fall since March 2020. TCS, Infosys, Wipro down 5-8%. Here's what Anthropic's Cowork AI agent actually does, why Indian IT companies are worried, and whether your job is safe."
+categories: ["Technology"]
+tags: ["tech-news", "ai", "indian-it-stocks", "anthropic-cowork", "ai-impact", "tcs-infosys-wipro", "saas-industry", "market-analysis"]
 ShowToc: true
 TocOpen: false
 ---

@@ -2,20 +2,10 @@
 title: "Gold Crashed ₹50,000, Silver Down 39%: What Happened in Indian Markets & What to Do Now"
 date: 2026-02-03T01:07:00+05:30
 draft: false
-tags:
-  - gold-price-india
-  - silver-price-mcx
-  - investment-strategy
-  - mcx-gold-silver
-  - precious-metals-india
-  - union-budget-2026
-  - investments
-categories:
-  - investments
-  - market-analysis
-  - gold
 author: "Chandra Shaker"
 description: "Gold fell ₹50,000 per 10g in 3 days. Silver crashed 39%. Here's what triggered India's biggest precious metals crash, why it happened despite Budget duty cut, and how to respond as an investor."
+categories: ["Finance"]
+tags: ["gold-price-india", "silver-price-mcx", "investment-strategy", "mcx-gold-silver", "precious-metals-india", "union-budget-2026", "investments"]
 ShowToc: true
 TocOpen: false
 ---

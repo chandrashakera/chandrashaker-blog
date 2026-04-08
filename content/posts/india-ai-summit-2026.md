@@ -2,11 +2,11 @@
 title: "India AI Impact Summit 2026: US Partnerships & AI Launches"
 date: 2026-02-21T10:00:00+05:30
 draft: false
-description: "India AI Impact Summit 2026: TCS-OpenAI, Infosys-Anthropic partnerships + Sarvam Kaze smartglasses launch. What it means for Indian tech jobs."
-tags: ["tech-news", "ai", "indian-it-stocks", "career", "india-ai-summit"]
-categories: ["Technology", "Finance", "Careers"]
 author: "Chandra Shaker"
-showToc: true
+description: "India AI Impact Summit 2026: TCS-OpenAI, Infosys-Anthropic partnerships + Sarvam Kaze smartglasses launch. What it means for Indian tech jobs."
+categories: ["Technology"]
+tags: ["tech-news", "ai", "indian-it-stocks", "career", "india-ai-summit"]
+ShowToc: true
 TocOpen: false
 hidemeta: false
 comments: true
