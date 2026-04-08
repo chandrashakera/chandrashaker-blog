@@ -1,23 +1,13 @@
 ---
-
 title: "Bitcoin Crashed 48% From Peak: Is This the Time Indian Investors Should Buy?"
-
 date: 2026-02-08
-
 draft: false
-
 author: "Chandra Shaker"
-
 description: "Bitcoin fell from $126,000 to $65,000. Panic or opportunity? Complete guide for Indian investors: tax rules, how Bitcoin compares to gold/equities, and where to buy safely."
-
 categories: ["Finance"]
-
 tags: ["investments", "bitcoin", "cryptocurrency", "india"]
-
 ShowToc: true
-
 TocOpen: false
-
 ---
 
 Bitcoin hit an all-time high of $126,080 in October 2025. Today it's trading around $65,000 — a brutal 48% crash.

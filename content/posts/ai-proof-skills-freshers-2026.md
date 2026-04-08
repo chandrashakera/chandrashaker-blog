@@ -1,23 +1,13 @@
 ---
-
 title: "5 Skills AI Cannot Replace: Career Survival Guide for 2026 Freshers"
-
 date: 2026-02-07
-
 draft: false
-
 author: "Chandra Shaker"
-
 description: "Entry-level jobs are disappearing to AI. Here are 5 skills that keep you employed, how to learn them in 90 days, and which courses actually work."
-
 categories: ["Careers"]
-
 tags: ["jobs", "skills", "ai", "freshers", "students"]
-
 ShowToc: true
-
 TocOpen: false
-
 ---
 
 ## The Job Market Just Flipped

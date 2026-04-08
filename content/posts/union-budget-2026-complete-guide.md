@@ -1,23 +1,13 @@
 ---
-
 title: "Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Costlier \& What It All Means for You"
-
 date: 2026-02-02T15:52:00+05:30
-
 draft: false
-
 author: "Chandra Shaker"
-
 description: "Union Budget 2026 complete breakdown - cancer drugs free, phones cheaper, F\&O trading costlier. What does this budget mean for salaried employees, investors, students, and common people? Real analysis from an engineering professor."
-
 categories: ["Finance"]
-
 tags: ["union-budget-2026", "budget-analysis", "finance-india", "tax-planning", "investments"]
-
 ShowToc: true
-
 TocOpen: false
-
 ---
 
 ## So... Budget 2026 Happened. Here's What You Need to Know.
