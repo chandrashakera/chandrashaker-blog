@@ -10,15 +10,15 @@ author: "Chandra Shaker"
 
 description: "Entry-level jobs are disappearing to AI. Here are 5 skills that keep you employed, how to learn them in 90 days, and which courses actually work."
 
-categories: \["Careers"]
+categories: ["Careers"]
 
-tags: \["jobs", "skills", "ai", "freshers", "students"]
+tags: ["jobs", "skills", "ai", "freshers", "students"]
 
 ShowToc: true
 
 TocOpen: false
 
-\---
+---
 
 ## The Job Market Just Flipped
 
