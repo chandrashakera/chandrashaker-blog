@@ -1,5 +1,5 @@
 ---
-title: "Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Costlier \& What It All Means for You"
+title: "Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Costlier & What It All Means for You"
 date: 2026-02-02T15:52:00+05:30
 draft: false
 author: "Chandra Shaker"
