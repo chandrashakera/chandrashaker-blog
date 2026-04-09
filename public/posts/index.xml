@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
-    <image>
-      <title>Chandra Shaker - Tech, Finance &amp; Career Insights</title>
-      <url>http://localhost:1313/images/profile.jpg</url>
-      <link>http://localhost:1313/images/profile.jpg</link>
-    </image>
-    <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
-    <copyright>2026 Chandra Shaker · Privacy Policy · Disclaimer · Contact</copyright>
+    <generator>Hugo</generator>
+    <language>en-in</language>
+    <copyright>© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Disclaimer](/disclaimer/) · [Contact](/contact/)</copyright>
     <lastBuildDate>Sat, 21 Feb 2026 10:00:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,42 +14,42 @@
       <link>http://localhost:1313/posts/india-ai-summit-2026/</link>
       <pubDate>Sat, 21 Feb 2026 10:00:00 +0530</pubDate>
       <guid>http://localhost:1313/posts/india-ai-summit-2026/</guid>
-      <description>India AI Impact Summit 2026: TCS-OpenAI, Infosys-Anthropic partnerships &#43; Sarvam Kaze smartglasses launch. What it means for Indian tech jobs.</description>
+      <description>&lt;p&gt;The world&amp;rsquo;s largest AI conference just wrapped up in New Delhi with over 300,000 attendees, and it delivered on three fronts: major US-India partnerships, indigenous AI product launches, and a clear signal about where tech jobs are heading.&lt;/p&gt;&#xA;&lt;p&gt;Prime Minister Modi, UN Secretary-General António Guterres, and CEOs from OpenAI, Anthropic, Google, and Microsoft all showed up. But beyond the photo ops, concrete business deals were signed and actual products were unveiled.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bitcoin Crashed 48% From Peak: Is This the Time Indian Investors Should Buy?</title>
       <link>http://localhost:1313/posts/bitcoin-dip-accumulation-india-2026/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/bitcoin-dip-accumulation-india-2026/</guid>
-      <description>Bitcoin fell from $126,000 to $65,000. Panic or opportunity? Complete guide for Indian investors: tax rules, how Bitcoin compares to gold/equities, and where to buy safely.</description>
+      <description>&lt;p&gt;Bitcoin hit an all-time high of $126,080 in October 2025. Today it&amp;rsquo;s trading around $65,000 — a brutal 48% crash.&lt;/p&gt;&#xA;&lt;p&gt;Everyone who FOMOed at the top is now panicking. Everyone who missed out is asking: &amp;ldquo;Is it too late? Or is this my chance?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re an Indian investor wondering whether to buy Bitcoin during this dip, this post will help you decide. No hype, no predictions. Just facts about what Bitcoin actually is as an investment, how it compares to assets you already know, and what the real costs are in India.&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Skills AI Cannot Replace: Career Survival Guide for 2026 Freshers</title>
       <link>http://localhost:1313/posts/ai-proof-skills-freshers-2026/</link>
       <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/ai-proof-skills-freshers-2026/</guid>
-      <description>Entry-level jobs are disappearing to AI. Here are 5 skills that keep you employed, how to learn them in 90 days, and which courses actually work.</description>
+      <description>&lt;h2 id=&#34;the-job-market-just-flipped&#34;&gt;The Job Market Just Flipped&lt;/h2&gt;&#xA;&lt;p&gt;Last week, Anthropic released AI that drafts legal contracts, analyzes balance sheets, and writes production code. Cost? ₹16,000/month. That&amp;rsquo;s what companies paid ₹50,000/month employees to do.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What this means if you&amp;rsquo;re graduating in 2026:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Campus placements are already down 30-40% at top colleges. Companies aren&amp;rsquo;t hiring fewer people because they&amp;rsquo;re struggling—they&amp;rsquo;re hiring fewer because AI replaced the work.&lt;/p&gt;&#xA;&lt;p&gt;But here&amp;rsquo;s what most students miss: &lt;strong&gt;AI didn&amp;rsquo;t eliminate jobs. It eliminated tasks.&lt;/strong&gt; The companies still need people—just different skills.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Anthropic&#39;s AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can&#39;t &amp; Why TCS, Infosys Are Panicking</title>
       <link>http://localhost:1313/posts/anthropic-cowork-indian-it-stocks-crash/</link>
       <pubDate>Wed, 04 Feb 2026 14:22:00 +0530</pubDate>
       <guid>http://localhost:1313/posts/anthropic-cowork-indian-it-stocks-crash/</guid>
-      <description>Nifty IT crashed 6% today - worst fall since March 2020. TCS, Infosys, Wipro down 5-8%. Here&amp;#39;s what Anthropic&amp;#39;s Cowork AI agent actually does, why Indian IT companies are worried, and whether your job is safe.</description>
+      <description>&lt;h2 id=&#34;today-was-brutal-for-indian-it-stocks&#34;&gt;Today Was Brutal for Indian IT Stocks&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;February 4, 2026, 10:30 AM:&lt;/strong&gt; Nifty IT was down 5.9%.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;By noon:&lt;/strong&gt; Down 6.3%.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The damage:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;TCS: Down 6.5% (₹3,014 from ₹3,225)&lt;/li&gt;&#xA;&lt;li&gt;Infosys: Down 8.2% - &lt;strong&gt;steepest fall in 2.5 years&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Wipro: Down 4-5%&lt;/li&gt;&#xA;&lt;li&gt;HCL Tech: Down 5.1%&lt;/li&gt;&#xA;&lt;li&gt;Persistent Systems: Down 7.5%&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Total market cap wiped out: ₹2 lakh crore.&lt;/strong&gt; In one day.&lt;/p&gt;&#xA;&lt;p&gt;This is the &lt;strong&gt;worst single-day crash for Nifty IT since March 2020&lt;/strong&gt; (COVID crash).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gold Crashed ₹50,000, Silver Down 39%: What Happened in Indian Markets &amp; What to Do Now</title>
       <link>http://localhost:1313/posts/gold-silver-crash-india-analysis/</link>
       <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
       <guid>http://localhost:1313/posts/gold-silver-crash-india-analysis/</guid>
-      <description>Gold fell ₹50,000 per 10g in 3 days. Silver crashed 39%. Here&amp;#39;s what triggered India&amp;#39;s biggest precious metals crash, why it happened despite Budget duty cut, and how to respond as an investor.</description>
+      <description>&lt;h2 id=&#34;thursday-gold-was-17885-per-gram-monday-15153&#34;&gt;Thursday: Gold Was ₹17,885 per Gram. Monday: ₹15,153.&lt;/h2&gt;&#xA;&lt;p&gt;That&amp;rsquo;s ₹2,732 gone per gram. In three trading days.&lt;/p&gt;&#xA;&lt;p&gt;If you bought 100 grams of gold last Thursday (₹17.8 lakh), by Monday it was worth ₹15.1 lakh. &lt;strong&gt;You just watched ₹2.7 lakh disappear.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Silver? Even more brutal. From ₹4.2 lakh per kg to ₹2.5 lakh per kg. &lt;strong&gt;Down ₹1.65 lakh per kilogram.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Let me explain what just happened in Indian gold and silver markets, why the Union Budget duty cut didn&amp;rsquo;t prevent this crash, and what you should do if you&amp;rsquo;re planning to buy or already holding.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Union Budget 2026 Explained: What&#39;s Getting Cheaper, What&#39;s Getting Costlier &amp; What It All Means for You</title>
       <link>http://localhost:1313/posts/union-budget-2026-complete-guide/</link>
       <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
       <guid>http://localhost:1313/posts/union-budget-2026-complete-guide/</guid>
-      <description>Union Budget 2026 complete breakdown - cancer drugs free, phones cheaper, F&amp;amp;O trading costlier. What does this budget mean for salaried employees, investors, students, and common people? Real analysis from an engineering professor.</description>
+      <description>&lt;h2 id=&#34;so-budget-2026-happened-heres-what-you-need-to-know&#34;&gt;So&amp;hellip; Budget 2026 Happened. Here&amp;rsquo;s What You Need to Know.&lt;/h2&gt;&#xA;&lt;p&gt;Finance Minister Nirmala Sitharaman just presented her 9th consecutive budget yesterday (February 1, 2026) - and fun fact, it&amp;rsquo;s the first Sunday budget presentation since 1999! I spent the entire evening going through the budget documents, watching the speech, and honestly&amp;hellip; it&amp;rsquo;s a mixed bag.&lt;/p&gt;&#xA;&lt;p&gt;As someone who teaches engineering students and also manages my own investments (Indian stocks, mutual funds, ETFs, US stocks through INDMoney), I wanted to break down what this budget actually means for regular people like us. Not the jargon-heavy analysis you&amp;rsquo;ll find everywhere else, but a straightforward explanation.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

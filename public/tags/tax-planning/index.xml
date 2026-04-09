@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tax-Planning on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
     <link>http://localhost:1313/tags/tax-planning/</link>
     <description>Recent content in Tax-Planning on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
-    <image>
-      <title>Chandra Shaker - Tech, Finance &amp; Career Insights</title>
-      <url>http://localhost:1313/images/profile.jpg</url>
-      <link>http://localhost:1313/images/profile.jpg</link>
-    </image>
-    <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
-    <copyright>2026 Chandra Shaker · Privacy Policy · Disclaimer · Contact</copyright>
+    <generator>Hugo</generator>
+    <language>en-in</language>
+    <copyright>© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Disclaimer](/disclaimer/) · [Contact](/contact/)</copyright>
     <lastBuildDate>Mon, 02 Feb 2026 15:52:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/tax-planning/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,7 +14,7 @@
       <link>http://localhost:1313/posts/union-budget-2026-complete-guide/</link>
       <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
       <guid>http://localhost:1313/posts/union-budget-2026-complete-guide/</guid>
-      <description>Union Budget 2026 complete breakdown - cancer drugs free, phones cheaper, F&amp;amp;O trading costlier. What does this budget mean for salaried employees, investors, students, and common people? Real analysis from an engineering professor.</description>
+      <description>&lt;h2 id=&#34;so-budget-2026-happened-heres-what-you-need-to-know&#34;&gt;So&amp;hellip; Budget 2026 Happened. Here&amp;rsquo;s What You Need to Know.&lt;/h2&gt;&#xA;&lt;p&gt;Finance Minister Nirmala Sitharaman just presented her 9th consecutive budget yesterday (February 1, 2026) - and fun fact, it&amp;rsquo;s the first Sunday budget presentation since 1999! I spent the entire evening going through the budget documents, watching the speech, and honestly&amp;hellip; it&amp;rsquo;s a mixed bag.&lt;/p&gt;&#xA;&lt;p&gt;As someone who teaches engineering students and also manages my own investments (Indian stocks, mutual funds, ETFs, US stocks through INDMoney), I wanted to break down what this budget actually means for regular people like us. Not the jargon-heavy analysis you&amp;rsquo;ll find everywhere else, but a straightforward explanation.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
