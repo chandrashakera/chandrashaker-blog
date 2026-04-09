@@ -1,0 +1,187 @@
+<!doctype html><html class=no-js lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>4.1 Neural Networks Fundamentals - Chandras Edu | AI, Stock Market, Courses & Jobs India</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content="Perceptrons, multilayer networks, backpropagation algorithm with face recognition example for M.Tech PAIML."><meta property="og:url" content="http://localhost:1313/courses/paiml/unit4/ann-fundamentals/"><meta property="og:site_name" content="Chandras Edu | AI, Stock Market, Courses & Jobs India"><meta property="og:title" content="4.1 Neural Networks Fundamentals"><meta property="og:description" content="Perceptrons, multilayer networks, backpropagation algorithm with face recognition example for M.Tech PAIML."><meta property="og:locale" content="en_in"><meta property="og:type" content="article"><meta property="article:section" content="courses"><meta property="article:published_time" content="2026-02-01T00:00:00+00:00"><meta property="article:modified_time" content="2026-02-01T00:00:00+00:00"><meta property="article:tag" content="Neural-Networks"><meta property="article:tag" content="Perceptron"><meta property="article:tag" content="Backpropagation"><meta property="article:tag" content="Multilayer"><meta property="article:tag" content="Mtech"><meta name=twitter:card content="summary"><meta name=twitter:title content="4.1 Neural Networks Fundamentals"><meta name=twitter:description content="Perceptrons, multilayer networks, backpropagation algorithm with face recognition example for M.Tech PAIML."><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Chandras Edu | AI, Stock Market, Courses & Jobs India" rel=home><div class="logo__item logo__text"><div class=logo__title>Chandras Edu | AI, Stock Market, Courses & Jobs India</div><div class=logo__tagline>Tech · Finance · Courses · Jobs</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/posts/><span class=menu__text>Blog</span></a></li><li class=menu__item><a class=menu__link href=/courses/><span class=menu__text>Courses</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>4.1 Neural Networks Fundamentals</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 110 28 1 1 0 010-28m0 3a3 3 0 100 22 3 3 0 000-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class=meta__text datetime=2026-02-01T00:00:00Z>February 1, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/courses/ rel=category>Courses</a></span></div></div></header><div class="content post__content clearfix"><h2 id=biological-inspiration>Biological Inspiration</h2><p>Artificial Neural Networks (ANNs) are inspired by the human brain.</p><table><thead><tr><th>Biological</th><th>Artificial</th></tr></thead><tbody><tr><td>Neuron</td><td>Node/Unit</td></tr><tr><td>Dendrites</td><td>Input connections</td></tr><tr><td>Axon</td><td>Output</td></tr><tr><td>Synapse</td><td>Weight</td></tr><tr><td>Firing threshold</td><td>Activation function</td></tr></tbody></table><p>Human brain: ~10¹¹ neurons, each connected to ~10⁴ others.</p><h2 id=the-artificial-neuron-perceptron>The Artificial Neuron (Perceptron)</h2><p>A perceptron computes a weighted sum of inputs and applies an activation function.</p><pre tabindex=0><code>Input: x = (x₁, x₂, ..., xₙ)
+Weights: w = (w₁, w₂, ..., wₙ)
+Bias: w₀
+
+Net input: net = w₀ + Σ wᵢxᵢ = w·x + b
+
+Output: y = f(net)
+</code></pre><h3 id=activation-functions>Activation Functions</h3><table><thead><tr><th>Function</th><th>Formula</th><th>Range</th><th>Use</th></tr></thead><tbody><tr><td><strong>Step</strong></td><td>1 if net>0, else 0</td><td>{0,1}</td><td>Binary classification</td></tr><tr><td><strong>Sigmoid</strong></td><td>1/(1+e^(-net))</td><td>(0,1)</td><td>Probability output</td></tr><tr><td><strong>Tanh</strong></td><td>(e^x - e^(-x))/(e^x + e^(-x))</td><td>(-1,1)</td><td>Hidden layers</td></tr><tr><td><strong>ReLU</strong></td><td>max(0, net)</td><td>[0,∞)</td><td>Deep networks</td></tr><tr><td><strong>Softmax</strong></td><td>e^(xᵢ)/Σe^(xⱼ)</td><td>(0,1)</td><td>Multi-class output</td></tr></tbody></table><h2 id=perceptron-learning>Perceptron Learning</h2><p>For linearly separable problems, the perceptron learning rule converges.</p><h3 id=algorithm>Algorithm</h3><pre tabindex=0><code>Initialize weights w randomly (small values)
+
+Repeat until convergence:
+  For each training example (x, y_true):
+    y_pred = step(w·x)
+    if y_pred ≠ y_true:
+      w ← w + η(y_true - y_pred)x
+      
+where η = learning rate (0 &lt; η ≤ 1)
+</code></pre><h3 id=example--and-gate>Example — AND Gate</h3><pre tabindex=0><code>Training data:
+x1  x2  | y
+ 0   0  | 0
+ 0   1  | 0
+ 1   0  | 0
+ 1   1  | 1
+
+Initial weights: w=(0.5, 0.5), bias=0, η=0.1
+
+Iteration 1: (0,0,0) → net=-0.5, pred=0, correct
+Iteration 2: (0,1,0) → net=0.5, pred=1, WRONG
+  w₀ ← 0 + 0.1×(0-1)×1 = -0.1 (bias update)
+  w₁ ← 0.5 + 0.1×(0-1)×0 = 0.5
+  w₂ ← 0.5 + 0.1×(0-1)×1 = 0.4
+...
+(Continue until convergence)
+</code></pre><h3 id=perceptron-convergence-theorem>Perceptron Convergence Theorem</h3><p>If training data is linearly separable, the perceptron learning algorithm will converge to a correct solution in finite steps.</p><h3 id=limitation-xor-problem>Limitation: XOR Problem</h3><p>Perceptron CANNOT solve XOR:</p><pre tabindex=0><code>x1  x2  | XOR
+ 0   0  | 0
+ 0   1  | 1
+ 1   0  | 1
+ 1   1  | 0
+
+No single line separates 0s from 1s → Need multilayer network
+</code></pre><h2 id=multilayer-networks>Multilayer Networks</h2><p>Adds hidden layers between input and output to solve non-linear problems.</p><h3 id=architecture>Architecture</h3><pre tabindex=0><code>Input Layer → Hidden Layer(s) → Output Layer
+
+Example (3-2-1 network):
+  x₁ ──┐
+  x₂ ──┤── h₁ ──┐
+  x₃ ──┤        ├── y
+       └── h₂ ──┘
+</code></pre><h3 id=forward-pass>Forward Pass</h3><p>For each layer:</p><pre tabindex=0><code>netⱼ = Σᵢ wᵢⱼ × aᵢ + bⱼ
+aⱼ = f(netⱼ)
+
+where:
+  aᵢ = output of previous layer neuron i
+  wᵢⱼ = weight from i to j
+  f = activation function
+</code></pre><h2 id=backpropagation-algorithm>Backpropagation Algorithm</h2><p>Backpropagation computes gradients of the loss with respect to all weights using the chain rule.</p><h3 id=loss-function>Loss Function</h3><p><strong>MSE for regression:</strong></p><pre tabindex=0><code>L = (1/2) Σ (y_true - y_pred)²
+</code></pre><p><strong>Cross-entropy for classification:</strong></p><pre tabindex=0><code>L = -Σ y_true × log(y_pred)
+</code></pre><h3 id=algorithm-1>Algorithm</h3><pre tabindex=0><code>1. FORWARD PASS: Compute outputs layer by layer
+
+2. COMPUTE OUTPUT ERROR:
+   δₖ = (yₖ - oₖ) × f&#39;(netₖ)    [output layer]
+
+3. BACKPROPAGATE ERROR:
+   δⱼ = f&#39;(netⱼ) × Σₖ wⱼₖ × δₖ  [hidden layer]
+
+4. UPDATE WEIGHTS:
+   wᵢⱼ ← wᵢⱼ + η × δⱼ × aᵢ
+
+5. REPEAT until convergence
+</code></pre><h3 id=detailed-example--xor-network>Detailed Example — XOR Network</h3><p><strong>Network:</strong> 2 inputs → 2 hidden (sigmoid) → 1 output (sigmoid)</p><pre tabindex=0><code>Initial weights (example):
+  w₁₁=0.5, w₂₁=0.5  (input→hidden1)
+  w₁₂=-0.5, w₂₂=0.5 (input→hidden2)
+  v₁=0.5, v₂=-0.5    (hidden→output)
+
+Input: x=(1,0), target y=1
+
+Forward pass:
+  h1_net = 0.5×1 + 0.5×0 = 0.5
+  h1_out = sigmoid(0.5) = 0.622
+  
+  h2_net = -0.5×1 + 0.5×0 = -0.5
+  h2_out = sigmoid(-0.5) = 0.378
+  
+  out_net = 0.5×0.622 + (-0.5)×0.378 = 0.122
+  out = sigmoid(0.122) = 0.530
+
+Loss: L = 0.5×(1-0.530)² = 0.110
+
+Backward pass:
+  δ_out = (1-0.530) × 0.530×(1-0.530) = 0.117
+  
+  δ_h1 = 0.622×(1-0.622) × 0.5×0.117 = 0.014
+  δ_h2 = 0.378×(1-0.378) × (-0.5)×0.117 = -0.014
+
+Weight updates (η=0.1):
+  v₁ ← 0.5 + 0.1×0.117×0.622 = 0.507
+  v₂ ← -0.5 + 0.1×0.117×0.378 = -0.496
+  w₁₁ ← 0.5 + 0.1×0.014×1 = 0.501
+</code></pre><h2 id=remarks-on-backpropagation>Remarks on Backpropagation</h2><p><strong>Strengths:</strong></p><ul><li>Works for any differentiable activation function</li><li>Can learn complex non-linear functions</li><li>Widely applicable</li></ul><p><strong>Weaknesses:</strong></p><ul><li>Local minima — may not find global optimum</li><li>Slow convergence for large networks</li><li>Vanishing gradient problem in deep networks</li><li>Sensitive to learning rate</li></ul><p><strong>Improvements:</strong></p><ul><li><strong>Momentum:</strong> Add fraction of previous update</li><li><strong>Adaptive learning rates:</strong> Adam, RMSProp</li><li><strong>Batch normalization:</strong> Normalize layer inputs</li><li><strong>Dropout:</strong> Randomly disable neurons during training</li></ul><h2 id=face-recognition-example>Face Recognition Example</h2><p><strong>Application:</strong> Recognize person from 20×20 pixel face images.</p><pre tabindex=0><code>Architecture:
+  Input:    400 units (20×20 pixels, grayscale 0-1)
+  Hidden:   3 hidden layers (200, 100, 50 units)
+  Output:   1 unit per person (softmax)
+
+Training:
+  Dataset: 1000 face images, 20 people (50 each)
+  Train/Test: 800/200
+
+Results after training:
+  Training accuracy: 98%
+  Test accuracy: 94%
+</code></pre><p><strong>Preprocessing:</strong> Normalize pixel values, align faces.</p><h2 id=practice-questions>Practice Questions</h2><p><strong>Short Answer (2 marks each)</strong></p><ol><li>What is a perceptron? Draw its structure.</li><li>Why can&rsquo;t a single perceptron solve the XOR problem?</li><li>State the perceptron convergence theorem.</li><li>What is the vanishing gradient problem?</li></ol><p><strong>Long Answer (8 marks each)</strong></p><ol><li>Explain the backpropagation algorithm in detail. Derive the weight update rules for output and hidden layers.</li><li>What are the limitations of the perceptron? How do multilayer networks overcome them?</li><li>Explain backpropagation with a numerical example for a 2-2-1 network.</li></ol><p><strong>Think & Apply</strong></p><ol><li><p>A neural network for digit recognition has:</p><ul><li>784 input neurons (28×28 image)</li><li>2 hidden layers with 256 and 128 neurons</li><li>10 output neurons</li></ul><p>Calculate total number of weights in this network.</p></li><li><p>The gradient is vanishing in a deep network. What would you change: activation function, weight initialization, or architecture? Justify.</p></li></ol><p><a href=/courses/paiml/unit4/>← Unit 4 Overview</a> | <a href=/courses/paiml/unit4/advanced-ann/>Next: Advanced ANN →</a></p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 000-6 3 3 0 000 6"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/neural-networks/ rel=tag>neural-networks</a></li><li class=tags__item><a class="tags__link btn" href=/tags/perceptron/ rel=tag>perceptron</a></li><li class=tags__item><a class="tags__link btn" href=/tags/backpropagation/ rel=tag>backpropagation</a></li><li class=tags__item><a class="tags__link btn" href=/tags/multilayer/ rel=tag>multilayer</a></li><li class=tags__item><a class="tags__link btn" href=/tags/mtech/ rel=tag>mtech</a></li></ul></div></footer></article></main></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><input class=widget-search__field type=search placeholder=Search… name=q aria-label=Search…>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=http://localhost:1313/></form></div><div class="widget-recent widget"><h4 class=widget__title>Recent Posts</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/india-ai-summit-2026/>India AI Impact Summit 2026: US Partnerships & AI Launches</a></li><li class=widget__item><a class=widget__link href=/posts/bitcoin-dip-accumulation-india-2026/>Bitcoin Crashed 48% From Peak: Is This the Time Indian Investors Should Buy?</a></li><li class=widget__item><a class=widget__link href=/posts/ai-proof-skills-freshers-2026/>5 Skills AI Cannot Replace: Career Survival Guide for 2026 Freshers</a></li><li class=widget__item><a class=widget__link href=/posts/anthropic-cowork-indian-it-stocks-crash/>Anthropic's AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can't & Why TCS, Infosys Are Panicking</a></li><li class=widget__item><a class=widget__link href=/posts/gold-silver-crash-india-analysis/>Gold Crashed ₹50,000, Silver Down 39%: What Happened in Indian Markets & What to Do Now</a></li><li class=widget__item><a class=widget__link href=/posts/union-budget-2026-complete-guide/>Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Costlier & What It All Means for You</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Categories</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/careers/>Careers</a></li><li class=widget__item><a class=widget__link href=/categories/courses/>Courses</a></li><li class=widget__item><a class=widget__link href=/categories/finance/></a></li><li class=widget__item><a class=widget__link href=/categories/technology/></a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/a-star/ title=A-Star>A-Star</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/adversarial-search/ title=Adversarial-Search>Adversarial-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai/ title=Ai>Ai</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai-impact/ title=Ai-Impact>Ai-Impact</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/alpha-beta/ title=Alpha-Beta>Alpha-Beta</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/anthropic-cowork/ title=Anthropic-Cowork>Anthropic-Cowork</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/backpropagation/ title=Backpropagation>Backpropagation</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayes-theorem/ title=Bayes-Theorem>Bayes-Theorem</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayesian/ title=Bayesian>Bayesian</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bfs/ title=Bfs>Bfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bitcoin/ title=Bitcoin>Bitcoin</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/boosting/ title=Boosting>Boosting</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/budget-analysis/ title=Budget-Analysis>Budget-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/career/ title=Career>Career</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/classification/ title=Classification>Classification</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cnn/ title=Cnn>Cnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/convolutional/ title=Convolutional>Convolutional</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/course/ title=Course>Course</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cryptocurrency/ title=Cryptocurrency>Cryptocurrency</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/csp/ title=Csp>Csp</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/decision-trees/ title=Decision-Trees>Decision-Trees</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/deep-learning/ title=Deep-Learning>Deep-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dfs/ title=Dfs>Dfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/em-algorithm/ title=Em-Algorithm>Em-Algorithm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ensemble/ title=Ensemble>Ensemble</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/finance-india/ title=Finance-India>Finance-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/foundations/ title=Foundations>Foundations</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/freshers/ title=Freshers>Freshers</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/games/ title=Games>Games</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gold-price-india/ title=Gold-Price-India>Gold-Price-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/greedy/ title=Greedy>Greedy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/heuristic/ title=Heuristic>Heuristic</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/id3/ title=Id3>Id3</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india/ title=India>India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india-ai-summit/ title=India-Ai-Summit>India-Ai-Summit</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/indian-it-stocks/ title=Indian-It-Stocks>Indian-It-Stocks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/informed-search/ title=Informed-Search>Informed-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/introduction/ title=Introduction>Introduction</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investment-strategy/ title=Investment-Strategy>Investment-Strategy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investments/ title=Investments>Investments</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jobs/ title=Jobs>Jobs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kernel/ title=Kernel>Kernel</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/machine-learning/ title=Machine-Learning>Machine-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/market-analysis/ title=Market-Analysis>Market-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/markov/ title=Markov>Markov</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mcx-gold-silver/ title=Mcx-Gold-Silver>Mcx-Gold-Silver</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/minimax/ title=Minimax>Minimax</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mtech/ title=Mtech>Mtech</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/multilayer/ title=Multilayer>Multilayer</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/naive-bayes/ title=Naive-Bayes>Naive-Bayes</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/neural-networks/ title=Neural-Networks>Neural-Networks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pac-learning/ title=Pac-Learning>Pac-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/perceptron/ title=Perceptron>Perceptron</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/precious-metals-india/ title=Precious-Metals-India>Precious-Metals-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/q-learning/ title=Q-Learning>Q-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/random-forest/ title=Random-Forest>Random-Forest</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/recurrent/ title=Recurrent>Recurrent</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/regression/ title=Regression>Regression</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement/ title=Reinforcement>Reinforcement</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement-learning/ title=Reinforcement-Learning>Reinforcement-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rnn/ title=Rnn>Rnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/saas-industry/ title=Saas-Industry>Saas-Industry</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/search/ title=Search>Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/silver-price-mcx/ title=Silver-Price-Mcx>Silver-Price-Mcx</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/skills/ title=Skills>Skills</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/students/ title=Students>Students</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/supervised-learning/ title=Supervised-Learning>Supervised-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/svm/ title=Svm>Svm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tax-planning/ title=Tax-Planning>Tax-Planning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tcs-infosys-wipro/ title=Tcs-Infosys-Wipro>Tcs-Infosys-Wipro</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tech-news/ title=Tech-News>Tech-News</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/temporal-difference/ title=Temporal-Difference>Temporal-Difference</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/uniform-cost/ title=Uniform-Cost>Uniform-Cost</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/union-budget-2026/ title=Union-Budget-2026>Union-Budget-2026</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/unsupervised/ title=Unsupervised>Unsupervised</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vc-dimension/ title=Vc-Dimension>Vc-Dimension</a></div></div></aside></div><footer class=footer><span>© 2026 Chandra Shaker · <a href=/privacy-policy/>Privacy Policy</a> · <a href=/disclaimer/>Disclaimer</a> · <a href=/contact/>Contact</a></span></footer></div><script async defer src=/js/menu.js></script></body></html>

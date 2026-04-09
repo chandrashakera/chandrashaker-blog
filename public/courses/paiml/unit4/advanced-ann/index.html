@@ -1,0 +1,151 @@
+<!doctype html><html class=no-js lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>4.2 Advanced Neural Networks — CNNs & Recurrent Networks - Chandras Edu | AI, Stock Market, Courses & Jobs India</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content="Error functions, recurrent neural networks, convolutional neural networks for image processing - M.Tech PAIML Unit 4."><meta property="og:url" content="http://localhost:1313/courses/paiml/unit4/advanced-ann/"><meta property="og:site_name" content="Chandras Edu | AI, Stock Market, Courses & Jobs India"><meta property="og:title" content="4.2 Advanced Neural Networks — CNNs & Recurrent Networks"><meta property="og:description" content="Error functions, recurrent neural networks, convolutional neural networks for image processing - M.Tech PAIML Unit 4."><meta property="og:locale" content="en_in"><meta property="og:type" content="article"><meta property="article:section" content="courses"><meta property="article:published_time" content="2026-02-01T00:00:00+00:00"><meta property="article:modified_time" content="2026-02-01T00:00:00+00:00"><meta property="article:tag" content="Cnn"><meta property="article:tag" content="Rnn"><meta property="article:tag" content="Deep-Learning"><meta property="article:tag" content="Convolutional"><meta property="article:tag" content="Recurrent"><meta property="article:tag" content="Mtech"><meta name=twitter:card content="summary"><meta name=twitter:title content="4.2 Advanced Neural Networks — CNNs & Recurrent Networks"><meta name=twitter:description content="Error functions, recurrent neural networks, convolutional neural networks for image processing - M.Tech PAIML Unit 4."><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Chandras Edu | AI, Stock Market, Courses & Jobs India" rel=home><div class="logo__item logo__text"><div class=logo__title>Chandras Edu | AI, Stock Market, Courses & Jobs India</div><div class=logo__tagline>Tech · Finance · Courses · Jobs</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/posts/><span class=menu__text>Blog</span></a></li><li class=menu__item><a class=menu__link href=/courses/><span class=menu__text>Courses</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>4.2 Advanced Neural Networks — CNNs & Recurrent Networks</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 110 28 1 1 0 010-28m0 3a3 3 0 100 22 3 3 0 000-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class=meta__text datetime=2026-02-01T00:00:00Z>February 1, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/courses/ rel=category>Courses</a></span></div></div></header><div class="content post__content clearfix"><h2 id=error-functions-in-neural-networks>Error Functions in Neural Networks</h2><p>The error function (loss function) guides learning. Choice depends on the task.</p><h3 id=regression-error-functions>Regression Error Functions</h3><p><strong>Mean Squared Error (MSE):</strong></p><pre tabindex=0><code>L = (1/n) Σ (yᵢ - ŷᵢ)²
+
+Gradient: ∂L/∂ŷ = -2(y - ŷ)
+</code></pre><p><strong>Mean Absolute Error (MAE):</strong></p><pre tabindex=0><code>L = (1/n) Σ |yᵢ - ŷᵢ|
+
+More robust to outliers than MSE.
+</code></pre><p><strong>Huber Loss:</strong> Combines MSE and MAE — quadratic for small errors, linear for large errors.</p><h3 id=classification-error-functions>Classification Error Functions</h3><p><strong>Binary Cross-Entropy:</strong></p><pre tabindex=0><code>L = -[y×log(ŷ) + (1-y)×log(1-ŷ)]
+</code></pre><p><strong>Categorical Cross-Entropy (multi-class):</strong></p><pre tabindex=0><code>L = -Σₖ yₖ × log(ŷₖ)
+
+where yₖ = 1 for true class, 0 otherwise
+</code></pre><p><strong>Why Cross-Entropy over MSE for classification?</strong></p><ul><li>MSE has flat gradients near 0 and 1 → slow learning</li><li>Cross-entropy has stronger gradients → faster learning</li></ul><h3 id=comparison>Comparison</h3><table><thead><tr><th>Task</th><th>Loss Function</th><th>Output Activation</th></tr></thead><tbody><tr><td>Binary classification</td><td>Binary cross-entropy</td><td>Sigmoid</td></tr><tr><td>Multi-class</td><td>Categorical cross-entropy</td><td>Softmax</td></tr><tr><td>Regression</td><td>MSE / MAE</td><td>Linear</td></tr><tr><td>Multi-label</td><td>Binary cross-entropy</td><td>Sigmoid per unit</td></tr></tbody></table><h2 id=recurrent-neural-networks-rnn>Recurrent Neural Networks (RNN)</h2><p>RNNs process <strong>sequential data</strong> by maintaining a hidden state across time steps.</p><h3 id=why-rnns>Why RNNs?</h3><p>Standard neural networks:</p><ul><li>Fixed input size</li><li>No memory of previous inputs</li></ul><p>RNNs:</p><ul><li>Variable input length</li><li>Hidden state carries information across time</li><li><strong>&ldquo;Memory&rdquo;</strong> of sequence history</li></ul><h3 id=rnn-architecture>RNN Architecture</h3><pre tabindex=0><code>x₁ → [RNN] → h₁ → y₁
+x₂ → [RNN] → h₂ → y₂
+x₃ → [RNN] → h₃ → y₃
+
+hₜ = f(Wₕhₜ₋₁ + Wₓxₜ + b)
+yₜ = g(Wᵧhₜ)
+
+where:
+  hₜ = hidden state at time t
+  xₜ = input at time t
+  Wₕ = hidden-to-hidden weight matrix
+  Wₓ = input-to-hidden weight matrix
+</code></pre><h3 id=rnn-applications>RNN Applications</h3><table><thead><tr><th>Application</th><th>Input</th><th>Output</th></tr></thead><tbody><tr><td>Language modeling</td><td>Sequence of words</td><td>Next word</td></tr><tr><td>Sentiment analysis</td><td>Sentence</td><td>Positive/Negative</td></tr><tr><td>Machine translation</td><td>English sentence</td><td>French sentence</td></tr><tr><td>Speech recognition</td><td>Audio frames</td><td>Text</td></tr><tr><td>Time series</td><td>Historical values</td><td>Future values</td></tr></tbody></table><h3 id=vanishing-gradient-in-rnns>Vanishing Gradient in RNNs</h3><p>For long sequences, gradients vanish during backpropagation through time (BPTT):</p><pre tabindex=0><code>∂L/∂h₁ = ∂L/∂hₜ × Π(∂hₜ/∂hₜ₋₁)
+
+If ∂hₜ/∂hₜ₋₁ &lt; 1 → product → 0 as t increases
+</code></pre><p><strong>Solution: LSTM (Long Short-Term Memory)</strong></p><p>LSTM uses gates to control information flow:</p><pre tabindex=0><code>Forget gate: fₜ = σ(Wf[hₜ₋₁, xₜ] + bf)
+Input gate:  iₜ = σ(Wi[hₜ₋₁, xₜ] + bi)
+Cell update: C̃ₜ = tanh(Wc[hₜ₋₁, xₜ] + bc)
+Cell state:  Cₜ = fₜ⊙Cₜ₋₁ + iₜ⊙C̃ₜ
+Output gate: oₜ = σ(Wo[hₜ₋₁, xₜ] + bo)
+Hidden:      hₜ = oₜ⊙tanh(Cₜ)
+</code></pre><h2 id=convolutional-neural-networks-cnns>Convolutional Neural Networks (CNNs)</h2><p>CNNs are specialized for <strong>grid-like data</strong> — images, audio, video.</p><h3 id=why-cnns-for-images>Why CNNs for Images?</h3><p><strong>Problems with fully connected networks for images:</strong></p><ul><li>1000×1000 image = 1,000,000 inputs</li><li>Fully connected to 1000 hidden units = 10⁹ parameters!</li><li>Doesn&rsquo;t exploit spatial structure</li></ul><p><strong>CNN solutions:</strong></p><ul><li><strong>Local connectivity:</strong> Each neuron connects to small region</li><li><strong>Weight sharing:</strong> Same filter applied across entire image</li><li><strong>Pooling:</strong> Reduces spatial dimensions</li></ul><h3 id=cnn-building-blocks>CNN Building Blocks</h3><h4 id=1-convolutional-layer>1. Convolutional Layer</h4><p>Applies a <strong>filter (kernel)</strong> that slides over the input:</p><pre tabindex=0><code>Input: 6×6 image
+Filter: 3×3 kernel
+
+        Input           Filter      Output (4×4)
+    1 1 1 0 0 0       1 0 1       4 3 4 2
+    0 0 1 1 1 0    ×  0 1 0  =    2 4 3 3
+    0 0 0 1 1 0       1 0 1       2 3 4 1
+    0 0 0 1 1 0                   ...
+    0 0 1 1 0 0
+    0 1 1 0 0 0
+
+Each output value = dot product of filter with corresponding patch
+</code></pre><p><strong>Key parameters:</strong></p><ul><li><strong>Filter size:</strong> 3×3, 5×5, 7×7</li><li><strong>Number of filters:</strong> Depth of output (feature maps)</li><li><strong>Stride:</strong> Step size of filter movement</li><li><strong>Padding:</strong> &lsquo;valid&rsquo; (no padding) or &lsquo;same&rsquo; (zero padding)</li></ul><p><strong>Output size:</strong></p><pre tabindex=0><code>Output = (Input - Filter + 2×Padding) / Stride + 1
+</code></pre><h4 id=2-relu-activation>2. ReLU Activation</h4><p>Applied after each convolution to add non-linearity:</p><pre tabindex=0><code>f(x) = max(0, x)
+</code></pre><h4 id=3-pooling-layer>3. Pooling Layer</h4><p>Reduces spatial dimensions, provides translation invariance.</p><p><strong>Max Pooling (2×2, stride=2):</strong></p><pre tabindex=0><code>4 3 2 1       4 2
+2 5 1 2  →    6 3
+9 6 8 2       9 8
+4 3 2 1       4 2
+
+Takes maximum value in each 2×2 region.
+</code></pre><p><strong>Average Pooling:</strong> Takes average instead of maximum.</p><h4 id=4-fully-connected-layer>4. Fully Connected Layer</h4><p>At the end, flatten feature maps and connect to output:</p><pre tabindex=0><code>Feature maps → Flatten → Dense layer → Softmax → Class probabilities
+</code></pre><h3 id=cnn-architecture-example--lenet-5>CNN Architecture Example — LeNet-5</h3><p>Classic CNN for digit recognition (LeCun, 1998):</p><pre tabindex=0><code>Input (32×32×1)
+    ↓
+Conv1: 6 filters, 5×5 → (28×28×6)
+    ↓
+MaxPool: 2×2 → (14×14×6)
+    ↓
+Conv2: 16 filters, 5×5 → (10×10×16)
+    ↓
+MaxPool: 2×2 → (5×5×16)
+    ↓
+Flatten → 400 units
+    ↓
+FC: 120 units
+    ↓
+FC: 84 units
+    ↓
+Output: 10 units (Softmax)
+</code></pre><p><strong>Parameters:</strong></p><ul><li>Conv1: 6 × (5×5×1 + 1) = 156</li><li>Conv2: 16 × (5×5×6 + 1) = 2,416</li><li>FC layers: 48,120 + 10,164 + 850 = 59,134</li><li><strong>Total: ~61,706</strong> (vs millions for fully connected)</li></ul><h3 id=modern-cnn-architectures>Modern CNN Architectures</h3><table><thead><tr><th>Architecture</th><th>Year</th><th>Key Innovation</th></tr></thead><tbody><tr><td>LeNet-5</td><td>1998</td><td>First successful CNN</td></tr><tr><td>AlexNet</td><td>2012</td><td>Deep CNN, ReLU, Dropout</td></tr><tr><td>VGGNet</td><td>2014</td><td>Very deep (16-19 layers), 3×3 filters</td></tr><tr><td>GoogLeNet</td><td>2014</td><td>Inception modules</td></tr><tr><td>ResNet</td><td>2015</td><td>Skip connections, 152 layers</td></tr><tr><td>EfficientNet</td><td>2019</td><td>Compound scaling</td></tr></tbody></table><h3 id=what-cnns-learn>What CNNs Learn</h3><pre tabindex=0><code>Early layers:  Detect edges, colors, textures
+Middle layers: Detect shapes, parts (eyes, wheels)
+Later layers:  Detect high-level features (faces, cars)
+</code></pre><p>This <strong>hierarchical feature learning</strong> is why CNNs work so well for images.</p><h2 id=practice-questions>Practice Questions</h2><p><strong>Short Answer (2 marks each)</strong></p><ol><li>What is the difference between MSE and cross-entropy loss?</li><li>What is the vanishing gradient problem in RNNs? How does LSTM solve it?</li><li>What is weight sharing in CNNs? Why is it useful?</li><li>What does max pooling do? What property does it provide?</li></ol><p><strong>Long Answer (8 marks each)</strong></p><ol><li>Explain the architecture of a CNN. Describe each layer type with its purpose and mathematical operation.</li><li>Compare RNN and LSTM. Why are LSTMs preferred for long sequences?</li><li>Explain the LeNet-5 architecture. Calculate the output dimensions after each layer.</li></ol><p><strong>Think & Apply</strong></p><ol><li><p>An input image is 224×224×3 (RGB). A convolutional layer has 64 filters of size 3×3, stride=1, padding=&lsquo;same&rsquo;. Calculate:</p><ul><li>Output dimensions</li><li>Number of parameters in this layer</li></ul></li><li><p>For a sentiment analysis task (positive/negative), design an RNN architecture. What loss function would you use? What activation at output?</p></li></ol><p><a href=/courses/paiml/unit4/ann-fundamentals/>← ANN Fundamentals</a> | <a href=/courses/paiml/unit5/>Next: Unit 5 →</a></p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 000-6 3 3 0 000 6"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/cnn/ rel=tag>cnn</a></li><li class=tags__item><a class="tags__link btn" href=/tags/rnn/ rel=tag>rnn</a></li><li class=tags__item><a class="tags__link btn" href=/tags/deep-learning/ rel=tag>deep-learning</a></li><li class=tags__item><a class="tags__link btn" href=/tags/convolutional/ rel=tag>convolutional</a></li><li class=tags__item><a class="tags__link btn" href=/tags/recurrent/ rel=tag>recurrent</a></li><li class=tags__item><a class="tags__link btn" href=/tags/mtech/ rel=tag>mtech</a></li></ul></div></footer></article></main></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><input class=widget-search__field type=search placeholder=Search… name=q aria-label=Search…>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=http://localhost:1313/></form></div><div class="widget-recent widget"><h4 class=widget__title>Recent Posts</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/india-ai-summit-2026/>India AI Impact Summit 2026: US Partnerships & AI Launches</a></li><li class=widget__item><a class=widget__link href=/posts/bitcoin-dip-accumulation-india-2026/>Bitcoin Crashed 48% From Peak: Is This the Time Indian Investors Should Buy?</a></li><li class=widget__item><a class=widget__link href=/posts/ai-proof-skills-freshers-2026/>5 Skills AI Cannot Replace: Career Survival Guide for 2026 Freshers</a></li><li class=widget__item><a class=widget__link href=/posts/anthropic-cowork-indian-it-stocks-crash/>Anthropic's AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can't & Why TCS, Infosys Are Panicking</a></li><li class=widget__item><a class=widget__link href=/posts/gold-silver-crash-india-analysis/>Gold Crashed ₹50,000, Silver Down 39%: What Happened in Indian Markets & What to Do Now</a></li><li class=widget__item><a class=widget__link href=/posts/union-budget-2026-complete-guide/>Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Costlier & What It All Means for You</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Categories</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/careers/>Careers</a></li><li class=widget__item><a class=widget__link href=/categories/courses/>Courses</a></li><li class=widget__item><a class=widget__link href=/categories/finance/></a></li><li class=widget__item><a class=widget__link href=/categories/technology/></a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/a-star/ title=A-Star>A-Star</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/adversarial-search/ title=Adversarial-Search>Adversarial-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai/ title=Ai>Ai</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai-impact/ title=Ai-Impact>Ai-Impact</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/alpha-beta/ title=Alpha-Beta>Alpha-Beta</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/anthropic-cowork/ title=Anthropic-Cowork>Anthropic-Cowork</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/backpropagation/ title=Backpropagation>Backpropagation</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayes-theorem/ title=Bayes-Theorem>Bayes-Theorem</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayesian/ title=Bayesian>Bayesian</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bfs/ title=Bfs>Bfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bitcoin/ title=Bitcoin>Bitcoin</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/boosting/ title=Boosting>Boosting</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/budget-analysis/ title=Budget-Analysis>Budget-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/career/ title=Career>Career</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/classification/ title=Classification>Classification</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cnn/ title=Cnn>Cnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/convolutional/ title=Convolutional>Convolutional</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/course/ title=Course>Course</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cryptocurrency/ title=Cryptocurrency>Cryptocurrency</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/csp/ title=Csp>Csp</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/decision-trees/ title=Decision-Trees>Decision-Trees</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/deep-learning/ title=Deep-Learning>Deep-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dfs/ title=Dfs>Dfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/em-algorithm/ title=Em-Algorithm>Em-Algorithm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ensemble/ title=Ensemble>Ensemble</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/finance-india/ title=Finance-India>Finance-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/foundations/ title=Foundations>Foundations</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/freshers/ title=Freshers>Freshers</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/games/ title=Games>Games</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gold-price-india/ title=Gold-Price-India>Gold-Price-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/greedy/ title=Greedy>Greedy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/heuristic/ title=Heuristic>Heuristic</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/id3/ title=Id3>Id3</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india/ title=India>India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india-ai-summit/ title=India-Ai-Summit>India-Ai-Summit</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/indian-it-stocks/ title=Indian-It-Stocks>Indian-It-Stocks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/informed-search/ title=Informed-Search>Informed-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/introduction/ title=Introduction>Introduction</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investment-strategy/ title=Investment-Strategy>Investment-Strategy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investments/ title=Investments>Investments</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jobs/ title=Jobs>Jobs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kernel/ title=Kernel>Kernel</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/machine-learning/ title=Machine-Learning>Machine-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/market-analysis/ title=Market-Analysis>Market-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/markov/ title=Markov>Markov</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mcx-gold-silver/ title=Mcx-Gold-Silver>Mcx-Gold-Silver</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/minimax/ title=Minimax>Minimax</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mtech/ title=Mtech>Mtech</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/multilayer/ title=Multilayer>Multilayer</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/naive-bayes/ title=Naive-Bayes>Naive-Bayes</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/neural-networks/ title=Neural-Networks>Neural-Networks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pac-learning/ title=Pac-Learning>Pac-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/perceptron/ title=Perceptron>Perceptron</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/precious-metals-india/ title=Precious-Metals-India>Precious-Metals-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/q-learning/ title=Q-Learning>Q-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/random-forest/ title=Random-Forest>Random-Forest</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/recurrent/ title=Recurrent>Recurrent</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/regression/ title=Regression>Regression</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement/ title=Reinforcement>Reinforcement</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement-learning/ title=Reinforcement-Learning>Reinforcement-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rnn/ title=Rnn>Rnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/saas-industry/ title=Saas-Industry>Saas-Industry</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/search/ title=Search>Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/silver-price-mcx/ title=Silver-Price-Mcx>Silver-Price-Mcx</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/skills/ title=Skills>Skills</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/students/ title=Students>Students</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/supervised-learning/ title=Supervised-Learning>Supervised-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/svm/ title=Svm>Svm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tax-planning/ title=Tax-Planning>Tax-Planning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tcs-infosys-wipro/ title=Tcs-Infosys-Wipro>Tcs-Infosys-Wipro</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tech-news/ title=Tech-News>Tech-News</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/temporal-difference/ title=Temporal-Difference>Temporal-Difference</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/uniform-cost/ title=Uniform-Cost>Uniform-Cost</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/union-budget-2026/ title=Union-Budget-2026>Union-Budget-2026</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/unsupervised/ title=Unsupervised>Unsupervised</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vc-dimension/ title=Vc-Dimension>Vc-Dimension</a></div></div></aside></div><footer class=footer><span>© 2026 Chandra Shaker · <a href=/privacy-policy/>Privacy Policy</a> · <a href=/disclaimer/>Disclaimer</a> · <a href=/contact/>Contact</a></span></footer></div><script async defer src=/js/menu.js></script></body></html>

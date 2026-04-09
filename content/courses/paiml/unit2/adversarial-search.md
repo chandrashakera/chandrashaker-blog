@@ -4,6 +4,9 @@ date: 2026-02-01
 description: "Optimal decisions in games, minimax algorithm, alpha-beta pruning and constraint satisfaction problems for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["adversarial-search", "minimax", "alpha-beta", "csp", "games", "mtech"]
+_build:
+  list: never
+  render: always
 ---
 
 ## What is Adversarial Search?
@@ -21,8 +24,6 @@ Adversarial search deals with competitive environments where agents have conflic
 | **Terminal state** | End of game |
 | **Utility function** | Numeric value of terminal state |
 | **Ply** | One level in game tree |
-
----
 
 ## Minimax Algorithm
 
@@ -64,8 +65,6 @@ MAX chooses: max(min(+1,-1), min(0,+1))
 | **Space Complexity** | O(bm) |
 
 **Problem:** Exponential time — chess has ~35^80 nodes. Cannot search entire tree.
-
----
 
 ## Alpha-Beta Pruning
 
@@ -126,8 +125,6 @@ At right MIN node: first child = 1 < α=3 → prune rest
 
 **Best case:** With perfect move ordering, alpha-beta searches **twice as deep** as minimax in the same time!
 
----
-
 ## Constraint Satisfaction Problems (CSP)
 
 A CSP is defined by:
@@ -176,8 +173,6 @@ X → Y is arc consistent if for every value in Domain(X),
 there exists a value in Domain(Y) satisfying the constraint.
 ```
 
----
-
 ## Practice Questions
 
 **Short Answer (2 marks each)**
@@ -200,7 +195,5 @@ there exists a value in Domain(Y) satisfying the constraint.
 ```
 Leaf values (left to right): 3, 5, 2, 9, 1, 4, 8, 6
 ```
-
----
 
 [← Unit 2 Overview](/courses/paiml/unit2/) | [Next: Bayesian Learning →](/courses/paiml/unit2/bayesian-learning/)

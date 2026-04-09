@@ -1,0 +1,187 @@
+<!doctype html><html class=no-js lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>5.2 Reinforcement Learning - Chandras Edu | AI, Stock Market, Courses & Jobs India</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content="Reinforcement learning, Q-learning, temporal difference learning and dynamic programming for M.Tech PAIML."><meta property="og:url" content="http://localhost:1313/courses/paiml/unit5/reinforcement-learning/"><meta property="og:site_name" content="Chandras Edu | AI, Stock Market, Courses & Jobs India"><meta property="og:title" content="5.2 Reinforcement Learning"><meta property="og:description" content="Reinforcement learning, Q-learning, temporal difference learning and dynamic programming for M.Tech PAIML."><meta property="og:locale" content="en_in"><meta property="og:type" content="article"><meta property="article:section" content="courses"><meta property="article:published_time" content="2026-02-01T00:00:00+00:00"><meta property="article:modified_time" content="2026-02-01T00:00:00+00:00"><meta property="article:tag" content="Reinforcement-Learning"><meta property="article:tag" content="Q-Learning"><meta property="article:tag" content="Temporal-Difference"><meta property="article:tag" content="Markov"><meta property="article:tag" content="Mtech"><meta name=twitter:card content="summary"><meta name=twitter:title content="5.2 Reinforcement Learning"><meta name=twitter:description content="Reinforcement learning, Q-learning, temporal difference learning and dynamic programming for M.Tech PAIML."><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Chandras Edu | AI, Stock Market, Courses & Jobs India" rel=home><div class="logo__item logo__text"><div class=logo__title>Chandras Edu | AI, Stock Market, Courses & Jobs India</div><div class=logo__tagline>Tech · Finance · Courses · Jobs</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/posts/><span class=menu__text>Blog</span></a></li><li class=menu__item><a class=menu__link href=/courses/><span class=menu__text>Courses</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>5.2 Reinforcement Learning</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 110 28 1 1 0 010-28m0 3a3 3 0 100 22 3 3 0 000-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class=meta__text datetime=2026-02-01T00:00:00Z>February 1, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/courses/ rel=category>Courses</a></span></div></div></header><div class="content post__content clearfix"><h2 id=what-is-reinforcement-learning>What is Reinforcement Learning?</h2><p>Reinforcement Learning (RL) is learning through <strong>interaction</strong> — an agent learns to make decisions by receiving rewards and penalties from its environment.</p><pre tabindex=0><code>Agent ──action──→ Environment
+  ↑                    |
+  └──state + reward────┘
+</code></pre><p><strong>Key difference from supervised learning:</strong></p><ul><li>No labeled examples</li><li>Learns from delayed rewards</li><li>Must explore to discover good actions</li></ul><h2 id=the-learning-task>The Learning Task</h2><h3 id=formal-definition>Formal Definition</h3><p>An RL problem is a <strong>Markov Decision Process (MDP):</strong></p><pre tabindex=0><code>MDP = (S, A, T, R, γ)
+
+S = set of states
+A = set of actions
+T(s,a,s&#39;) = transition probability P(s&#39;|s,a)
+R(s,a,s&#39;) = reward function
+γ = discount factor (0 ≤ γ ≤ 1)
+</code></pre><h3 id=key-concepts>Key Concepts</h3><table><thead><tr><th>Concept</th><th>Symbol</th><th>Meaning</th></tr></thead><tbody><tr><td><strong>Policy</strong></td><td>π(s)</td><td>Strategy — action to take in state s</td></tr><tr><td><strong>Value function</strong></td><td>V(s)</td><td>Expected cumulative reward from state s</td></tr><tr><td><strong>Q-function</strong></td><td>Q(s,a)</td><td>Expected reward for action a in state s</td></tr><tr><td><strong>Return</strong></td><td>G</td><td>Total discounted future reward</td></tr></tbody></table><h3 id=discounted-return>Discounted Return</h3><pre tabindex=0><code>Gₜ = rₜ + γrₜ₊₁ + γ²rₜ₊₂ + ... = Σ γᵏrₜ₊ₖ
+
+γ = 0: Only immediate reward matters
+γ = 1: All future rewards equally important
+γ = 0.9: Common practical choice
+</code></pre><h2 id=markov-property>Markov Property</h2><p><strong>&ldquo;The future depends only on the present, not the past&rdquo;</strong></p><pre tabindex=0><code>P(sₜ₊₁ | sₜ, aₜ, sₜ₋₁, aₜ₋₁, ...) = P(sₜ₊₁ | sₜ, aₜ)
+</code></pre><p>This simplifies RL — we only need current state, not full history.</p><h2 id=value-functions>Value Functions</h2><h3 id=state-value-function-vπs>State Value Function V^π(s)</h3><p>Expected return starting from state s, following policy π:</p><pre tabindex=0><code>V^π(s) = E[Gₜ | Sₜ=s, π]
+        = E[rₜ + γV^π(sₜ₊₁) | Sₜ=s, π]   (Bellman equation)
+</code></pre><h3 id=action-value-function-qπsa>Action Value Function Q^π(s,a)</h3><p>Expected return starting from state s, taking action a, then following π:</p><pre tabindex=0><code>Q^π(s,a) = E[Gₜ | Sₜ=s, Aₜ=a, π]
+          = R(s,a) + γ Σs&#39; T(s,a,s&#39;) V^π(s&#39;)
+</code></pre><h3 id=bellman-optimality-equations>Bellman Optimality Equations</h3><pre tabindex=0><code>V*(s) = max_a [R(s,a) + γ Σs&#39; T(s,a,s&#39;) V*(s&#39;)]
+
+Q*(s,a) = R(s,a) + γ Σs&#39; T(s,a,s&#39;) max_a&#39; Q*(s&#39;,a&#39;)
+
+Optimal policy: π*(s) = argmax_a Q*(s,a)
+</code></pre><h2 id=q-learning>Q-Learning</h2><p>Q-learning is a <strong>model-free</strong> RL algorithm — learns Q-values directly from experience.</p><h3 id=q-learning-update-rule>Q-Learning Update Rule</h3><pre tabindex=0><code>Q(s,a) ← Q(s,a) + α[r + γ max_a&#39; Q(s&#39;,a&#39;) - Q(s,a)]
+
+where:
+  α = learning rate
+  r = immediate reward
+  γ = discount factor
+  max_a&#39; Q(s&#39;,a&#39;) = best future value
+  [r + γ max_a&#39; Q(s&#39;,a&#39;) - Q(s,a)] = TD error
+</code></pre><h3 id=q-learning-algorithm>Q-Learning Algorithm</h3><pre tabindex=0><code>Initialize Q(s,a) = 0 for all s,a
+
+For each episode:
+  Initialize state s
+  
+  Repeat until terminal:
+    Choose action a using ε-greedy policy:
+      With probability ε: random action (exploration)
+      With probability 1-ε: argmax_a Q(s,a) (exploitation)
+    
+    Take action a, observe reward r and next state s&#39;
+    
+    Q(s,a) ← Q(s,a) + α[r + γ max_a&#39; Q(s&#39;,a&#39;) - Q(s,a)]
+    
+    s ← s&#39;
+</code></pre><h3 id=example-grid-world>Example: Grid World</h3><pre tabindex=0><code>Grid (4×4):
+S = Start, G = Goal (+1), F = Fire (-1), _ = Empty
+
+S _ _ _
+_ _ _ F
+_ F _ _
+_ _ _ G
+
+Actions: Up, Down, Left, Right
+Rewards: +1 at G, -1 at F, -0.01 otherwise
+γ = 0.9, α = 0.1, ε = 0.1
+</code></pre><p><strong>Q-table (initialized to 0, after training):</strong></p><table><thead><tr><th>State</th><th>Up</th><th>Down</th><th>Left</th><th>Right</th></tr></thead><tbody><tr><td>S(0,0)</td><td>0</td><td>0.1</td><td>0</td><td>0.3</td></tr><tr><td>(0,1)</td><td>0</td><td>0.2</td><td>0.1</td><td>0.4</td></tr><tr><td>&mldr;</td><td></td><td></td><td></td><td></td></tr><tr><td>(3,3)=G</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody></table><p><strong>Optimal path derived from Q-table:</strong> S → Right → Right → Right → Down → Down → Down → G</p><h2 id=non-deterministic-rewards-and-actions>Non-Deterministic Rewards and Actions</h2><p>Real environments are stochastic — same action may lead to different outcomes.</p><pre tabindex=0><code>T(s, a, s&#39;) = P(s&#39;|s,a) ≠ always 1
+
+Example: Robot with 80% chance of moving correctly,
+         10% chance of drifting left, 10% right
+</code></pre><p><strong>Q-learning still converges</strong> under certain conditions even with stochastic transitions.</p><h2 id=temporal-difference-learning>Temporal Difference Learning</h2><p>TD learning updates estimates based on <strong>other estimates</strong> (bootstrapping).</p><h3 id=td0>TD(0)</h3><pre tabindex=0><code>V(s) ← V(s) + α[r + γV(s&#39;) - V(s)]
+
+TD error: δ = r + γV(s&#39;) - V(s)
+</code></pre><h3 id=td-vs-monte-carlo>TD vs Monte Carlo</h3><table><thead><tr><th>Method</th><th>Update When</th><th>Variance</th><th>Bias</th></tr></thead><tbody><tr><td>Monte Carlo</td><td>End of episode</td><td>High</td><td>Low</td></tr><tr><td>TD(0)</td><td>Every step</td><td>Low</td><td>High</td></tr><tr><td>TD(λ)</td><td>Every step</td><td>Middle</td><td>Middle</td></tr></tbody></table><h3 id=tdλ--eligibility-traces>TD(λ) — Eligibility Traces</h3><p>Combines TD and Monte Carlo with parameter λ:</p><pre tabindex=0><code>λ = 0: Pure TD(0)
+λ = 1: Pure Monte Carlo
+
+Eligibility trace: eₜ(s) = γλeₜ₋₁(s) + 1[Sₜ=s]
+Update: V(s) ← V(s) + α × δₜ × eₜ(s)
+</code></pre><h2 id=generalizing-from-examples>Generalizing from Examples</h2><p><strong>Problem:</strong> State space too large to store Q-value for every state.</p><p><strong>Solution:</strong> Use function approximation:</p><pre tabindex=0><code>Q(s,a) ≈ Q(s,a;θ)    where θ = parameters
+
+Options:
+- Linear: Q(s,a;θ) = θᵀφ(s,a)
+- Neural Network (Deep Q-Network / DQN)
+</code></pre><h3 id=deep-q-network-dqn>Deep Q-Network (DQN)</h3><p>Uses a neural network to approximate Q-values:</p><pre tabindex=0><code>Input: State s (e.g., game pixels)
+Output: Q(s,a) for all actions a
+
+Loss: L(θ) = E[(r + γ max_a&#39; Q(s&#39;,a&#39;;θ⁻) - Q(s,a;θ))²]
+
+Key innovations:
+  - Experience replay: Store and sample past transitions
+  - Target network: Separate network for stable targets
+</code></pre><p><strong>DQN achieved superhuman performance on 49 Atari games (DeepMind, 2015)</strong></p><h2 id=relationship-to-dynamic-programming>Relationship to Dynamic Programming</h2><table><thead><tr><th>Method</th><th>Model?</th><th>Update</th><th>When</th></tr></thead><tbody><tr><td>Dynamic Programming</td><td>Yes</td><td>Full Bellman</td><td>Offline</td></tr><tr><td>Monte Carlo</td><td>No</td><td>After episode</td><td>After episode</td></tr><tr><td>TD Learning</td><td>No</td><td>Bellman approx</td><td>Every step</td></tr></tbody></table><p><strong>Dynamic programming</strong> (Value Iteration):</p><pre tabindex=0><code>V(s) ← max_a [R(s,a) + γ Σs&#39; T(s,a,s&#39;) V(s&#39;)]
+
+Requires known T and R — not always available.
+</code></pre><p><strong>Q-learning</strong> works without knowing T and R — <strong>model-free</strong>.</p><h2 id=exploration-vs-exploitation>Exploration vs Exploitation</h2><p><strong>Key dilemma:</strong> Should the agent explore new actions or exploit known good ones?</p><h3 id=ε-greedy-policy>ε-Greedy Policy</h3><pre tabindex=0><code>With probability ε: random action (explore)
+With probability 1-ε: best known action (exploit)
+
+Common: Start with ε=1.0, decay to ε=0.01
+</code></pre><h3 id=softmax-boltzmann-exploration>Softmax (Boltzmann) Exploration</h3><pre tabindex=0><code>P(a|s) = exp(Q(s,a)/τ) / Σa&#39; exp(Q(s,a&#39;)/τ)
+
+τ = temperature
+High τ: More uniform (exploration)
+Low τ: More greedy (exploitation)
+</code></pre><h2 id=practice-questions>Practice Questions</h2><p><strong>Short Answer (2 marks each)</strong></p><ol><li>What is a Markov Decision Process? Name its components.</li><li>What is the Bellman equation for V*(s)?</li><li>What is the ε-greedy policy? Why is exploration important?</li><li>How does Q-learning differ from Dynamic Programming?</li></ol><p><strong>Long Answer (8 marks each)</strong></p><ol><li>Explain Q-learning algorithm in detail. Derive the Q-learning update rule.</li><li>Compare TD learning and Monte Carlo methods in terms of bias, variance and update frequency.</li><li>What is DQN? How does experience replay and target network improve stability?</li></ol><p><strong>Think & Apply</strong></p><ol><li>For the following MDP, calculate V*(s) for all states using value iteration (γ=0.9):</li></ol><pre tabindex=0><code>States: S1, S2, S3 (terminal)
+Actions: a1, a2
+
+From S1:
+  a1: P(S2)=1, r=0
+  a2: P(S3)=1, r=10
+
+From S2:
+  a1: P(S3)=1, r=5
+  a2: P(S1)=1, r=-1
+
+V(S3) = 0 (terminal)
+</code></pre><ol start=2><li>An RL agent learning to play chess has a state space of 10⁴⁷. Why can&rsquo;t we use a simple Q-table? What alternative would you use?</li></ol><p><a href=/courses/paiml/unit5/decision-trees/>← Decision Trees</a> | <a href=/courses/paiml/>Back to Course Overview →</a></p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 000-6 3 3 0 000 6"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/reinforcement-learning/ rel=tag>reinforcement-learning</a></li><li class=tags__item><a class="tags__link btn" href=/tags/q-learning/ rel=tag>q-learning</a></li><li class=tags__item><a class="tags__link btn" href=/tags/temporal-difference/ rel=tag>temporal-difference</a></li><li class=tags__item><a class="tags__link btn" href=/tags/markov/ rel=tag>markov</a></li><li class=tags__item><a class="tags__link btn" href=/tags/mtech/ rel=tag>mtech</a></li></ul></div></footer></article></main></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><input class=widget-search__field type=search placeholder=Search… name=q aria-label=Search…>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=http://localhost:1313/></form></div><div class="widget-recent widget"><h4 class=widget__title>Recent Posts</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/india-ai-summit-2026/>India AI Impact Summit 2026: US Partnerships & AI Launches</a></li><li class=widget__item><a class=widget__link href=/posts/bitcoin-dip-accumulation-india-2026/>Bitcoin Crashed 48% From Peak: Is This the Time Indian Investors Should Buy?</a></li><li class=widget__item><a class=widget__link href=/posts/ai-proof-skills-freshers-2026/>5 Skills AI Cannot Replace: Career Survival Guide for 2026 Freshers</a></li><li class=widget__item><a class=widget__link href=/posts/anthropic-cowork-indian-it-stocks-crash/>Anthropic's AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can't & Why TCS, Infosys Are Panicking</a></li><li class=widget__item><a class=widget__link href=/posts/gold-silver-crash-india-analysis/>Gold Crashed ₹50,000, Silver Down 39%: What Happened in Indian Markets & What to Do Now</a></li><li class=widget__item><a class=widget__link href=/posts/union-budget-2026-complete-guide/>Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Costlier & What It All Means for You</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Categories</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/careers/>Careers</a></li><li class=widget__item><a class=widget__link href=/categories/courses/>Courses</a></li><li class=widget__item><a class=widget__link href=/categories/finance/></a></li><li class=widget__item><a class=widget__link href=/categories/technology/></a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/a-star/ title=A-Star>A-Star</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/adversarial-search/ title=Adversarial-Search>Adversarial-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai/ title=Ai>Ai</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai-impact/ title=Ai-Impact>Ai-Impact</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/alpha-beta/ title=Alpha-Beta>Alpha-Beta</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/anthropic-cowork/ title=Anthropic-Cowork>Anthropic-Cowork</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/backpropagation/ title=Backpropagation>Backpropagation</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayes-theorem/ title=Bayes-Theorem>Bayes-Theorem</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayesian/ title=Bayesian>Bayesian</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bfs/ title=Bfs>Bfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bitcoin/ title=Bitcoin>Bitcoin</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/boosting/ title=Boosting>Boosting</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/budget-analysis/ title=Budget-Analysis>Budget-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/career/ title=Career>Career</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/classification/ title=Classification>Classification</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cnn/ title=Cnn>Cnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/convolutional/ title=Convolutional>Convolutional</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/course/ title=Course>Course</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cryptocurrency/ title=Cryptocurrency>Cryptocurrency</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/csp/ title=Csp>Csp</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/decision-trees/ title=Decision-Trees>Decision-Trees</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/deep-learning/ title=Deep-Learning>Deep-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dfs/ title=Dfs>Dfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/em-algorithm/ title=Em-Algorithm>Em-Algorithm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ensemble/ title=Ensemble>Ensemble</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/finance-india/ title=Finance-India>Finance-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/foundations/ title=Foundations>Foundations</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/freshers/ title=Freshers>Freshers</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/games/ title=Games>Games</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gold-price-india/ title=Gold-Price-India>Gold-Price-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/greedy/ title=Greedy>Greedy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/heuristic/ title=Heuristic>Heuristic</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/id3/ title=Id3>Id3</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india/ title=India>India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india-ai-summit/ title=India-Ai-Summit>India-Ai-Summit</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/indian-it-stocks/ title=Indian-It-Stocks>Indian-It-Stocks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/informed-search/ title=Informed-Search>Informed-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/introduction/ title=Introduction>Introduction</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investment-strategy/ title=Investment-Strategy>Investment-Strategy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investments/ title=Investments>Investments</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jobs/ title=Jobs>Jobs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kernel/ title=Kernel>Kernel</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/machine-learning/ title=Machine-Learning>Machine-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/market-analysis/ title=Market-Analysis>Market-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/markov/ title=Markov>Markov</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mcx-gold-silver/ title=Mcx-Gold-Silver>Mcx-Gold-Silver</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/minimax/ title=Minimax>Minimax</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mtech/ title=Mtech>Mtech</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/multilayer/ title=Multilayer>Multilayer</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/naive-bayes/ title=Naive-Bayes>Naive-Bayes</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/neural-networks/ title=Neural-Networks>Neural-Networks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pac-learning/ title=Pac-Learning>Pac-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/perceptron/ title=Perceptron>Perceptron</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/precious-metals-india/ title=Precious-Metals-India>Precious-Metals-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/q-learning/ title=Q-Learning>Q-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/random-forest/ title=Random-Forest>Random-Forest</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/recurrent/ title=Recurrent>Recurrent</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/regression/ title=Regression>Regression</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement/ title=Reinforcement>Reinforcement</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement-learning/ title=Reinforcement-Learning>Reinforcement-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rnn/ title=Rnn>Rnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/saas-industry/ title=Saas-Industry>Saas-Industry</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/search/ title=Search>Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/silver-price-mcx/ title=Silver-Price-Mcx>Silver-Price-Mcx</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/skills/ title=Skills>Skills</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/students/ title=Students>Students</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/supervised-learning/ title=Supervised-Learning>Supervised-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/svm/ title=Svm>Svm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tax-planning/ title=Tax-Planning>Tax-Planning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tcs-infosys-wipro/ title=Tcs-Infosys-Wipro>Tcs-Infosys-Wipro</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tech-news/ title=Tech-News>Tech-News</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/temporal-difference/ title=Temporal-Difference>Temporal-Difference</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/uniform-cost/ title=Uniform-Cost>Uniform-Cost</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/union-budget-2026/ title=Union-Budget-2026>Union-Budget-2026</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/unsupervised/ title=Unsupervised>Unsupervised</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vc-dimension/ title=Vc-Dimension>Vc-Dimension</a></div></div></aside></div><footer class=footer><span>© 2026 Chandra Shaker · <a href=/privacy-policy/>Privacy Policy</a> · <a href=/disclaimer/>Disclaimer</a> · <a href=/contact/>Contact</a></span></footer></div><script async defer src=/js/menu.js></script></body></html>

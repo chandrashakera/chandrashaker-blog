@@ -4,6 +4,9 @@ date: 2026-02-01
 description: "Supervised learning concepts - VC dimension, PAC learning, SVM, kernel tricks and model generalization for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["supervised-learning", "svm", "vc-dimension", "pac-learning", "kernel", "mtech"]
+_build:
+  list: never
+  render: always
 ---
 
 ## Learning a Class from Examples
@@ -37,8 +40,6 @@ For each training example (x, label):
     Remove from S any hypothesis inconsistent with x
     Specialize G to exclude x (minimally)
 ```
-
----
 
 ## Vapnik-Chervonenkis (VC) Dimension
 
@@ -76,8 +77,6 @@ m ≥ (1/ε)[ln|H| + ln(1/δ)]     (finite H)
 m ≥ (1/ε)[VC(H) + ln(1/δ)]     (infinite H)
 ```
 
----
-
 ## Probably Approximately Correct (PAC) Learning
 
 PAC learning asks: **How much data do we need to learn a good hypothesis?**
@@ -107,8 +106,6 @@ Example:
   m ≥ 99 examples
 ```
 
----
-
 ## Noise in Learning
 
 Real data has noise — mislabeled examples, measurement errors.
@@ -120,8 +117,6 @@ Real data has noise — mislabeled examples, measurement errors.
 **MDL approach:** Shorter hypothesis preferred even if it makes some errors.
 
 **Cross-validation:** Use held-out data to detect overfitting.
-
----
 
 ## Learning Multiple Classes
 
@@ -138,8 +133,6 @@ Prediction: class with highest confidence
 Classifier for each pair (i,j)
 Prediction: majority vote
 ```
-
----
 
 ## Regression
 
@@ -173,8 +166,6 @@ Prevents overfitting by penalizing large weights:
 Ridge (L2): L(w) = MSE + λ Σwᵢ²
 Lasso (L1): L(w) = MSE + λ Σ|wᵢ|
 ```
-
----
 
 ## Support Vector Machines (SVM)
 
@@ -234,8 +225,6 @@ Data:          After RBF kernel transform:
 Linear SVM on transformed data finds optimal hyperplane.
 ```
 
----
-
 ## Model Selection and Generalization
 
 ### Cross-Validation
@@ -260,8 +249,6 @@ err_test ≤ err_train + √(VC(H)×ln(n) + ln(1/δ)) / √n
 
 As n → ∞, test error approaches training error.
 
----
-
 ## Dimensions of Supervised ML Algorithm
 
 When designing a supervised ML algorithm, consider:
@@ -271,8 +258,6 @@ When designing a supervised ML algorithm, consider:
 | **Representation** | Decision trees, neural nets, SVM, linear models |
 | **Evaluation** | Accuracy, MSE, likelihood, posterior |
 | **Optimization** | Gradient descent, genetic algorithms, exact methods |
-
----
 
 ## Practice Questions
 
@@ -298,7 +283,5 @@ Negative: (1,3), (2,4), (3,3)
 ```
 
 2. You have 10,000 training examples and your SVM with RBF kernel overfits. What changes would you make to C and γ? Why?
-
----
 
 [← Intro to ML](/courses/paiml/unit3/intro-ml/) | [Next: Unit 4 →](/courses/paiml/unit4/)

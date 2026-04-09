@@ -5,6 +5,9 @@ description: "Complete course on AI and ML for M.Tech students. Covers search st
 categories: ["Courses"]
 tags: ["ai", "machine-learning", "mtech", "course"]
 thumbnail: "/images/paiml-course.jpg"
+_build:
+  list: never
+  render: always
 ---
 
 ## Course Overview
@@ -14,16 +17,12 @@ thumbnail: "/images/paiml-course.jpg"
 **Credits:** L:3 | T:0 | P:0 | C:3  
 **Prerequisite:** NIL
 
----
-
 ## Course Objectives
 
 1. Become familiar with basic principles of AI toward problem solving using Search Strategy
 2. Illustrate AI and ML algorithms and their use in appropriate applications
 3. Formulate solutions to real-time problems using machine learning algorithms
 4. Design and analyze various machine learning algorithms and techniques with a modern outlook focusing on advances
-
----
 
 ## Course Units
 
@@ -35,8 +34,6 @@ thumbnail: "/images/paiml-course.jpg"
 | [Unit 4](/courses/paiml/unit4/) | Artificial Neural Networks | ~8 hrs |
 | [Unit 5](/courses/paiml/unit5/) | Decision Trees & Reinforcement Learning | ~12 hrs |
 
----
-
 ## Course Outcomes
 
 After completing this course, students will be able to:
@@ -46,8 +43,6 @@ After completing this course, students will be able to:
 3. Analyze probabilistic models, Bayesian learning, and ensemble techniques for effective decision-making
 4. Distinguish various neural networks, including modern deep learning models (CNNs)
 5. Analyze unsupervised, supervised and reinforcement learning
-
----
 
 ## Text Books
 

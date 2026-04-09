@@ -31,6 +31,13 @@
       <description></description>
     </item>
     <item>
+      <title>Courses</title>
+      <link>http://localhost:1313/categories/courses/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/courses/</guid>
+      <description></description>
+    </item>
+    <item>
       <title></title>
       <link>http://localhost:1313/categories/gold/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

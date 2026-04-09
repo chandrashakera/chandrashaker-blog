@@ -1,0 +1,154 @@
+<!doctype html><html class=no-js lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>2.2 Bayesian Learning - Chandras Edu | AI, Stock Market, Courses & Jobs India</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content="Bayes theorem, concept learning, maximum likelihood, Naive Bayes classifier, Bayesian Belief Networks and EM algorithm for M.Tech PAIML."><meta property="og:url" content="http://localhost:1313/courses/paiml/unit2/bayesian-learning/"><meta property="og:site_name" content="Chandras Edu | AI, Stock Market, Courses & Jobs India"><meta property="og:title" content="2.2 Bayesian Learning"><meta property="og:description" content="Bayes theorem, concept learning, maximum likelihood, Naive Bayes classifier, Bayesian Belief Networks and EM algorithm for M.Tech PAIML."><meta property="og:locale" content="en_in"><meta property="og:type" content="article"><meta property="article:section" content="courses"><meta property="article:published_time" content="2026-02-01T00:00:00+00:00"><meta property="article:modified_time" content="2026-02-01T00:00:00+00:00"><meta property="article:tag" content="Bayesian"><meta property="article:tag" content="Naive-Bayes"><meta property="article:tag" content="Bayes-Theorem"><meta property="article:tag" content="Em-Algorithm"><meta property="article:tag" content="Machine-Learning"><meta property="article:tag" content="Mtech"><meta name=twitter:card content="summary"><meta name=twitter:title content="2.2 Bayesian Learning"><meta name=twitter:description content="Bayes theorem, concept learning, maximum likelihood, Naive Bayes classifier, Bayesian Belief Networks and EM algorithm for M.Tech PAIML."><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Chandras Edu | AI, Stock Market, Courses & Jobs India" rel=home><div class="logo__item logo__text"><div class=logo__title>Chandras Edu | AI, Stock Market, Courses & Jobs India</div><div class=logo__tagline>Tech · Finance · Courses · Jobs</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/posts/><span class=menu__text>Blog</span></a></li><li class=menu__item><a class=menu__link href=/courses/><span class=menu__text>Courses</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>2.2 Bayesian Learning</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 110 28 1 1 0 010-28m0 3a3 3 0 100 22 3 3 0 000-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class=meta__text datetime=2026-02-01T00:00:00Z>February 1, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/courses/ rel=category>Courses</a></span></div></div></header><div class="content post__content clearfix"><h2 id=bayes-theorem>Bayes Theorem</h2><p>Bayes theorem relates conditional probabilities:</p><pre tabindex=0><code>P(h|D) = P(D|h) × P(h) / P(D)
+
+where:
+  P(h)   = Prior probability of hypothesis h
+  P(D)   = Prior probability of data D
+  P(D|h) = Likelihood — probability of D given h
+  P(h|D) = Posterior — probability of h given D
+</code></pre><h3 id=example-medical-diagnosis>Example: Medical Diagnosis</h3><pre tabindex=0><code>P(Cancer) = 0.01        ← prior (1% of population)
+P(+Test | Cancer) = 0.9 ← sensitivity
+P(+Test | No Cancer) = 0.05 ← false positive rate
+
+P(Cancer | +Test) = P(+Test|Cancer) × P(Cancer) / P(+Test)
+
+P(+Test) = P(+Test|Cancer)×P(Cancer) + P(+Test|NoCancer)×P(NoCancer)
+         = 0.9×0.01 + 0.05×0.99
+         = 0.009 + 0.0495 = 0.0585
+
+P(Cancer|+Test) = 0.9 × 0.01 / 0.0585 = 0.154 (15.4%)
+</code></pre><h2 id=maximum-likelihood-estimation-mle>Maximum Likelihood Estimation (MLE)</h2><p>Chooses the hypothesis h that maximizes P(D|h):</p><pre tabindex=0><code>h_ML = argmax P(D|h)
+         h
+</code></pre><p><strong>Example:</strong> For a coin with unknown bias θ:</p><ul><li>Data D: 3 heads, 2 tails</li><li>P(D|θ) = θ³(1-θ)²</li><li>MLE: dP/dθ = 0 → θ_ML = 3/5 = 0.6</li></ul><h2 id=minimum-description-length-mdl>Minimum Description Length (MDL)</h2><p>Choose the hypothesis that minimizes total description length:</p><pre tabindex=0><code>h_MDL = argmin [L(h) + L(D|h)]
+          h
+
+where:
+  L(h)   = length to describe hypothesis
+  L(D|h) = length to describe data given hypothesis
+</code></pre><p>MDL favors simpler hypotheses that explain data well (Occam&rsquo;s Razor).</p><h2 id=bayes-optimal-classifier>Bayes Optimal Classifier</h2><p>Combines predictions from ALL hypotheses weighted by their probabilities:</p><pre tabindex=0><code>P(vj|D) = Σ P(vj|hi) × P(hi|D)
+           i
+
+Prediction = argmax P(vj|D)
+               vj
+</code></pre><p>Most accurate but computationally expensive.</p><h2 id=gibbs-algorithm>Gibbs Algorithm</h2><p>Practical approximation of Bayes optimal classifier:</p><ol><li>Sample a hypothesis h from P(h|D)</li><li>Use h to classify new instance</li><li>Expected error ≤ 2 × Bayes optimal error</li></ol><hr><p>_build:
+list: never
+render: always
+_build:
+list: never
+render: always</p><h2 id=naive-bayes-classifier>Naive Bayes Classifier</h2><p>Assumes features are conditionally independent given the class:</p><pre tabindex=0><code>P(C|x1,x2,...,xn) ∝ P(C) × P(x1|C) × P(x2|C) × ... × P(xn|C)
+</code></pre><h3 id=algorithm>Algorithm</h3><pre tabindex=0><code>Training:
+  For each class C:
+    P(C) = count(C) / total_samples
+    For each feature xi:
+      P(xi|C) = count(xi,C) / count(C)
+
+Prediction:
+  For new instance x = (x1,...,xn):
+    predict C* = argmax P(C) × Π P(xi|C)
+                   C          i
+</code></pre><h3 id=example-email-spam-classification>Example: Email Spam Classification</h3><p><strong>Training Data:</strong></p><table><thead><tr><th>Email</th><th>&ldquo;offer&rdquo;</th><th>&ldquo;free&rdquo;</th><th>&ldquo;meeting&rdquo;</th><th>Class</th></tr></thead><tbody><tr><td>E1</td><td>Yes</td><td>Yes</td><td>No</td><td>Spam</td></tr><tr><td>E2</td><td>Yes</td><td>No</td><td>No</td><td>Spam</td></tr><tr><td>E3</td><td>No</td><td>Yes</td><td>No</td><td>Spam</td></tr><tr><td>E4</td><td>No</td><td>No</td><td>Yes</td><td>Ham</td></tr><tr><td>E5</td><td>No</td><td>No</td><td>Yes</td><td>Ham</td></tr></tbody></table><p><strong>Probabilities:</strong></p><pre tabindex=0><code>P(Spam) = 3/5 = 0.6,  P(Ham) = 2/5 = 0.4
+
+P(&#34;offer&#34;|Spam) = 2/3,  P(&#34;offer&#34;|Ham) = 0/2 = 0
+P(&#34;free&#34;|Spam) = 2/3,   P(&#34;free&#34;|Ham) = 0/2 = 0
+P(&#34;meeting&#34;|Spam) = 0/3, P(&#34;meeting&#34;|Ham) = 2/2 = 1
+</code></pre><p><strong>New email: &ldquo;offer&rdquo;, &ldquo;free&rdquo;, no &ldquo;meeting&rdquo;</strong></p><pre tabindex=0><code>P(Spam|x) ∝ 0.6 × 2/3 × 2/3 × (1-0) = 0.267
+P(Ham|x) ∝ 0.4 × 0 × 0 × (1-1) = 0
+
+→ Classify as SPAM
+</code></pre><p><strong>Note:</strong> Use Laplace smoothing to handle zero probabilities.</p><h2 id=bayesian-belief-networks>Bayesian Belief Networks</h2><p>A Bayesian Belief Network (BBN) is a directed acyclic graph (DAG) where:</p><ul><li><strong>Nodes</strong> represent random variables</li><li><strong>Edges</strong> represent conditional dependencies</li><li>Each node has a Conditional Probability Table (CPT)</li></ul><h3 id=example-alarm-network>Example: Alarm Network</h3><pre tabindex=0><code>Burglary  Earthquake
+    \      /
+     Alarm
+    /     \
+Phone    Radio
+</code></pre><p><strong>CPT for Alarm:</strong></p><table><thead><tr><th>Burglary</th><th>Earthquake</th><th>P(Alarm=T)</th></tr></thead><tbody><tr><td>T</td><td>T</td><td>0.95</td></tr><tr><td>T</td><td>F</td><td>0.94</td></tr><tr><td>F</td><td>T</td><td>0.29</td></tr><tr><td>F</td><td>F</td><td>0.001</td></tr></tbody></table><p><strong>Joint Probability:</strong></p><pre tabindex=0><code>P(B,E,A,P,R) = P(B) × P(E) × P(A|B,E) × P(P|A) × P(R|E)
+</code></pre><h3 id=inference-in-bbn>Inference in BBN</h3><p>Given evidence, compute probability of query variable:</p><pre tabindex=0><code>P(Burglary | Alarm=True) = ?
+
+Using Bayes theorem with summing out other variables.
+</code></pre><h2 id=the-em-algorithm>The EM Algorithm</h2><p>Expectation-Maximization (EM) is used when data has missing/hidden variables.</p><h3 id=two-steps>Two Steps</h3><p><strong>E-step (Expectation):</strong> Estimate missing values using current parameters:</p><pre tabindex=0><code>Q(θ|θ_old) = E[log P(X,Z|θ) | X, θ_old]
+</code></pre><p><strong>M-step (Maximization):</strong> Update parameters to maximize expected log-likelihood:</p><pre tabindex=0><code>θ_new = argmax Q(θ|θ_old)
+           θ
+</code></pre><h3 id=example-gaussian-mixture-model>Example: Gaussian Mixture Model</h3><pre tabindex=0><code>Data: Points that came from 2 Gaussian distributions (unknown which)
+
+E-step: P(zi=k | xi, θ) = P(xi|μk,σk) × P(k) / Σ P(xi|μj,σj)×P(j)
+
+M-step: Update μk, σk, P(k) using weighted data points
+
+Repeat until convergence.
+</code></pre><h2 id=practice-questions>Practice Questions</h2><p><strong>Short Answer (2 marks each)</strong></p><ol><li>State Bayes theorem. Define each term.</li><li>What is the Naive Bayes assumption? When does it fail?</li><li>What is a Bayesian Belief Network? What does a node represent?</li><li>What are the two steps of the EM algorithm?</li></ol><p><strong>Long Answer (8 marks each)</strong></p><ol><li>Explain Naive Bayes classifier with a complete example. How do you handle zero probability using Laplace smoothing?</li><li>What is a Bayesian Belief Network? Explain with the Alarm example, including the joint probability calculation.</li><li>Explain the EM algorithm. How is it used for Gaussian Mixture Models?</li></ol><p><strong>Think & Apply</strong></p><ol><li>Given the following data, build a Naive Bayes classifier to predict whether to play tennis:</li></ol><table><thead><tr><th>Outlook</th><th>Temp</th><th>Humidity</th><th>Wind</th><th>Play</th></tr></thead><tbody><tr><td>Sunny</td><td>Hot</td><td>High</td><td>Weak</td><td>No</td></tr><tr><td>Sunny</td><td>Hot</td><td>High</td><td>Strong</td><td>No</td></tr><tr><td>Overcast</td><td>Hot</td><td>High</td><td>Weak</td><td>Yes</td></tr><tr><td>Rain</td><td>Mild</td><td>High</td><td>Weak</td><td>Yes</td></tr><tr><td>Rain</td><td>Cool</td><td>Normal</td><td>Weak</td><td>Yes</td></tr></tbody></table><p>Predict: Outlook=Sunny, Temp=Cool, Humidity=High, Wind=Strong</p><p><a href=/courses/paiml/unit2/adversarial-search/>← Adversarial Search</a> | <a href=/courses/paiml/unit3/>Next: Unit 3 →</a></p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 000-6 3 3 0 000 6"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/bayesian/ rel=tag>bayesian</a></li><li class=tags__item><a class="tags__link btn" href=/tags/naive-bayes/ rel=tag>naive-bayes</a></li><li class=tags__item><a class="tags__link btn" href=/tags/bayes-theorem/ rel=tag>bayes-theorem</a></li><li class=tags__item><a class="tags__link btn" href=/tags/em-algorithm/ rel=tag>em-algorithm</a></li><li class=tags__item><a class="tags__link btn" href=/tags/machine-learning/ rel=tag>machine-learning</a></li><li class=tags__item><a class="tags__link btn" href=/tags/mtech/ rel=tag>mtech</a></li></ul></div></footer></article></main></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><input class=widget-search__field type=search placeholder=Search… name=q aria-label=Search…>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=http://localhost:1313/></form></div><div class="widget-recent widget"><h4 class=widget__title>Recent Posts</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/india-ai-summit-2026/>India AI Impact Summit 2026: US Partnerships & AI Launches</a></li><li class=widget__item><a class=widget__link href=/posts/bitcoin-dip-accumulation-india-2026/>Bitcoin Crashed 48% From Peak: Is This the Time Indian Investors Should Buy?</a></li><li class=widget__item><a class=widget__link href=/posts/ai-proof-skills-freshers-2026/>5 Skills AI Cannot Replace: Career Survival Guide for 2026 Freshers</a></li><li class=widget__item><a class=widget__link href=/posts/anthropic-cowork-indian-it-stocks-crash/>Anthropic's AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can't & Why TCS, Infosys Are Panicking</a></li><li class=widget__item><a class=widget__link href=/posts/gold-silver-crash-india-analysis/>Gold Crashed ₹50,000, Silver Down 39%: What Happened in Indian Markets & What to Do Now</a></li><li class=widget__item><a class=widget__link href=/posts/union-budget-2026-complete-guide/>Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Costlier & What It All Means for You</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Categories</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/careers/>Careers</a></li><li class=widget__item><a class=widget__link href=/categories/courses/>Courses</a></li><li class=widget__item><a class=widget__link href=/categories/finance/></a></li><li class=widget__item><a class=widget__link href=/categories/technology/></a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/a-star/ title=A-Star>A-Star</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/adversarial-search/ title=Adversarial-Search>Adversarial-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai/ title=Ai>Ai</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai-impact/ title=Ai-Impact>Ai-Impact</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/alpha-beta/ title=Alpha-Beta>Alpha-Beta</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/anthropic-cowork/ title=Anthropic-Cowork>Anthropic-Cowork</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/backpropagation/ title=Backpropagation>Backpropagation</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayes-theorem/ title=Bayes-Theorem>Bayes-Theorem</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayesian/ title=Bayesian>Bayesian</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bfs/ title=Bfs>Bfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bitcoin/ title=Bitcoin>Bitcoin</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/boosting/ title=Boosting>Boosting</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/budget-analysis/ title=Budget-Analysis>Budget-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/career/ title=Career>Career</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/classification/ title=Classification>Classification</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cnn/ title=Cnn>Cnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/convolutional/ title=Convolutional>Convolutional</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/course/ title=Course>Course</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cryptocurrency/ title=Cryptocurrency>Cryptocurrency</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/csp/ title=Csp>Csp</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/decision-trees/ title=Decision-Trees>Decision-Trees</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/deep-learning/ title=Deep-Learning>Deep-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dfs/ title=Dfs>Dfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/em-algorithm/ title=Em-Algorithm>Em-Algorithm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ensemble/ title=Ensemble>Ensemble</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/finance-india/ title=Finance-India>Finance-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/foundations/ title=Foundations>Foundations</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/freshers/ title=Freshers>Freshers</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/games/ title=Games>Games</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gold-price-india/ title=Gold-Price-India>Gold-Price-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/greedy/ title=Greedy>Greedy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/heuristic/ title=Heuristic>Heuristic</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/id3/ title=Id3>Id3</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india/ title=India>India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india-ai-summit/ title=India-Ai-Summit>India-Ai-Summit</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/indian-it-stocks/ title=Indian-It-Stocks>Indian-It-Stocks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/informed-search/ title=Informed-Search>Informed-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/introduction/ title=Introduction>Introduction</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investment-strategy/ title=Investment-Strategy>Investment-Strategy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investments/ title=Investments>Investments</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jobs/ title=Jobs>Jobs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kernel/ title=Kernel>Kernel</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/machine-learning/ title=Machine-Learning>Machine-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/market-analysis/ title=Market-Analysis>Market-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/markov/ title=Markov>Markov</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mcx-gold-silver/ title=Mcx-Gold-Silver>Mcx-Gold-Silver</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/minimax/ title=Minimax>Minimax</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mtech/ title=Mtech>Mtech</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/multilayer/ title=Multilayer>Multilayer</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/naive-bayes/ title=Naive-Bayes>Naive-Bayes</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/neural-networks/ title=Neural-Networks>Neural-Networks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pac-learning/ title=Pac-Learning>Pac-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/perceptron/ title=Perceptron>Perceptron</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/precious-metals-india/ title=Precious-Metals-India>Precious-Metals-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/q-learning/ title=Q-Learning>Q-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/random-forest/ title=Random-Forest>Random-Forest</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/recurrent/ title=Recurrent>Recurrent</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/regression/ title=Regression>Regression</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement/ title=Reinforcement>Reinforcement</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement-learning/ title=Reinforcement-Learning>Reinforcement-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rnn/ title=Rnn>Rnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/saas-industry/ title=Saas-Industry>Saas-Industry</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/search/ title=Search>Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/silver-price-mcx/ title=Silver-Price-Mcx>Silver-Price-Mcx</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/skills/ title=Skills>Skills</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/students/ title=Students>Students</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/supervised-learning/ title=Supervised-Learning>Supervised-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/svm/ title=Svm>Svm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tax-planning/ title=Tax-Planning>Tax-Planning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tcs-infosys-wipro/ title=Tcs-Infosys-Wipro>Tcs-Infosys-Wipro</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tech-news/ title=Tech-News>Tech-News</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/temporal-difference/ title=Temporal-Difference>Temporal-Difference</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/uniform-cost/ title=Uniform-Cost>Uniform-Cost</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/union-budget-2026/ title=Union-Budget-2026>Union-Budget-2026</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/unsupervised/ title=Unsupervised>Unsupervised</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vc-dimension/ title=Vc-Dimension>Vc-Dimension</a></div></div></aside></div><footer class=footer><span>© 2026 Chandra Shaker · <a href=/privacy-policy/>Privacy Policy</a> · <a href=/disclaimer/>Disclaimer</a> · <a href=/contact/>Contact</a></span></footer></div><script async defer src=/js/menu.js></script></body></html>

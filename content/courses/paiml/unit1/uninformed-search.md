@@ -4,6 +4,9 @@ date: 2026-02-01
 description: "Complete notes on uninformed search strategies - BFS, DFS, Uniform-cost search with examples and practice questions for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["search", "bfs", "dfs", "uniform-cost", "ai", "mtech"]
+_build:
+  list: never
+  render: always
 ---
 
 ## What is Search in AI?
@@ -23,13 +26,9 @@ Search is the process of finding a sequence of actions that leads from an initia
 ### Solution
 A sequence of actions leading from initial state to goal state. An **optimal solution** has the lowest path cost.
 
----
-
 ## Uninformed Search Strategies
 
 Uninformed (blind) search has no additional information beyond the problem definition. It does not know whether one non-goal state is "better" than another.
-
----
 
 ## 1. Breadth-First Search (BFS)
 
@@ -71,8 +70,6 @@ BFS Order: A → B → C → D → E → F → G ✓
 
 **Limitation:** Memory intensive — stores all nodes at current depth.
 
----
-
 ## 2. Uniform-Cost Search (UCS)
 
 Expands the node with the lowest path cost g(n). Generalizes BFS for varying step costs.
@@ -107,8 +104,6 @@ Path: A → B → D → G, Cost = 4
 | **Optimal?** | Yes |
 | **Time Complexity** | O(b^(1+C*/ε)) |
 | **Space Complexity** | O(b^(1+C*/ε)) |
-
----
 
 ## 3. Depth-First Search (DFS)
 
@@ -147,8 +142,6 @@ DFS Order: A → B → D → E → C → F → G ✓
 
 **Advantage:** Much less memory than BFS.
 
----
-
 ## Comparison of Uninformed Search Strategies
 
 | Criterion | BFS | UCS | DFS |
@@ -160,8 +153,6 @@ DFS Order: A → B → D → E → C → F → G ✓
 | Best for | Shallow goals | Varying costs | Memory constraint |
 
 *BFS optimal only when all step costs are equal.
-
----
 
 ## Depth-Limited Search
 
@@ -181,8 +172,6 @@ Recursive-DLS(node, limit):
   return cutoff
 ```
 
----
-
 ## Iterative Deepening DFS (IDDFS)
 
 Combines advantages of BFS and DFS:
@@ -195,8 +184,6 @@ Combines advantages of BFS and DFS:
 | Optimal | Yes (uniform step cost) |
 | Time | O(b^d) |
 | Space | O(bd) |
-
----
 
 ## Practice Questions
 
@@ -227,7 +214,5 @@ Combines advantages of BFS and DFS:
 ```
 
 2. You need to find the shortest path in a road network with different distances. Which search strategy would you use? Why?
-
----
 
 [← Introduction to AI](/courses/paiml/unit1/introduction-to-ai/) | [Next: Informed Search →](/courses/paiml/unit1/informed-search/)

@@ -1,0 +1,142 @@
+<!doctype html><html class=no-js lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>1.2 Uninformed Search Strategies - Chandras Edu | AI, Stock Market, Courses & Jobs India</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content="Complete notes on uninformed search strategies - BFS, DFS, Uniform-cost search with examples and practice questions for M.Tech PAIML."><meta property="og:url" content="http://localhost:1313/courses/paiml/unit1/uninformed-search/"><meta property="og:site_name" content="Chandras Edu | AI, Stock Market, Courses & Jobs India"><meta property="og:title" content="1.2 Uninformed Search Strategies"><meta property="og:description" content="Complete notes on uninformed search strategies - BFS, DFS, Uniform-cost search with examples and practice questions for M.Tech PAIML."><meta property="og:locale" content="en_in"><meta property="og:type" content="article"><meta property="article:section" content="courses"><meta property="article:published_time" content="2026-02-01T00:00:00+00:00"><meta property="article:modified_time" content="2026-02-01T00:00:00+00:00"><meta property="article:tag" content="Search"><meta property="article:tag" content="Bfs"><meta property="article:tag" content="Dfs"><meta property="article:tag" content="Uniform-Cost"><meta property="article:tag" content="Ai"><meta property="article:tag" content="Mtech"><meta name=twitter:card content="summary"><meta name=twitter:title content="1.2 Uninformed Search Strategies"><meta name=twitter:description content="Complete notes on uninformed search strategies - BFS, DFS, Uniform-cost search with examples and practice questions for M.Tech PAIML."><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Chandras Edu | AI, Stock Market, Courses & Jobs India" rel=home><div class="logo__item logo__text"><div class=logo__title>Chandras Edu | AI, Stock Market, Courses & Jobs India</div><div class=logo__tagline>Tech · Finance · Courses · Jobs</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/posts/><span class=menu__text>Blog</span></a></li><li class=menu__item><a class=menu__link href=/courses/><span class=menu__text>Courses</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>1.2 Uninformed Search Strategies</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 110 28 1 1 0 010-28m0 3a3 3 0 100 22 3 3 0 000-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class=meta__text datetime=2026-02-01T00:00:00Z>February 1, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/courses/ rel=category>Courses</a></span></div></div></header><div class="content post__content clearfix"><h2 id=what-is-search-in-ai>What is Search in AI?</h2><p>Search is the process of finding a sequence of actions that leads from an initial state to a goal state. It is fundamental to AI problem solving.</p><h3 id=key-components-of-a-search-problem>Key Components of a Search Problem</h3><table><thead><tr><th>Component</th><th>Description</th><th>Example (Romania Map)</th></tr></thead><tbody><tr><td><strong>Initial State</strong></td><td>Starting point</td><td>Arad</td></tr><tr><td><strong>Actions</strong></td><td>Possible moves from a state</td><td>Go to Zerind, Sibiu, Timisoara</td></tr><tr><td><strong>Transition Model</strong></td><td>Result of an action</td><td>Go(Arad, Zerind) → Zerind</td></tr><tr><td><strong>Goal Test</strong></td><td>Is this the goal?</td><td>At Bucharest?</td></tr><tr><td><strong>Path Cost</strong></td><td>Cost of reaching state</td><td>Distance in km</td></tr></tbody></table><h3 id=solution>Solution</h3><p>A sequence of actions leading from initial state to goal state. An <strong>optimal solution</strong> has the lowest path cost.</p><h2 id=uninformed-search-strategies>Uninformed Search Strategies</h2><p>Uninformed (blind) search has no additional information beyond the problem definition. It does not know whether one non-goal state is &ldquo;better&rdquo; than another.</p><h2 id=1-breadth-first-search-bfs>1. Breadth-First Search (BFS)</h2><p>Expands the shallowest unexpanded node first.</p><h3 id=algorithm>Algorithm</h3><pre tabindex=0><code>1. Initialize queue with initial state
+2. Loop:
+   a. If queue is empty → return FAILURE
+   b. Pop node from front of queue
+   c. If node is GOAL → return solution
+   d. Expand node, add children to BACK of queue
+</code></pre><h3 id=example>Example</h3><pre tabindex=0><code>Initial: A
+Goal: G
+
+Tree:
+        A
+      /   \
+     B     C
+    / \   / \
+   D   E F   G
+
+BFS Order: A → B → C → D → E → F → G ✓
+</code></pre><h3 id=properties>Properties</h3><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><strong>Complete?</strong></td><td>Yes (if branching factor b is finite)</td></tr><tr><td><strong>Optimal?</strong></td><td>Yes (if path cost = 1 per step)</td></tr><tr><td><strong>Time Complexity</strong></td><td>O(b^d)</td></tr><tr><td><strong>Space Complexity</strong></td><td>O(b^d) — keeps all nodes in memory</td></tr></tbody></table><p><strong>Limitation:</strong> Memory intensive — stores all nodes at current depth.</p><h2 id=2-uniform-cost-search-ucs>2. Uniform-Cost Search (UCS)</h2><p>Expands the node with the lowest path cost g(n). Generalizes BFS for varying step costs.</p><h3 id=algorithm-1>Algorithm</h3><pre tabindex=0><code>1. Initialize priority queue with initial state (cost=0)
+2. Loop:
+   a. If queue is empty → return FAILURE
+   b. Pop node with LOWEST cost
+   c. If node is GOAL → return solution
+   d. Expand node, add children to priority queue with updated cost
+</code></pre><h3 id=example-1>Example</h3><pre tabindex=0><code>A --1-- B --2-- D
+|               |
+4               1
+|               |
+C ------3------ G
+
+UCS: A(0) → B(1) → C(4) → D(3) → G(4) ✓
+Path: A → B → D → G, Cost = 4
+</code></pre><h3 id=properties-1>Properties</h3><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><strong>Complete?</strong></td><td>Yes (if step costs ≥ ε > 0)</td></tr><tr><td><strong>Optimal?</strong></td><td>Yes</td></tr><tr><td><strong>Time Complexity</strong></td><td>O(b^(1+C*/ε))</td></tr><tr><td><strong>Space Complexity</strong></td><td>O(b^(1+C*/ε))</td></tr></tbody></table><h2 id=3-depth-first-search-dfs>3. Depth-First Search (DFS)</h2><p>Expands the deepest unexpanded node first.</p><h3 id=algorithm-2>Algorithm</h3><pre tabindex=0><code>1. Initialize stack with initial state
+2. Loop:
+   a. If stack is empty → return FAILURE
+   b. Pop node from TOP of stack
+   c. If node is GOAL → return solution
+   d. Expand node, add children to TOP of stack
+</code></pre><h3 id=example-2>Example</h3><pre tabindex=0><code>Tree:
+        A
+      /   \
+     B     C
+    / \   / \
+   D   E F   G
+
+DFS Order: A → B → D → E → C → F → G ✓
+</code></pre><h3 id=properties-2>Properties</h3><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><strong>Complete?</strong></td><td>No (fails in infinite spaces)</td></tr><tr><td><strong>Optimal?</strong></td><td>No</td></tr><tr><td><strong>Time Complexity</strong></td><td>O(b^m) where m = max depth</td></tr><tr><td><strong>Space Complexity</strong></td><td>O(bm) — linear space!</td></tr></tbody></table><p><strong>Advantage:</strong> Much less memory than BFS.</p><h2 id=comparison-of-uninformed-search-strategies>Comparison of Uninformed Search Strategies</h2><table><thead><tr><th>Criterion</th><th>BFS</th><th>UCS</th><th>DFS</th></tr></thead><tbody><tr><td>Complete</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td>Optimal</td><td>Yes*</td><td>Yes</td><td>No</td></tr><tr><td>Time</td><td>O(b^d)</td><td>O(b^C*/ε)</td><td>O(b^m)</td></tr><tr><td>Space</td><td>O(b^d)</td><td>O(b^C*/ε)</td><td>O(bm)</td></tr><tr><td>Best for</td><td>Shallow goals</td><td>Varying costs</td><td>Memory constraint</td></tr></tbody></table><p>*BFS optimal only when all step costs are equal.</p><h2 id=depth-limited-search>Depth-Limited Search</h2><p>DFS with a depth limit l — prevents infinite loops.</p><pre tabindex=0><code>DFS-Limited(problem, limit):
+  return Recursive-DLS(initial_state, limit)
+
+Recursive-DLS(node, limit):
+  if GOAL-TEST(node) → return solution
+  if limit = 0 → return cutoff
+  for each action in ACTIONS(node):
+    child = RESULT(node, action)
+    result = Recursive-DLS(child, limit-1)
+    if result ≠ cutoff → return result
+  return cutoff
+</code></pre><h2 id=iterative-deepening-dfs-iddfs>Iterative Deepening DFS (IDDFS)</h2><p>Combines advantages of BFS and DFS:</p><ul><li>Runs DFS with limit l = 0, 1, 2, 3&mldr;</li><li>Complete like BFS, memory-efficient like DFS</li></ul><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td>Complete</td><td>Yes</td></tr><tr><td>Optimal</td><td>Yes (uniform step cost)</td></tr><tr><td>Time</td><td>O(b^d)</td></tr><tr><td>Space</td><td>O(bd)</td></tr></tbody></table><h2 id=practice-questions>Practice Questions</h2><p><strong>Short Answer (2 marks each)</strong></p><ol><li>What is uninformed search? How does it differ from informed search?</li><li>Define completeness and optimality of a search algorithm.</li><li>Why is DFS not complete? Give an example.</li><li>What is the advantage of UCS over BFS?</li></ol><p><strong>Long Answer (8 marks each)</strong></p><ol><li>Explain BFS with algorithm, example and time/space complexity analysis.</li><li>Compare BFS, DFS and UCS with respect to completeness, optimality, time and space complexity.</li><li>What is Iterative Deepening DFS? How does it combine advantages of BFS and DFS?</li></ol><p><strong>Think & Apply</strong></p><ol><li>Apply BFS and DFS on this tree and trace the node expansion order:</li></ol><pre tabindex=0><code>        S
+      / | \
+     A  B  C
+    /\     |
+   D  E    F
+            |
+            G (goal)
+</code></pre><ol start=2><li>You need to find the shortest path in a road network with different distances. Which search strategy would you use? Why?</li></ol><p><a href=/courses/paiml/unit1/introduction-to-ai/>← Introduction to AI</a> | <a href=/courses/paiml/unit1/informed-search/>Next: Informed Search →</a></p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 000-6 3 3 0 000 6"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/search/ rel=tag>search</a></li><li class=tags__item><a class="tags__link btn" href=/tags/bfs/ rel=tag>bfs</a></li><li class=tags__item><a class="tags__link btn" href=/tags/dfs/ rel=tag>dfs</a></li><li class=tags__item><a class="tags__link btn" href=/tags/uniform-cost/ rel=tag>uniform-cost</a></li><li class=tags__item><a class="tags__link btn" href=/tags/ai/ rel=tag>ai</a></li><li class=tags__item><a class="tags__link btn" href=/tags/mtech/ rel=tag>mtech</a></li></ul></div></footer></article></main></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><input class=widget-search__field type=search placeholder=Search… name=q aria-label=Search…>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=http://localhost:1313/></form></div><div class="widget-recent widget"><h4 class=widget__title>Recent Posts</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/india-ai-summit-2026/>India AI Impact Summit 2026: US Partnerships & AI Launches</a></li><li class=widget__item><a class=widget__link href=/posts/bitcoin-dip-accumulation-india-2026/>Bitcoin Crashed 48% From Peak: Is This the Time Indian Investors Should Buy?</a></li><li class=widget__item><a class=widget__link href=/posts/ai-proof-skills-freshers-2026/>5 Skills AI Cannot Replace: Career Survival Guide for 2026 Freshers</a></li><li class=widget__item><a class=widget__link href=/posts/anthropic-cowork-indian-it-stocks-crash/>Anthropic's AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can't & Why TCS, Infosys Are Panicking</a></li><li class=widget__item><a class=widget__link href=/posts/gold-silver-crash-india-analysis/>Gold Crashed ₹50,000, Silver Down 39%: What Happened in Indian Markets & What to Do Now</a></li><li class=widget__item><a class=widget__link href=/posts/union-budget-2026-complete-guide/>Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Costlier & What It All Means for You</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Categories</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/careers/>Careers</a></li><li class=widget__item><a class=widget__link href=/categories/courses/>Courses</a></li><li class=widget__item><a class=widget__link href=/categories/finance/></a></li><li class=widget__item><a class=widget__link href=/categories/technology/></a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/a-star/ title=A-Star>A-Star</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/adversarial-search/ title=Adversarial-Search>Adversarial-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai/ title=Ai>Ai</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai-impact/ title=Ai-Impact>Ai-Impact</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/alpha-beta/ title=Alpha-Beta>Alpha-Beta</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/anthropic-cowork/ title=Anthropic-Cowork>Anthropic-Cowork</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/backpropagation/ title=Backpropagation>Backpropagation</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayes-theorem/ title=Bayes-Theorem>Bayes-Theorem</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayesian/ title=Bayesian>Bayesian</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bfs/ title=Bfs>Bfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bitcoin/ title=Bitcoin>Bitcoin</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/boosting/ title=Boosting>Boosting</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/budget-analysis/ title=Budget-Analysis>Budget-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/career/ title=Career>Career</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/classification/ title=Classification>Classification</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cnn/ title=Cnn>Cnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/convolutional/ title=Convolutional>Convolutional</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/course/ title=Course>Course</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cryptocurrency/ title=Cryptocurrency>Cryptocurrency</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/csp/ title=Csp>Csp</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/decision-trees/ title=Decision-Trees>Decision-Trees</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/deep-learning/ title=Deep-Learning>Deep-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dfs/ title=Dfs>Dfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/em-algorithm/ title=Em-Algorithm>Em-Algorithm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ensemble/ title=Ensemble>Ensemble</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/finance-india/ title=Finance-India>Finance-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/foundations/ title=Foundations>Foundations</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/freshers/ title=Freshers>Freshers</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/games/ title=Games>Games</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gold-price-india/ title=Gold-Price-India>Gold-Price-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/greedy/ title=Greedy>Greedy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/heuristic/ title=Heuristic>Heuristic</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/id3/ title=Id3>Id3</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india/ title=India>India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india-ai-summit/ title=India-Ai-Summit>India-Ai-Summit</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/indian-it-stocks/ title=Indian-It-Stocks>Indian-It-Stocks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/informed-search/ title=Informed-Search>Informed-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/introduction/ title=Introduction>Introduction</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investment-strategy/ title=Investment-Strategy>Investment-Strategy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investments/ title=Investments>Investments</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jobs/ title=Jobs>Jobs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kernel/ title=Kernel>Kernel</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/machine-learning/ title=Machine-Learning>Machine-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/market-analysis/ title=Market-Analysis>Market-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/markov/ title=Markov>Markov</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mcx-gold-silver/ title=Mcx-Gold-Silver>Mcx-Gold-Silver</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/minimax/ title=Minimax>Minimax</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mtech/ title=Mtech>Mtech</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/multilayer/ title=Multilayer>Multilayer</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/naive-bayes/ title=Naive-Bayes>Naive-Bayes</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/neural-networks/ title=Neural-Networks>Neural-Networks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pac-learning/ title=Pac-Learning>Pac-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/perceptron/ title=Perceptron>Perceptron</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/precious-metals-india/ title=Precious-Metals-India>Precious-Metals-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/q-learning/ title=Q-Learning>Q-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/random-forest/ title=Random-Forest>Random-Forest</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/recurrent/ title=Recurrent>Recurrent</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/regression/ title=Regression>Regression</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement/ title=Reinforcement>Reinforcement</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement-learning/ title=Reinforcement-Learning>Reinforcement-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rnn/ title=Rnn>Rnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/saas-industry/ title=Saas-Industry>Saas-Industry</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/search/ title=Search>Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/silver-price-mcx/ title=Silver-Price-Mcx>Silver-Price-Mcx</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/skills/ title=Skills>Skills</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/students/ title=Students>Students</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/supervised-learning/ title=Supervised-Learning>Supervised-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/svm/ title=Svm>Svm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tax-planning/ title=Tax-Planning>Tax-Planning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tcs-infosys-wipro/ title=Tcs-Infosys-Wipro>Tcs-Infosys-Wipro</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tech-news/ title=Tech-News>Tech-News</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/temporal-difference/ title=Temporal-Difference>Temporal-Difference</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/uniform-cost/ title=Uniform-Cost>Uniform-Cost</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/union-budget-2026/ title=Union-Budget-2026>Union-Budget-2026</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/unsupervised/ title=Unsupervised>Unsupervised</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vc-dimension/ title=Vc-Dimension>Vc-Dimension</a></div></div></aside></div><footer class=footer><span>© 2026 Chandra Shaker · <a href=/privacy-policy/>Privacy Policy</a> · <a href=/disclaimer/>Disclaimer</a> · <a href=/contact/>Contact</a></span></footer></div><script async defer src=/js/menu.js></script></body></html>

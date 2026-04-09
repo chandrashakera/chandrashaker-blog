@@ -4,6 +4,9 @@ date: 2026-02-01
 description: "Complete notes on informed search - heuristic functions, greedy best-first search and A* search with examples for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["search", "heuristic", "a-star", "greedy", "informed-search", "mtech"]
+_build:
+  list: never
+  render: always
 ---
 
 ## What is Informed Search?
@@ -11,8 +14,6 @@ tags: ["search", "heuristic", "a-star", "greedy", "informed-search", "mtech"]
 Informed (heuristic) search uses problem-specific knowledge beyond the problem definition to find solutions more efficiently than uninformed strategies.
 
 The key idea: use a **heuristic function h(n)** to estimate the cost from node n to the goal.
-
----
 
 ## Heuristic Functions
 
@@ -45,8 +46,6 @@ h(n) ≤ c(n, a, n') + h(n')
 
 h_SLD is admissible because straight-line distance never overestimates road distance.
 
----
-
 ## Greedy Best-First Search
 
 Expands the node that appears closest to the goal based on h(n).
@@ -74,8 +73,6 @@ Arad → Sibiu (h=253) → Fagaras (h=176) → Bucharest (h=0) ✓
 | **Space Complexity** | O(b^m) |
 
 **Problem:** Greedy search ignores the actual cost already paid — can lead to suboptimal paths.
-
----
 
 ## A* Search
 
@@ -136,8 +133,6 @@ where:
 - f(n) = g(n) + h(n) ≤ C* (since h is admissible)
 - Therefore A* will expand n before G2 → finds optimal solution first
 
----
-
 ## Comparison: Greedy vs A*
 
 | Aspect | Greedy Best-First | A* |
@@ -147,8 +142,6 @@ where:
 | Optimal | No | Yes (admissible h) |
 | Speed | Faster | Slower |
 | Memory | Less | More |
-
----
 
 ## Designing Heuristics
 
@@ -186,8 +179,6 @@ Manhattan distance h2:
 
 **h2 dominates h1:** h2(n) ≥ h1(n) for all n → h2 is the better heuristic.
 
----
-
 ## Practice Questions
 
 **Short Answer (2 marks each)**
@@ -215,7 +206,5 @@ B ------2------ C (h: B=4, C=2)
 ```
 
 2. Given an 8-puzzle configuration, calculate h1 (misplaced tiles) and h2 (Manhattan distance). Which is a better heuristic and why?
-
----
 
 [← Uninformed Search](/courses/paiml/unit1/uninformed-search/) | [Next: Unit 2 →](/courses/paiml/unit2/)

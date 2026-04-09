@@ -1,0 +1,152 @@
+<!doctype html><html class=no-js lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>3.2 Supervised Learning - Chandras Edu | AI, Stock Market, Courses & Jobs India</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content="Supervised learning concepts - VC dimension, PAC learning, SVM, kernel tricks and model generalization for M.Tech PAIML."><meta property="og:url" content="http://localhost:1313/courses/paiml/unit3/supervised-learning/"><meta property="og:site_name" content="Chandras Edu | AI, Stock Market, Courses & Jobs India"><meta property="og:title" content="3.2 Supervised Learning"><meta property="og:description" content="Supervised learning concepts - VC dimension, PAC learning, SVM, kernel tricks and model generalization for M.Tech PAIML."><meta property="og:locale" content="en_in"><meta property="og:type" content="article"><meta property="article:section" content="courses"><meta property="article:published_time" content="2026-02-01T00:00:00+00:00"><meta property="article:modified_time" content="2026-02-01T00:00:00+00:00"><meta property="article:tag" content="Supervised-Learning"><meta property="article:tag" content="Svm"><meta property="article:tag" content="Vc-Dimension"><meta property="article:tag" content="Pac-Learning"><meta property="article:tag" content="Kernel"><meta property="article:tag" content="Mtech"><meta name=twitter:card content="summary"><meta name=twitter:title content="3.2 Supervised Learning"><meta name=twitter:description content="Supervised learning concepts - VC dimension, PAC learning, SVM, kernel tricks and model generalization for M.Tech PAIML."><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Chandras Edu | AI, Stock Market, Courses & Jobs India" rel=home><div class="logo__item logo__text"><div class=logo__title>Chandras Edu | AI, Stock Market, Courses & Jobs India</div><div class=logo__tagline>Tech · Finance · Courses · Jobs</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/posts/><span class=menu__text>Blog</span></a></li><li class=menu__item><a class=menu__link href=/courses/><span class=menu__text>Courses</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>3.2 Supervised Learning</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 110 28 1 1 0 010-28m0 3a3 3 0 100 22 3 3 0 000-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class=meta__text datetime=2026-02-01T00:00:00Z>February 1, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/courses/ rel=category>Courses</a></span></div></div></header><div class="content post__content clearfix"><h2 id=learning-a-class-from-examples>Learning a Class from Examples</h2><p>In supervised learning, we learn a <strong>concept</strong> (a class) from labeled examples.</p><h3 id=key-concepts>Key Concepts</h3><p><strong>Hypothesis:</strong> A candidate function mapping inputs to outputs.</p><p><strong>Hypothesis Space H:</strong> All possible hypotheses a learner can consider.</p><p><strong>Version Space:</strong> Subset of H consistent with all training examples.</p><pre tabindex=0><code>Version Space = {h ∈ H | h is consistent with all training data}
+</code></pre><h3 id=candidate-elimination-algorithm>Candidate Elimination Algorithm</h3><p>Maintains two boundaries:</p><ul><li><strong>G (General boundary):</strong> Most general consistent hypotheses</li><li><strong>S (Specific boundary):</strong> Most specific consistent hypotheses</li></ul><pre tabindex=0><code>For each training example (x, label):
+  If positive example:
+    Remove from G any hypothesis inconsistent with x
+    Generalize S to cover x (minimally)
+  If negative example:
+    Remove from S any hypothesis inconsistent with x
+    Specialize G to exclude x (minimally)
+</code></pre><h2 id=vapnik-chervonenkis-vc-dimension>Vapnik-Chervonenkis (VC) Dimension</h2><p>VC Dimension measures the <strong>capacity</strong> of a hypothesis space — how complex a model is.</p><h3 id=definition>Definition</h3><p>VC dimension of H = largest set of points that H can <strong>shatter</strong>.</p><p><strong>Shattering:</strong> H shatters a set S if for every possible labeling of S, there exists a hypothesis in H consistent with that labeling.</p><h3 id=examples>Examples</h3><p><strong>Linear classifiers in 2D (lines):</strong></p><ul><li>Can shatter 3 points → VC dim = 3</li><li>Cannot shatter 4 points (XOR problem) → VC dim = 3</li></ul><pre tabindex=0><code>3 points — all 8 labelings possible with a line:
+○ ○     ● ○     ○ ●     ● ●     (etc.)
+  ○       ○       ○       ○
+
+4 points — XOR not linearly separable:
+○ ●
+● ○    ← No single line can separate these
+</code></pre><h3 id=why-vc-dimension-matters>Why VC Dimension Matters</h3><p>Higher VC dimension → more powerful model → more data needed to learn well.</p><p><strong>Sample complexity:</strong> To learn with error ε and confidence δ:</p><pre tabindex=0><code>m ≥ (1/ε)[ln|H| + ln(1/δ)]     (finite H)
+m ≥ (1/ε)[VC(H) + ln(1/δ)]     (infinite H)
+</code></pre><h2 id=probably-approximately-correct-pac-learning>Probably Approximately Correct (PAC) Learning</h2><p>PAC learning asks: <strong>How much data do we need to learn a good hypothesis?</strong></p><h3 id=pac-definition>PAC Definition</h3><p>A concept class C is PAC-learnable if there exists an algorithm L such that for any:</p><ul><li>Target concept c ∈ C</li><li>Distribution D over instances</li><li>ε > 0 (error tolerance)</li><li>δ > 0 (failure probability)</li></ul><p>L outputs h with probability ≥ (1-δ) satisfying error(h) ≤ ε, using a <strong>polynomial</strong> number of samples.</p><h3 id=sample-complexity-for-finite-h>Sample Complexity for Finite H</h3><pre tabindex=0><code>m ≥ (1/ε)[ln|H| + ln(1/δ)]
+
+Example:
+  |H| = 1000 hypotheses
+  ε = 0.1 (10% error tolerance)
+  δ = 0.05 (5% failure probability)
+  
+  m ≥ 10 × [ln(1000) + ln(20)]
+  m ≥ 10 × [6.9 + 3.0]
+  m ≥ 99 examples
+</code></pre><h2 id=noise-in-learning>Noise in Learning</h2><p>Real data has noise — mislabeled examples, measurement errors.</p><h3 id=handling-noise>Handling Noise</h3><p><strong>Statistical approach:</strong> Allow some training errors, look for best-fit hypothesis.</p><p><strong>MDL approach:</strong> Shorter hypothesis preferred even if it makes some errors.</p><p><strong>Cross-validation:</strong> Use held-out data to detect overfitting.</p><h2 id=learning-multiple-classes>Learning Multiple Classes</h2><p><strong>One-vs-All (OvA):</strong> Train k binary classifiers for k classes.</p><pre tabindex=0><code>Classifier 1: Class 1 vs {2,3,...,k}
+Classifier 2: Class 2 vs {1,3,...,k}
+...
+Prediction: class with highest confidence
+</code></pre><p><strong>One-vs-One (OvO):</strong> Train k(k-1)/2 classifiers.</p><pre tabindex=0><code>Classifier for each pair (i,j)
+Prediction: majority vote
+</code></pre><h2 id=regression>Regression</h2><p>Predicts a <strong>continuous</strong> output value.</p><h3 id=linear-regression>Linear Regression</h3><pre tabindex=0><code>ŷ = w₀ + w₁x₁ + w₂x₂ + ... + wₙxₙ = wᵀx
+
+Loss function (MSE):
+L(w) = (1/n) Σ (yi - ŷi)²
+
+Gradient Descent Update:
+w ← w - α × ∇L(w)
+w ← w + (α/n) Σ (yi - ŷi) × xi
+</code></pre><h3 id=polynomial-regression>Polynomial Regression</h3><p>Extends linear regression with polynomial features:</p><pre tabindex=0><code>ŷ = w₀ + w₁x + w₂x² + w₃x³ + ...
+</code></pre><h3 id=regularization>Regularization</h3><p>Prevents overfitting by penalizing large weights:</p><pre tabindex=0><code>Ridge (L2): L(w) = MSE + λ Σwᵢ²
+Lasso (L1): L(w) = MSE + λ Σ|wᵢ|
+</code></pre><h2 id=support-vector-machines-svm>Support Vector Machines (SVM)</h2><p>SVM finds the <strong>maximum margin hyperplane</strong> that separates classes.</p><h3 id=key-concepts-1>Key Concepts</h3><p><strong>Hyperplane:</strong> w·x + b = 0</p><p><strong>Margin:</strong> Distance between hyperplane and nearest points (support vectors).</p><p><strong>Support Vectors:</strong> Data points closest to the hyperplane.</p><pre tabindex=0><code>Maximize margin = 2/||w||
+Subject to: yi(w·xi + b) ≥ 1 for all i
+</code></pre><h3 id=hard-vs-soft-margin>Hard vs Soft Margin</h3><p><strong>Hard margin SVM:</strong> Requires perfect separation (no misclassification).</p><p><strong>Soft margin SVM:</strong> Allows some misclassification using slack variables ξᵢ:</p><pre tabindex=0><code>Minimize: (1/2)||w||² + C Σξᵢ
+Subject to: yi(w·xi + b) ≥ 1 - ξᵢ,  ξᵢ ≥ 0
+
+C = regularization parameter
+High C → smaller margin, fewer errors
+Low C → larger margin, more errors allowed
+</code></pre><h3 id=kernel-trick>Kernel Trick</h3><p>For non-linearly separable data, map to higher dimension using kernel:</p><pre tabindex=0><code>K(x, x&#39;) = φ(x)·φ(x&#39;)
+
+Common Kernels:
+  Linear:     K(x,x&#39;) = x·x&#39;
+  Polynomial: K(x,x&#39;) = (x·x&#39; + 1)^d
+  RBF/Gaussian: K(x,x&#39;) = exp(-γ||x-x&#39;||²)
+  Sigmoid:    K(x,x&#39;) = tanh(κx·x&#39; - δ)
+</code></pre><p><strong>Key insight:</strong> We never need to compute φ(x) explicitly — just compute K(x,x&rsquo;).</p><h3 id=svm-example>SVM Example</h3><pre tabindex=0><code>Data:          After RBF kernel transform:
+○ ○ ● ●        ○ ○ | ● ●
+○ ● ● ○   →    (linearly separable)
+● ○ ○ ●
+
+Linear SVM on transformed data finds optimal hyperplane.
+</code></pre><h2 id=model-selection-and-generalization>Model Selection and Generalization</h2><h3 id=cross-validation>Cross-Validation</h3><p><strong>k-fold Cross-Validation:</strong></p><pre tabindex=0><code>1. Split data into k equal folds
+2. For i = 1 to k:
+   - Train on all folds except i
+   - Test on fold i
+3. Average performance across k folds
+</code></pre><p><strong>Common:</strong> k=5 or k=10.</p><h3 id=generalization-bound>Generalization Bound</h3><p>For hypothesis h with training error err_train and n samples:</p><pre tabindex=0><code>err_test ≤ err_train + √(VC(H)×ln(n) + ln(1/δ)) / √n
+</code></pre><p>As n → ∞, test error approaches training error.</p><h2 id=dimensions-of-supervised-ml-algorithm>Dimensions of Supervised ML Algorithm</h2><p>When designing a supervised ML algorithm, consider:</p><table><thead><tr><th>Dimension</th><th>Options</th></tr></thead><tbody><tr><td><strong>Representation</strong></td><td>Decision trees, neural nets, SVM, linear models</td></tr><tr><td><strong>Evaluation</strong></td><td>Accuracy, MSE, likelihood, posterior</td></tr><tr><td><strong>Optimization</strong></td><td>Gradient descent, genetic algorithms, exact methods</td></tr></tbody></table><h2 id=practice-questions>Practice Questions</h2><p><strong>Short Answer (2 marks each)</strong></p><ol><li>What is VC dimension? Why is it important?</li><li>Define PAC learning. What does &ldquo;probably approximately correct&rdquo; mean?</li><li>What are support vectors in SVM?</li><li>What is the kernel trick? Give one example of a kernel function.</li></ol><p><strong>Long Answer (8 marks each)</strong></p><ol><li>Explain SVM with hard margin and soft margin. How does the regularization parameter C affect the model?</li><li>What is PAC learning? Derive the sample complexity for a finite hypothesis space.</li><li>Explain the kernel trick in SVM. Why is it computationally efficient? Compare RBF and polynomial kernels.</li></ol><p><strong>Think & Apply</strong></p><ol><li>For the following 2D dataset, identify the support vectors and describe the maximum margin hyperplane:</li></ol><pre tabindex=0><code>Positive: (1,1), (2,2), (3,1)
+Negative: (1,3), (2,4), (3,3)
+</code></pre><ol start=2><li>You have 10,000 training examples and your SVM with RBF kernel overfits. What changes would you make to C and γ? Why?</li></ol><p><a href=/courses/paiml/unit3/intro-ml/>← Intro to ML</a> | <a href=/courses/paiml/unit4/>Next: Unit 4 →</a></p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 000-6 3 3 0 000 6"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/supervised-learning/ rel=tag>supervised-learning</a></li><li class=tags__item><a class="tags__link btn" href=/tags/svm/ rel=tag>svm</a></li><li class=tags__item><a class="tags__link btn" href=/tags/vc-dimension/ rel=tag>vc-dimension</a></li><li class=tags__item><a class="tags__link btn" href=/tags/pac-learning/ rel=tag>pac-learning</a></li><li class=tags__item><a class="tags__link btn" href=/tags/kernel/ rel=tag>kernel</a></li><li class=tags__item><a class="tags__link btn" href=/tags/mtech/ rel=tag>mtech</a></li></ul></div></footer></article></main></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><input class=widget-search__field type=search placeholder=Search… name=q aria-label=Search…>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=http://localhost:1313/></form></div><div class="widget-recent widget"><h4 class=widget__title>Recent Posts</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/india-ai-summit-2026/>India AI Impact Summit 2026: US Partnerships & AI Launches</a></li><li class=widget__item><a class=widget__link href=/posts/bitcoin-dip-accumulation-india-2026/>Bitcoin Crashed 48% From Peak: Is This the Time Indian Investors Should Buy?</a></li><li class=widget__item><a class=widget__link href=/posts/ai-proof-skills-freshers-2026/>5 Skills AI Cannot Replace: Career Survival Guide for 2026 Freshers</a></li><li class=widget__item><a class=widget__link href=/posts/anthropic-cowork-indian-it-stocks-crash/>Anthropic's AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can't & Why TCS, Infosys Are Panicking</a></li><li class=widget__item><a class=widget__link href=/posts/gold-silver-crash-india-analysis/>Gold Crashed ₹50,000, Silver Down 39%: What Happened in Indian Markets & What to Do Now</a></li><li class=widget__item><a class=widget__link href=/posts/union-budget-2026-complete-guide/>Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Costlier & What It All Means for You</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Categories</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/careers/>Careers</a></li><li class=widget__item><a class=widget__link href=/categories/courses/>Courses</a></li><li class=widget__item><a class=widget__link href=/categories/finance/></a></li><li class=widget__item><a class=widget__link href=/categories/technology/></a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/a-star/ title=A-Star>A-Star</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/adversarial-search/ title=Adversarial-Search>Adversarial-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai/ title=Ai>Ai</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai-impact/ title=Ai-Impact>Ai-Impact</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/alpha-beta/ title=Alpha-Beta>Alpha-Beta</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/anthropic-cowork/ title=Anthropic-Cowork>Anthropic-Cowork</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/backpropagation/ title=Backpropagation>Backpropagation</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayes-theorem/ title=Bayes-Theorem>Bayes-Theorem</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayesian/ title=Bayesian>Bayesian</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bfs/ title=Bfs>Bfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bitcoin/ title=Bitcoin>Bitcoin</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/boosting/ title=Boosting>Boosting</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/budget-analysis/ title=Budget-Analysis>Budget-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/career/ title=Career>Career</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/classification/ title=Classification>Classification</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cnn/ title=Cnn>Cnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/convolutional/ title=Convolutional>Convolutional</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/course/ title=Course>Course</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cryptocurrency/ title=Cryptocurrency>Cryptocurrency</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/csp/ title=Csp>Csp</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/decision-trees/ title=Decision-Trees>Decision-Trees</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/deep-learning/ title=Deep-Learning>Deep-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dfs/ title=Dfs>Dfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/em-algorithm/ title=Em-Algorithm>Em-Algorithm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ensemble/ title=Ensemble>Ensemble</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/finance-india/ title=Finance-India>Finance-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/foundations/ title=Foundations>Foundations</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/freshers/ title=Freshers>Freshers</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/games/ title=Games>Games</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gold-price-india/ title=Gold-Price-India>Gold-Price-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/greedy/ title=Greedy>Greedy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/heuristic/ title=Heuristic>Heuristic</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/id3/ title=Id3>Id3</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india/ title=India>India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india-ai-summit/ title=India-Ai-Summit>India-Ai-Summit</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/indian-it-stocks/ title=Indian-It-Stocks>Indian-It-Stocks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/informed-search/ title=Informed-Search>Informed-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/introduction/ title=Introduction>Introduction</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investment-strategy/ title=Investment-Strategy>Investment-Strategy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investments/ title=Investments>Investments</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jobs/ title=Jobs>Jobs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kernel/ title=Kernel>Kernel</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/machine-learning/ title=Machine-Learning>Machine-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/market-analysis/ title=Market-Analysis>Market-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/markov/ title=Markov>Markov</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mcx-gold-silver/ title=Mcx-Gold-Silver>Mcx-Gold-Silver</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/minimax/ title=Minimax>Minimax</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mtech/ title=Mtech>Mtech</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/multilayer/ title=Multilayer>Multilayer</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/naive-bayes/ title=Naive-Bayes>Naive-Bayes</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/neural-networks/ title=Neural-Networks>Neural-Networks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pac-learning/ title=Pac-Learning>Pac-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/perceptron/ title=Perceptron>Perceptron</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/precious-metals-india/ title=Precious-Metals-India>Precious-Metals-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/q-learning/ title=Q-Learning>Q-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/random-forest/ title=Random-Forest>Random-Forest</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/recurrent/ title=Recurrent>Recurrent</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/regression/ title=Regression>Regression</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement/ title=Reinforcement>Reinforcement</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement-learning/ title=Reinforcement-Learning>Reinforcement-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rnn/ title=Rnn>Rnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/saas-industry/ title=Saas-Industry>Saas-Industry</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/search/ title=Search>Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/silver-price-mcx/ title=Silver-Price-Mcx>Silver-Price-Mcx</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/skills/ title=Skills>Skills</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/students/ title=Students>Students</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/supervised-learning/ title=Supervised-Learning>Supervised-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/svm/ title=Svm>Svm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tax-planning/ title=Tax-Planning>Tax-Planning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tcs-infosys-wipro/ title=Tcs-Infosys-Wipro>Tcs-Infosys-Wipro</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tech-news/ title=Tech-News>Tech-News</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/temporal-difference/ title=Temporal-Difference>Temporal-Difference</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/uniform-cost/ title=Uniform-Cost>Uniform-Cost</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/union-budget-2026/ title=Union-Budget-2026>Union-Budget-2026</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/unsupervised/ title=Unsupervised>Unsupervised</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vc-dimension/ title=Vc-Dimension>Vc-Dimension</a></div></div></aside></div><footer class=footer><span>© 2026 Chandra Shaker · <a href=/privacy-policy/>Privacy Policy</a> · <a href=/disclaimer/>Disclaimer</a> · <a href=/contact/>Contact</a></span></footer></div><script async defer src=/js/menu.js></script></body></html>

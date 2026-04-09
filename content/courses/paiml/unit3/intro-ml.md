@@ -4,6 +4,9 @@ date: 2026-02-01
 description: "Machine learning applications, types of learning - classification, regression, unsupervised and reinforcement learning for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["machine-learning", "classification", "regression", "unsupervised", "reinforcement", "mtech"]
+_build:
+  list: never
+  render: always
 ---
 
 ## What is Machine Learning?
@@ -18,8 +21,6 @@ Machine Learning (ML) is a subset of AI that enables systems to **learn from dat
 - **Experience E:** Training emails labeled spam/not spam
 - **Performance P:** Accuracy of classification
 
----
-
 ## Examples of Machine Learning Applications
 
 | Domain | Application | Type of ML |
@@ -32,8 +33,6 @@ Machine Learning (ML) is a subset of AI that enables systems to **learn from dat
 | Security | Fraud detection | Classification |
 | Robotics | Robot navigation | Reinforcement |
 | Computer Vision | Face recognition | Classification |
-
----
 
 ## Types of Machine Learning
 
@@ -53,8 +52,6 @@ Test: Predict y for new x
 
 **Algorithms:** Decision Trees, SVM, Neural Networks, Naive Bayes
 
----
-
 ### 2. Unsupervised Learning
 
 Learns from **unlabeled data** — finds hidden patterns or structure.
@@ -71,8 +68,6 @@ Goal: Discover structure in data
 
 **Example:** Customer segmentation — group customers by buying behavior without predefined categories.
 
----
-
 ### 3. Semi-supervised Learning
 
 Uses a **small amount of labeled data** + large amount of unlabeled data.
@@ -80,8 +75,6 @@ Uses a **small amount of labeled data** + large amount of unlabeled data.
 **Why useful:** Labeling data is expensive. Getting raw data is cheap.
 
 **Example:** Google Photos — few labeled photos + many unlabeled photos to learn face recognition.
-
----
 
 ### 4. Reinforcement Learning
 
@@ -101,8 +94,6 @@ Agent → Action → Environment → State + Reward → Agent
 
 **Example:** AlphaGo — learns to play Go by playing millions of games, receiving +reward for winning, -reward for losing.
 
----
-
 ### 5. Learning Associations
 
 Find rules describing associations between variables.
@@ -115,8 +106,6 @@ Find rules describing associations between variables.
 ```
 
 **Apriori Algorithm** is commonly used for association rule mining.
-
----
 
 ## The Machine Learning Pipeline
 
@@ -136,8 +125,6 @@ Find rules describing associations between variables.
         ↓
 7. Monitoring & Updating
 ```
-
----
 
 ## Key Concepts
 
@@ -170,8 +157,6 @@ High Variance (Overfitting): Memorizes training data, poor generalization
 | Validation | Tune hyperparameters | 10-20% |
 | Test | Final evaluation | 20-30% |
 
----
-
 ## Performance Metrics
 
 ### Classification Metrics
@@ -200,8 +185,6 @@ Actual   Pos   [TP]   [FN]
 | RMSE | √MSE | Same units as y |
 | R² | 1 - SS_res/SS_tot | Variance explained (0-1) |
 
----
-
 ## Practice Questions
 
 **Short Answer (2 marks each)**
@@ -226,7 +209,5 @@ Actual   Pos   [TP]   [FN]
    - Detecting credit card fraud
 
 2. A spam filter has: TP=90, FP=10, FN=5, TN=895. Calculate accuracy, precision, recall and F1-score. Which metric is most important for a spam filter?
-
----
 
 [← Unit 3 Overview](/courses/paiml/unit3/) | [Next: Supervised Learning →](/courses/paiml/unit3/supervised-learning/)

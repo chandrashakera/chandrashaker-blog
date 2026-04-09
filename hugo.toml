@@ -47,6 +47,7 @@ copyright = "© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Di
   post_meta = ["date", "categories"]
   favicon = "/favicon.ico"
   customCSS = ["css/custom.css"]
+  mainSections = ["posts"]
 
   # Sidebar
   [params.sidebar]

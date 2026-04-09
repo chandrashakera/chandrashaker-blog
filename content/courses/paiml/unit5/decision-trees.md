@@ -4,6 +4,9 @@ date: 2026-02-01
 description: "Decision trees, ID3 algorithm, pruning, rule extraction, random forests and ensemble methods for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["decision-trees", "id3", "random-forest", "ensemble", "boosting", "mtech"]
+_build:
+  list: never
+  render: always
 ---
 
 ## What are Decision Trees?
@@ -27,8 +30,6 @@ A decision tree is a hierarchical model that makes decisions by testing feature 
 - Handles both categorical and numerical features
 - No feature scaling needed
 - Can be visualized
-
----
 
 ## ID3 Algorithm
 
@@ -157,8 +158,6 @@ Outlook?
            └── Weak → YES
 ```
 
----
-
 ## Types of Decision Trees
 
 | Type | Target | Split Criterion |
@@ -175,8 +174,6 @@ Gini(S) = 1 - Σ pᵢ²
 Example: 9 Yes, 5 No:
   Gini = 1 - (9/14)² - (5/14)² = 1 - 0.413 - 0.128 = 0.459
 ```
-
----
 
 ## Pruning
 
@@ -201,8 +198,6 @@ Stop growing tree when:
 3. Repeat until no improvement
 ```
 
----
-
 ## Rule Extraction from Trees
 
 Convert decision tree to IF-THEN rules:
@@ -225,8 +220,6 @@ R5: IF Outlook=Rain AND Wind=Weak THEN Play=Yes
 3. Keep removal if accuracy improves on validation set
 4. Sort rules by accuracy
 
----
-
 ## Multivariate Trees
 
 Standard trees use one attribute per node (axis-aligned splits).
@@ -237,8 +230,6 @@ w₁x₁ + w₂x₂ + ... + wₙxₙ > threshold → branch
 ```
 
 More powerful but harder to interpret.
-
----
 
 ## Ensemble Methods
 
@@ -305,8 +296,6 @@ F_m(x) = F_{m-1}(x) + η × hₘ(x)
 | Random Forest | Same | Much lower | Low |
 | Boosting | Lower | Lower | Very low |
 
----
-
 ## Practice Questions
 
 **Short Answer (2 marks each)**
@@ -336,7 +325,5 @@ F_m(x) = F_{m-1}(x) + η × hₘ(x)
 | Cloud | Light | No |
 
 2. A Random Forest has 100 trees. 60 predict "Yes", 40 predict "No". What is the final prediction? How does this reduce variance?
-
----
 
 [← Unit 5 Overview](/courses/paiml/unit5/) | [Next: Reinforcement Learning →](/courses/paiml/unit5/reinforcement-learning/)

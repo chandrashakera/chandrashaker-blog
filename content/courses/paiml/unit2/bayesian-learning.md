@@ -4,6 +4,9 @@ date: 2026-02-01
 description: "Bayes theorem, concept learning, maximum likelihood, Naive Bayes classifier, Bayesian Belief Networks and EM algorithm for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["bayesian", "naive-bayes", "bayes-theorem", "em-algorithm", "machine-learning", "mtech"]
+_build:
+  list: never
+  render: always
 ---
 
 ## Bayes Theorem
@@ -36,8 +39,6 @@ P(+Test) = P(+Test|Cancer)×P(Cancer) + P(+Test|NoCancer)×P(NoCancer)
 P(Cancer|+Test) = 0.9 × 0.01 / 0.0585 = 0.154 (15.4%)
 ```
 
----
-
 ## Maximum Likelihood Estimation (MLE)
 
 Chooses the hypothesis h that maximizes P(D|h):
@@ -51,8 +52,6 @@ h_ML = argmax P(D|h)
 - Data D: 3 heads, 2 tails
 - P(D|θ) = θ³(1-θ)²
 - MLE: dP/dθ = 0 → θ_ML = 3/5 = 0.6
-
----
 
 ## Minimum Description Length (MDL)
 
@@ -69,8 +68,6 @@ where:
 
 MDL favors simpler hypotheses that explain data well (Occam's Razor).
 
----
-
 ## Bayes Optimal Classifier
 
 Combines predictions from ALL hypotheses weighted by their probabilities:
@@ -85,8 +82,6 @@ Prediction = argmax P(vj|D)
 
 Most accurate but computationally expensive.
 
----
-
 ## Gibbs Algorithm
 
 Practical approximation of Bayes optimal classifier:
@@ -95,6 +90,12 @@ Practical approximation of Bayes optimal classifier:
 3. Expected error ≤ 2 × Bayes optimal error
 
 ---
+_build:
+  list: never
+  render: always
+_build:
+  list: never
+  render: always
 
 ## Naive Bayes Classifier
 
@@ -150,8 +151,6 @@ P(Ham|x) ∝ 0.4 × 0 × 0 × (1-1) = 0
 
 **Note:** Use Laplace smoothing to handle zero probabilities.
 
----
-
 ## Bayesian Belief Networks
 
 A Bayesian Belief Network (BBN) is a directed acyclic graph (DAG) where:
@@ -192,8 +191,6 @@ P(Burglary | Alarm=True) = ?
 Using Bayes theorem with summing out other variables.
 ```
 
----
-
 ## The EM Algorithm
 
 Expectation-Maximization (EM) is used when data has missing/hidden variables.
@@ -223,8 +220,6 @@ M-step: Update μk, σk, P(k) using weighted data points
 Repeat until convergence.
 ```
 
----
-
 ## Practice Questions
 
 **Short Answer (2 marks each)**
@@ -253,7 +248,5 @@ Repeat until convergence.
 | Rain | Cool | Normal | Weak | Yes |
 
 Predict: Outlook=Sunny, Temp=Cool, Humidity=High, Wind=Strong
-
----
 
 [← Adversarial Search](/courses/paiml/unit2/adversarial-search/) | [Next: Unit 3 →](/courses/paiml/unit3/)

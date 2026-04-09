@@ -4,6 +4,9 @@ date: 2026-02-01
 description: "Perceptrons, multilayer networks, backpropagation algorithm with face recognition example for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["neural-networks", "perceptron", "backpropagation", "multilayer", "mtech"]
+_build:
+  list: never
+  render: always
 ---
 
 ## Biological Inspiration
@@ -19,8 +22,6 @@ Artificial Neural Networks (ANNs) are inspired by the human brain.
 | Firing threshold | Activation function |
 
 Human brain: ~10¹¹ neurons, each connected to ~10⁴ others.
-
----
 
 ## The Artificial Neuron (Perceptron)
 
@@ -45,8 +46,6 @@ Output: y = f(net)
 | **Tanh** | (e^x - e^(-x))/(e^x + e^(-x)) | (-1,1) | Hidden layers |
 | **ReLU** | max(0, net) | [0,∞) | Deep networks |
 | **Softmax** | e^(xᵢ)/Σe^(xⱼ) | (0,1) | Multi-class output |
-
----
 
 ## Perceptron Learning
 
@@ -104,8 +103,6 @@ x1  x2  | XOR
 No single line separates 0s from 1s → Need multilayer network
 ```
 
----
-
 ## Multilayer Networks
 
 Adds hidden layers between input and output to solve non-linear problems.
@@ -134,8 +131,6 @@ where:
   wᵢⱼ = weight from i to j
   f = activation function
 ```
-
----
 
 ## Backpropagation Algorithm
 
@@ -206,8 +201,6 @@ Weight updates (η=0.1):
   w₁₁ ← 0.5 + 0.1×0.014×1 = 0.501
 ```
 
----
-
 ## Remarks on Backpropagation
 
 **Strengths:**
@@ -226,8 +219,6 @@ Weight updates (η=0.1):
 - **Adaptive learning rates:** Adam, RMSProp
 - **Batch normalization:** Normalize layer inputs
 - **Dropout:** Randomly disable neurons during training
-
----
 
 ## Face Recognition Example
 
@@ -249,8 +240,6 @@ Results after training:
 ```
 
 **Preprocessing:** Normalize pixel values, align faces.
-
----
 
 ## Practice Questions
 
@@ -277,7 +266,5 @@ Results after training:
    Calculate total number of weights in this network.
 
 2. The gradient is vanishing in a deep network. What would you change: activation function, weight initialization, or architecture? Justify.
-
----
 
 [← Unit 4 Overview](/courses/paiml/unit4/) | [Next: Advanced ANN →](/courses/paiml/unit4/advanced-ann/)

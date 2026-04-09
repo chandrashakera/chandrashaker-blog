@@ -4,6 +4,9 @@ date: 2026-02-01
 description: "Error functions, recurrent neural networks, convolutional neural networks for image processing - M.Tech PAIML Unit 4."
 categories: ["Courses"]
 tags: ["cnn", "rnn", "deep-learning", "convolutional", "recurrent", "mtech"]
+_build:
+  list: never
+  render: always
 ---
 
 ## Error Functions in Neural Networks
@@ -54,8 +57,6 @@ where yₖ = 1 for true class, 0 otherwise
 | Multi-class | Categorical cross-entropy | Softmax |
 | Regression | MSE / MAE | Linear |
 | Multi-label | Binary cross-entropy | Sigmoid per unit |
-
----
 
 ## Recurrent Neural Networks (RNN)
 
@@ -120,8 +121,6 @@ Output gate: oₜ = σ(Wo[hₜ₋₁, xₜ] + bo)
 Hidden:      hₜ = oₜ⊙tanh(Cₜ)
 ```
 
----
-
 ## Convolutional Neural Networks (CNNs)
 
 CNNs are specialized for **grid-like data** — images, audio, video.
@@ -137,8 +136,6 @@ CNNs are specialized for **grid-like data** — images, audio, video.
 - **Local connectivity:** Each neuron connects to small region
 - **Weight sharing:** Same filter applied across entire image
 - **Pooling:** Reduces spatial dimensions
-
----
 
 ### CNN Building Blocks
 
@@ -202,8 +199,6 @@ At the end, flatten feature maps and connect to output:
 Feature maps → Flatten → Dense layer → Softmax → Class probabilities
 ```
 
----
-
 ### CNN Architecture Example — LeNet-5
 
 Classic CNN for digit recognition (LeCun, 1998):
@@ -234,8 +229,6 @@ Output: 10 units (Softmax)
 - FC layers: 48,120 + 10,164 + 850 = 59,134
 - **Total: ~61,706** (vs millions for fully connected)
 
----
-
 ### Modern CNN Architectures
 
 | Architecture | Year | Key Innovation |
@@ -247,8 +240,6 @@ Output: 10 units (Softmax)
 | ResNet | 2015 | Skip connections, 152 layers |
 | EfficientNet | 2019 | Compound scaling |
 
----
-
 ### What CNNs Learn
 
 ```
@@ -258,8 +249,6 @@ Later layers:  Detect high-level features (faces, cars)
 ```
 
 This **hierarchical feature learning** is why CNNs work so well for images.
-
----
 
 ## Practice Questions
 
@@ -283,7 +272,5 @@ This **hierarchical feature learning** is why CNNs work so well for images.
    - Number of parameters in this layer
 
 2. For a sentiment analysis task (positive/negative), design an RNN architecture. What loss function would you use? What activation at output?
-
----
 
 [← ANN Fundamentals](/courses/paiml/unit4/ann-fundamentals/) | [Next: Unit 5 →](/courses/paiml/unit5/)

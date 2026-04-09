@@ -4,6 +4,9 @@ date: 2026-02-01
 description: "Learn the definitions, foundations and subareas of Artificial Intelligence. Complete notes for M.Tech PAIML Unit 1."
 categories: ["Courses"]
 tags: ["ai", "introduction", "foundations", "mtech"]
+_build:
+  list: never
+  render: always
 ---
 
 ## What is Artificial Intelligence?
@@ -37,8 +40,6 @@ Using logic to reason correctly. Aristotle's syllogisms were early examples:
 
 **4. Acting Rationally (Rational Agent)**
 A rational agent acts to achieve the best outcome or the best expected outcome given uncertainty. This is the dominant approach in modern AI.
-
----
 
 ## Foundations of AI
 
@@ -79,8 +80,6 @@ AI draws from multiple disciplines:
 - Language structure and meaning
 - Natural language understanding
 
----
-
 ## Subareas of AI
 
 | Subarea | Description | Examples |
@@ -93,8 +92,6 @@ AI draws from multiple disciplines:
 | **Robotics** | Physical agents in the world | Self-driving cars |
 | **Expert Systems** | Domain-specific reasoning | Medical diagnosis |
 | **Speech Recognition** | Converting speech to text | Siri, Alexa |
-
----
 
 ## History of AI — Key Milestones
 
@@ -111,8 +108,6 @@ AI draws from multiple disciplines:
 | 2016 | AlphaGo beats Go world champion |
 | 2022 | ChatGPT — large language models |
 
----
-
 ## AI vs Human Intelligence
 
 | Aspect | Human Intelligence | Artificial Intelligence |
@@ -123,8 +118,6 @@ AI draws from multiple disciplines:
 | Creativity | High | Improving |
 | Common sense | Natural | Still limited |
 | Adaptability | High | Task-specific |
-
----
 
 ## Practice Questions
 
@@ -146,7 +139,5 @@ AI draws from multiple disciplines:
 1. Is a calculator an AI system? Justify your answer.
 2. Give three examples of AI applications you use in daily life. Which subarea of AI does each belong to?
 3. What are the limitations of the Turing Test?
-
----
 
 [← Unit 1 Overview](/courses/paiml/unit1/) | [Next: Uninformed Search →](/courses/paiml/unit1/uninformed-search/)

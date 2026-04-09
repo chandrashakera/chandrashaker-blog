@@ -4,6 +4,9 @@ date: 2026-02-01
 description: "Reinforcement learning, Q-learning, temporal difference learning and dynamic programming for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["reinforcement-learning", "q-learning", "temporal-difference", "markov", "mtech"]
+_build:
+  list: never
+  render: always
 ---
 
 ## What is Reinforcement Learning?
@@ -20,8 +23,6 @@ Agent ──action──→ Environment
 - No labeled examples
 - Learns from delayed rewards
 - Must explore to discover good actions
-
----
 
 ## The Learning Task
 
@@ -58,8 +59,6 @@ Gₜ = rₜ + γrₜ₊₁ + γ²rₜ₊₂ + ... = Σ γᵏrₜ₊ₖ
 γ = 0.9: Common practical choice
 ```
 
----
-
 ## Markov Property
 
 **"The future depends only on the present, not the past"**
@@ -69,8 +68,6 @@ P(sₜ₊₁ | sₜ, aₜ, sₜ₋₁, aₜ₋₁, ...) = P(sₜ₊₁ | sₜ, a
 ```
 
 This simplifies RL — we only need current state, not full history.
-
----
 
 ## Value Functions
 
@@ -101,8 +98,6 @@ Q*(s,a) = R(s,a) + γ Σs' T(s,a,s') max_a' Q*(s',a')
 
 Optimal policy: π*(s) = argmax_a Q*(s,a)
 ```
-
----
 
 ## Q-Learning
 
@@ -168,8 +163,6 @@ Rewards: +1 at G, -1 at F, -0.01 otherwise
 
 **Optimal path derived from Q-table:** S → Right → Right → Right → Down → Down → Down → G
 
----
-
 ## Non-Deterministic Rewards and Actions
 
 Real environments are stochastic — same action may lead to different outcomes.
@@ -182,8 +175,6 @@ Example: Robot with 80% chance of moving correctly,
 ```
 
 **Q-learning still converges** under certain conditions even with stochastic transitions.
-
----
 
 ## Temporal Difference Learning
 
@@ -217,8 +208,6 @@ Eligibility trace: eₜ(s) = γλeₜ₋₁(s) + 1[Sₜ=s]
 Update: V(s) ← V(s) + α × δₜ × eₜ(s)
 ```
 
----
-
 ## Generalizing from Examples
 
 **Problem:** State space too large to store Q-value for every state.
@@ -250,8 +239,6 @@ Key innovations:
 
 **DQN achieved superhuman performance on 49 Atari games (DeepMind, 2015)**
 
----
-
 ## Relationship to Dynamic Programming
 
 | Method | Model? | Update | When |
@@ -268,8 +255,6 @@ Requires known T and R — not always available.
 ```
 
 **Q-learning** works without knowing T and R — **model-free**.
-
----
 
 ## Exploration vs Exploitation
 
@@ -293,8 +278,6 @@ P(a|s) = exp(Q(s,a)/τ) / Σa' exp(Q(s,a')/τ)
 High τ: More uniform (exploration)
 Low τ: More greedy (exploitation)
 ```
-
----
 
 ## Practice Questions
 
@@ -331,7 +314,5 @@ V(S3) = 0 (terminal)
 ```
 
 2. An RL agent learning to play chess has a state space of 10⁴⁷. Why can't we use a simple Q-table? What alternative would you use?
-
----
 
 [← Decision Trees](/courses/paiml/unit5/decision-trees/) | [Back to Course Overview →](/courses/paiml/)

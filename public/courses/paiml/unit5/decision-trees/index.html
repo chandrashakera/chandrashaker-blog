@@ -1,0 +1,185 @@
+<!doctype html><html class=no-js lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>5.1 Decision Trees - Chandras Edu | AI, Stock Market, Courses & Jobs India</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content="Decision trees, ID3 algorithm, pruning, rule extraction, random forests and ensemble methods for M.Tech PAIML."><meta property="og:url" content="http://localhost:1313/courses/paiml/unit5/decision-trees/"><meta property="og:site_name" content="Chandras Edu | AI, Stock Market, Courses & Jobs India"><meta property="og:title" content="5.1 Decision Trees"><meta property="og:description" content="Decision trees, ID3 algorithm, pruning, rule extraction, random forests and ensemble methods for M.Tech PAIML."><meta property="og:locale" content="en_in"><meta property="og:type" content="article"><meta property="article:section" content="courses"><meta property="article:published_time" content="2026-02-01T00:00:00+00:00"><meta property="article:modified_time" content="2026-02-01T00:00:00+00:00"><meta property="article:tag" content="Decision-Trees"><meta property="article:tag" content="Id3"><meta property="article:tag" content="Random-Forest"><meta property="article:tag" content="Ensemble"><meta property="article:tag" content="Boosting"><meta property="article:tag" content="Mtech"><meta name=twitter:card content="summary"><meta name=twitter:title content="5.1 Decision Trees"><meta name=twitter:description content="Decision trees, ID3 algorithm, pruning, rule extraction, random forests and ensemble methods for M.Tech PAIML."><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Chandras Edu | AI, Stock Market, Courses & Jobs India" rel=home><div class="logo__item logo__text"><div class=logo__title>Chandras Edu | AI, Stock Market, Courses & Jobs India</div><div class=logo__tagline>Tech · Finance · Courses · Jobs</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/posts/><span class=menu__text>Blog</span></a></li><li class=menu__item><a class=menu__link href=/courses/><span class=menu__text>Courses</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>5.1 Decision Trees</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 110 28 1 1 0 010-28m0 3a3 3 0 100 22 3 3 0 000-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class=meta__text datetime=2026-02-01T00:00:00Z>February 1, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/courses/ rel=category>Courses</a></span></div></div></header><div class="content post__content clearfix"><h2 id=what-are-decision-trees>What are Decision Trees?</h2><p>A decision tree is a hierarchical model that makes decisions by testing feature values, leading to a prediction at leaf nodes.</p><pre tabindex=0><code>                 Outlook?
+               /    |    \
+           Sunny  Overcast  Rain
+            |       |        |
+         Humidity? YES    Wind?
+          /    \          /    \
+       High  Normal    Strong  Weak
+        |       |        |      |
+        NO     YES       NO    YES
+</code></pre><p><strong>Advantages:</strong></p><ul><li>Easy to understand and interpret</li><li>Handles both categorical and numerical features</li><li>No feature scaling needed</li><li>Can be visualized</li></ul><h2 id=id3-algorithm>ID3 Algorithm</h2><p>ID3 (Iterative Dichotomiser 3) builds decision trees using <strong>Information Gain</strong>.</p><h3 id=entropy>Entropy</h3><p>Measures impurity/uncertainty in a dataset:</p><pre tabindex=0><code>Entropy(S) = -Σ pᵢ × log₂(pᵢ)
+
+where pᵢ = proportion of class i in S
+
+Example: S has 9 positive, 5 negative
+  p(+) = 9/14,  p(-) = 5/14
+  
+  Entropy(S) = -(9/14)log₂(9/14) - (5/14)log₂(5/14)
+             = -(0.643)(−0.637) − (0.357)(−1.485)
+             = 0.410 + 0.530 = 0.940
+</code></pre><p><strong>Key values:</strong></p><ul><li>Entropy = 0 → perfectly pure (all same class)</li><li>Entropy = 1 → maximum impurity (50-50 split for 2 classes)</li></ul><h3 id=information-gain>Information Gain</h3><p>Reduction in entropy after splitting on attribute A:</p><pre tabindex=0><code>Gain(S, A) = Entropy(S) - Σᵥ (|Sᵥ|/|S|) × Entropy(Sᵥ)
+
+where Sᵥ = subset of S where A = v
+</code></pre><h3 id=id3-algorithm-1>ID3 Algorithm</h3><pre tabindex=0><code>function ID3(S, Attributes):
+  if all examples in S same class C:
+    return Leaf(C)
+  if Attributes is empty:
+    return Leaf(majority class in S)
+    
+  A = attribute with highest Gain(S, A)
+  Create node with test A
+  
+  for each value v of A:
+    Sᵥ = {s ∈ S | A(s) = v}
+    if Sᵥ is empty:
+      add leaf with majority class of S
+    else:
+      add subtree ID3(Sᵥ, Attributes - {A})
+  
+  return tree
+</code></pre><h3 id=complete-example-play-tennis>Complete Example: Play Tennis</h3><p><strong>Dataset:</strong></p><table><thead><tr><th>Day</th><th>Outlook</th><th>Temp</th><th>Humidity</th><th>Wind</th><th>Play</th></tr></thead><tbody><tr><td>D1</td><td>Sunny</td><td>Hot</td><td>High</td><td>Weak</td><td>No</td></tr><tr><td>D2</td><td>Sunny</td><td>Hot</td><td>High</td><td>Strong</td><td>No</td></tr><tr><td>D3</td><td>Overcast</td><td>Hot</td><td>High</td><td>Weak</td><td>Yes</td></tr><tr><td>D4</td><td>Rain</td><td>Mild</td><td>High</td><td>Weak</td><td>Yes</td></tr><tr><td>D5</td><td>Rain</td><td>Cool</td><td>Normal</td><td>Weak</td><td>Yes</td></tr><tr><td>D6</td><td>Rain</td><td>Cool</td><td>Normal</td><td>Strong</td><td>No</td></tr><tr><td>D7</td><td>Overcast</td><td>Cool</td><td>Normal</td><td>Strong</td><td>Yes</td></tr><tr><td>D8</td><td>Sunny</td><td>Mild</td><td>High</td><td>Weak</td><td>No</td></tr><tr><td>D9</td><td>Sunny</td><td>Cool</td><td>Normal</td><td>Weak</td><td>Yes</td></tr><tr><td>D10</td><td>Rain</td><td>Mild</td><td>Normal</td><td>Weak</td><td>Yes</td></tr><tr><td>D11</td><td>Sunny</td><td>Mild</td><td>Normal</td><td>Strong</td><td>Yes</td></tr><tr><td>D12</td><td>Overcast</td><td>Mild</td><td>High</td><td>Strong</td><td>Yes</td></tr><tr><td>D13</td><td>Overcast</td><td>Hot</td><td>Normal</td><td>Weak</td><td>Yes</td></tr><tr><td>D14</td><td>Rain</td><td>Mild</td><td>High</td><td>Strong</td><td>No</td></tr></tbody></table><p><strong>Step 1:</strong> Entropy(S) where 9 Yes, 5 No:</p><pre tabindex=0><code>Entropy(S) = -(9/14)log₂(9/14) - (5/14)log₂(5/14) = 0.940
+</code></pre><p><strong>Step 2:</strong> Information Gain for Outlook:</p><pre tabindex=0><code>S_Sunny = {D1,D2,D8,D9,D11} → 2 Yes, 3 No
+Entropy(S_Sunny) = -(2/5)log₂(2/5) - (3/5)log₂(3/5) = 0.971
+
+S_Overcast = {D3,D7,D12,D13} → 4 Yes, 0 No
+Entropy(S_Overcast) = 0
+
+S_Rain = {D4,D5,D6,D10,D14} → 3 Yes, 2 No
+Entropy(S_Rain) = 0.971
+
+Gain(S, Outlook) = 0.940 - (5/14×0.971 + 4/14×0 + 5/14×0.971)
+                 = 0.940 - 0.693 = 0.247
+</code></pre><p><strong>Calculate for all attributes:</strong></p><pre tabindex=0><code>Gain(S, Temperature) = 0.029
+Gain(S, Humidity) = 0.151
+Gain(S, Wind) = 0.048
+Gain(S, Outlook) = 0.247  ← HIGHEST → Root node
+</code></pre><p><strong>Outlook = Overcast → Always Yes</strong> (pure leaf)</p><p><strong>For Outlook = Sunny:</strong> {D1,D2,D8,D9,D11}</p><pre tabindex=0><code>Gain(S_Sunny, Humidity) = 0.971 (best) → Split on Humidity
+  High → D1,D2,D8 → No (pure)
+  Normal → D9,D11 → Yes (pure)
+</code></pre><p><strong>Final Tree:</strong></p><pre tabindex=0><code>Outlook?
+├── Sunny → Humidity?
+│          ├── High → NO
+│          └── Normal → YES
+├── Overcast → YES
+└── Rain → Wind?
+           ├── Strong → NO
+           └── Weak → YES
+</code></pre><h2 id=types-of-decision-trees>Types of Decision Trees</h2><table><thead><tr><th>Type</th><th>Target</th><th>Split Criterion</th></tr></thead><tbody><tr><td><strong>Classification Tree</strong></td><td>Discrete class</td><td>Information Gain, Gini</td></tr><tr><td><strong>Regression Tree</strong></td><td>Continuous value</td><td>Variance reduction</td></tr><tr><td><strong>Multivariate Tree</strong></td><td>Any</td><td>Linear combinations</td></tr></tbody></table><h3 id=gini-impurity-used-in-cart>Gini Impurity (used in CART)</h3><pre tabindex=0><code>Gini(S) = 1 - Σ pᵢ²
+
+Example: 9 Yes, 5 No:
+  Gini = 1 - (9/14)² - (5/14)² = 1 - 0.413 - 0.128 = 0.459
+</code></pre><h2 id=pruning>Pruning</h2><p>Pruning reduces overfitting by removing branches.</p><h3 id=pre-pruning-early-stopping>Pre-Pruning (Early Stopping)</h3><p>Stop growing tree when:</p><ul><li>Gain below threshold</li><li>Too few examples in node</li><li>Maximum depth reached</li></ul><h3 id=post-pruning-reduced-error-pruning>Post-Pruning (Reduced Error Pruning)</h3><pre tabindex=0><code>1. Grow full tree
+2. For each internal node (bottom-up):
+   a. Compute accuracy with this node as leaf (majority class)
+   b. Compute accuracy with subtree
+   c. If accuracy with leaf ≥ accuracy with subtree:
+      → Replace subtree with leaf
+3. Repeat until no improvement
+</code></pre><h2 id=rule-extraction-from-trees>Rule Extraction from Trees</h2><p>Convert decision tree to IF-THEN rules:</p><p><strong>Each path from root to leaf = one rule</strong></p><pre tabindex=0><code>From Tennis tree:
+
+R1: IF Outlook=Sunny AND Humidity=High THEN Play=No
+R2: IF Outlook=Sunny AND Humidity=Normal THEN Play=Yes
+R3: IF Outlook=Overcast THEN Play=Yes
+R4: IF Outlook=Rain AND Wind=Strong THEN Play=No
+R5: IF Outlook=Rain AND Wind=Weak THEN Play=Yes
+</code></pre><p><strong>Rule Post-Pruning:</strong></p><ol><li>Convert tree to rules</li><li>For each rule, try removing conditions</li><li>Keep removal if accuracy improves on validation set</li><li>Sort rules by accuracy</li></ol><h2 id=multivariate-trees>Multivariate Trees</h2><p>Standard trees use one attribute per node (axis-aligned splits).</p><p>Multivariate trees use linear combinations:</p><pre tabindex=0><code>w₁x₁ + w₂x₂ + ... + wₙxₙ &gt; threshold → branch
+</code></pre><p>More powerful but harder to interpret.</p><h2 id=ensemble-methods>Ensemble Methods</h2><p>Combine multiple models for better performance.</p><h3 id=bagging-bootstrap-aggregating>Bagging (Bootstrap Aggregating)</h3><pre tabindex=0><code>1. Create B bootstrap samples (sample with replacement)
+2. Train one tree on each sample
+3. Prediction: majority vote (classification) or average (regression)
+</code></pre><p><strong>Reduces variance</strong> — less overfitting than single tree.</p><h3 id=random-forests>Random Forests</h3><p>Extends bagging with feature randomness:</p><pre tabindex=0><code>For each tree:
+  1. Bootstrap sample
+  2. At each split: choose best feature from RANDOM SUBSET of features
+     (typically √p features for classification)
+  3. Grow full tree (no pruning)
+
+Final prediction: majority vote
+</code></pre><p><strong>Advantages:</strong></p><ul><li>Very accurate</li><li>Handles high dimensions well</li><li>Gives feature importance</li></ul><h3 id=boosting>Boosting</h3><p>Trains models sequentially, each focusing on errors of previous:</p><p><strong>AdaBoost:</strong></p><pre tabindex=0><code>1. Initialize equal weights for all examples
+2. For t = 1 to T:
+   a. Train weak learner hₜ on weighted data
+   b. Compute weighted error εₜ
+   c. αₜ = (1/2)ln((1-εₜ)/εₜ)
+   d. Update weights:
+      wᵢ ← wᵢ × exp(-αₜ × yᵢ × hₜ(xᵢ))
+      Normalize weights
+3. Final: H(x) = sign(Σ αₜhₜ(x))
+</code></pre><p><strong>Gradient Boosting:</strong></p><pre tabindex=0><code>Fit each new tree to residuals of previous ensemble
+F_m(x) = F_{m-1}(x) + η × hₘ(x)
+</code></pre><h3 id=comparison>Comparison</h3><table><thead><tr><th>Method</th><th>Bias</th><th>Variance</th><th>Interpretability</th></tr></thead><tbody><tr><td>Single tree</td><td>High</td><td>High</td><td>High</td></tr><tr><td>Bagging</td><td>Same</td><td>Lower</td><td>Low</td></tr><tr><td>Random Forest</td><td>Same</td><td>Much lower</td><td>Low</td></tr><tr><td>Boosting</td><td>Lower</td><td>Lower</td><td>Very low</td></tr></tbody></table><h2 id=practice-questions>Practice Questions</h2><p><strong>Short Answer (2 marks each)</strong></p><ol><li>What is entropy? What does entropy = 0 mean?</li><li>How is Information Gain calculated?</li><li>What is the difference between pre-pruning and post-pruning?</li><li>How does Random Forest differ from Bagging?</li></ol><p><strong>Long Answer (8 marks each)</strong></p><ol><li>Explain the ID3 algorithm. Apply it to build a decision tree for the tennis dataset (first 2 levels).</li><li>What is pruning in decision trees? Explain post-pruning with reduced error pruning.</li><li>Compare Bagging, Random Forests, and Boosting. Which would you use for a medical diagnosis problem and why?</li></ol><p><strong>Think & Apply</strong></p><ol><li>Calculate Information Gain for the following dataset when splitting on Weather:</li></ol><table><thead><tr><th>Weather</th><th>Traffic</th><th>Delay</th></tr></thead><tbody><tr><td>Rain</td><td>Heavy</td><td>Yes</td></tr><tr><td>Rain</td><td>Light</td><td>Yes</td></tr><tr><td>Sun</td><td>Heavy</td><td>No</td></tr><tr><td>Sun</td><td>Light</td><td>No</td></tr><tr><td>Cloud</td><td>Heavy</td><td>Yes</td></tr><tr><td>Cloud</td><td>Light</td><td>No</td></tr></tbody></table><ol start=2><li>A Random Forest has 100 trees. 60 predict &ldquo;Yes&rdquo;, 40 predict &ldquo;No&rdquo;. What is the final prediction? How does this reduce variance?</li></ol><p><a href=/courses/paiml/unit5/>← Unit 5 Overview</a> | <a href=/courses/paiml/unit5/reinforcement-learning/>Next: Reinforcement Learning →</a></p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 000-6 3 3 0 000 6"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/decision-trees/ rel=tag>decision-trees</a></li><li class=tags__item><a class="tags__link btn" href=/tags/id3/ rel=tag>id3</a></li><li class=tags__item><a class="tags__link btn" href=/tags/random-forest/ rel=tag>random-forest</a></li><li class=tags__item><a class="tags__link btn" href=/tags/ensemble/ rel=tag>ensemble</a></li><li class=tags__item><a class="tags__link btn" href=/tags/boosting/ rel=tag>boosting</a></li><li class=tags__item><a class="tags__link btn" href=/tags/mtech/ rel=tag>mtech</a></li></ul></div></footer></article></main></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><input class=widget-search__field type=search placeholder=Search… name=q aria-label=Search…>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=http://localhost:1313/></form></div><div class="widget-recent widget"><h4 class=widget__title>Recent Posts</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/india-ai-summit-2026/>India AI Impact Summit 2026: US Partnerships & AI Launches</a></li><li class=widget__item><a class=widget__link href=/posts/bitcoin-dip-accumulation-india-2026/>Bitcoin Crashed 48% From Peak: Is This the Time Indian Investors Should Buy?</a></li><li class=widget__item><a class=widget__link href=/posts/ai-proof-skills-freshers-2026/>5 Skills AI Cannot Replace: Career Survival Guide for 2026 Freshers</a></li><li class=widget__item><a class=widget__link href=/posts/anthropic-cowork-indian-it-stocks-crash/>Anthropic's AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can't & Why TCS, Infosys Are Panicking</a></li><li class=widget__item><a class=widget__link href=/posts/gold-silver-crash-india-analysis/>Gold Crashed ₹50,000, Silver Down 39%: What Happened in Indian Markets & What to Do Now</a></li><li class=widget__item><a class=widget__link href=/posts/union-budget-2026-complete-guide/>Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Costlier & What It All Means for You</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Categories</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/careers/>Careers</a></li><li class=widget__item><a class=widget__link href=/categories/courses/>Courses</a></li><li class=widget__item><a class=widget__link href=/categories/finance/></a></li><li class=widget__item><a class=widget__link href=/categories/technology/></a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/a-star/ title=A-Star>A-Star</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/adversarial-search/ title=Adversarial-Search>Adversarial-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai/ title=Ai>Ai</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai-impact/ title=Ai-Impact>Ai-Impact</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/alpha-beta/ title=Alpha-Beta>Alpha-Beta</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/anthropic-cowork/ title=Anthropic-Cowork>Anthropic-Cowork</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/backpropagation/ title=Backpropagation>Backpropagation</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayes-theorem/ title=Bayes-Theorem>Bayes-Theorem</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayesian/ title=Bayesian>Bayesian</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bfs/ title=Bfs>Bfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bitcoin/ title=Bitcoin>Bitcoin</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/boosting/ title=Boosting>Boosting</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/budget-analysis/ title=Budget-Analysis>Budget-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/career/ title=Career>Career</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/classification/ title=Classification>Classification</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cnn/ title=Cnn>Cnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/convolutional/ title=Convolutional>Convolutional</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/course/ title=Course>Course</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cryptocurrency/ title=Cryptocurrency>Cryptocurrency</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/csp/ title=Csp>Csp</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/decision-trees/ title=Decision-Trees>Decision-Trees</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/deep-learning/ title=Deep-Learning>Deep-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dfs/ title=Dfs>Dfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/em-algorithm/ title=Em-Algorithm>Em-Algorithm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ensemble/ title=Ensemble>Ensemble</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/finance-india/ title=Finance-India>Finance-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/foundations/ title=Foundations>Foundations</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/freshers/ title=Freshers>Freshers</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/games/ title=Games>Games</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gold-price-india/ title=Gold-Price-India>Gold-Price-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/greedy/ title=Greedy>Greedy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/heuristic/ title=Heuristic>Heuristic</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/id3/ title=Id3>Id3</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india/ title=India>India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india-ai-summit/ title=India-Ai-Summit>India-Ai-Summit</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/indian-it-stocks/ title=Indian-It-Stocks>Indian-It-Stocks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/informed-search/ title=Informed-Search>Informed-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/introduction/ title=Introduction>Introduction</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investment-strategy/ title=Investment-Strategy>Investment-Strategy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investments/ title=Investments>Investments</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jobs/ title=Jobs>Jobs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kernel/ title=Kernel>Kernel</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/machine-learning/ title=Machine-Learning>Machine-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/market-analysis/ title=Market-Analysis>Market-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/markov/ title=Markov>Markov</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mcx-gold-silver/ title=Mcx-Gold-Silver>Mcx-Gold-Silver</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/minimax/ title=Minimax>Minimax</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mtech/ title=Mtech>Mtech</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/multilayer/ title=Multilayer>Multilayer</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/naive-bayes/ title=Naive-Bayes>Naive-Bayes</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/neural-networks/ title=Neural-Networks>Neural-Networks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pac-learning/ title=Pac-Learning>Pac-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/perceptron/ title=Perceptron>Perceptron</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/precious-metals-india/ title=Precious-Metals-India>Precious-Metals-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/q-learning/ title=Q-Learning>Q-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/random-forest/ title=Random-Forest>Random-Forest</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/recurrent/ title=Recurrent>Recurrent</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/regression/ title=Regression>Regression</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement/ title=Reinforcement>Reinforcement</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement-learning/ title=Reinforcement-Learning>Reinforcement-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rnn/ title=Rnn>Rnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/saas-industry/ title=Saas-Industry>Saas-Industry</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/search/ title=Search>Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/silver-price-mcx/ title=Silver-Price-Mcx>Silver-Price-Mcx</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/skills/ title=Skills>Skills</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/students/ title=Students>Students</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/supervised-learning/ title=Supervised-Learning>Supervised-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/svm/ title=Svm>Svm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tax-planning/ title=Tax-Planning>Tax-Planning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tcs-infosys-wipro/ title=Tcs-Infosys-Wipro>Tcs-Infosys-Wipro</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tech-news/ title=Tech-News>Tech-News</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/temporal-difference/ title=Temporal-Difference>Temporal-Difference</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/uniform-cost/ title=Uniform-Cost>Uniform-Cost</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/union-budget-2026/ title=Union-Budget-2026>Union-Budget-2026</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/unsupervised/ title=Unsupervised>Unsupervised</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vc-dimension/ title=Vc-Dimension>Vc-Dimension</a></div></div></aside></div><footer class=footer><span>© 2026 Chandra Shaker · <a href=/privacy-policy/>Privacy Policy</a> · <a href=/disclaimer/>Disclaimer</a> · <a href=/contact/>Contact</a></span></footer></div><script async defer src=/js/menu.js></script></body></html>

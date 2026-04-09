@@ -1,0 +1,120 @@
+<!doctype html><html class=no-js lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>1.3 Informed Search Strategies - Chandras Edu | AI, Stock Market, Courses & Jobs India</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content="Complete notes on informed search - heuristic functions, greedy best-first search and A* search with examples for M.Tech PAIML."><meta property="og:url" content="http://localhost:1313/courses/paiml/unit1/informed-search/"><meta property="og:site_name" content="Chandras Edu | AI, Stock Market, Courses & Jobs India"><meta property="og:title" content="1.3 Informed Search Strategies"><meta property="og:description" content="Complete notes on informed search - heuristic functions, greedy best-first search and A* search with examples for M.Tech PAIML."><meta property="og:locale" content="en_in"><meta property="og:type" content="article"><meta property="article:section" content="courses"><meta property="article:published_time" content="2026-02-01T00:00:00+00:00"><meta property="article:modified_time" content="2026-02-01T00:00:00+00:00"><meta property="article:tag" content="Search"><meta property="article:tag" content="Heuristic"><meta property="article:tag" content="A-Star"><meta property="article:tag" content="Greedy"><meta property="article:tag" content="Informed-Search"><meta property="article:tag" content="Mtech"><meta name=twitter:card content="summary"><meta name=twitter:title content="1.3 Informed Search Strategies"><meta name=twitter:description content="Complete notes on informed search - heuristic functions, greedy best-first search and A* search with examples for M.Tech PAIML."><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Chandras Edu | AI, Stock Market, Courses & Jobs India" rel=home><div class="logo__item logo__text"><div class=logo__title>Chandras Edu | AI, Stock Market, Courses & Jobs India</div><div class=logo__tagline>Tech · Finance · Courses · Jobs</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/posts/><span class=menu__text>Blog</span></a></li><li class=menu__item><a class=menu__link href=/courses/><span class=menu__text>Courses</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>1.3 Informed Search Strategies</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 110 28 1 1 0 010-28m0 3a3 3 0 100 22 3 3 0 000-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class=meta__text datetime=2026-02-01T00:00:00Z>February 1, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/courses/ rel=category>Courses</a></span></div></div></header><div class="content post__content clearfix"><h2 id=what-is-informed-search>What is Informed Search?</h2><p>Informed (heuristic) search uses problem-specific knowledge beyond the problem definition to find solutions more efficiently than uninformed strategies.</p><p>The key idea: use a <strong>heuristic function h(n)</strong> to estimate the cost from node n to the goal.</p><h2 id=heuristic-functions>Heuristic Functions</h2><p>A heuristic function <strong>h(n)</strong> estimates the cost of the cheapest path from node n to the goal.</p><h3 id=properties-of-a-good-heuristic>Properties of a Good Heuristic</h3><p><strong>Admissibility:</strong> h(n) never overestimates the actual cost to the goal.</p><pre tabindex=0><code>h(n) ≤ h*(n)   where h*(n) = true cost to goal
+</code></pre><p><strong>Consistency (Monotonicity):</strong> For every node n and successor n':</p><pre tabindex=0><code>h(n) ≤ c(n, a, n&#39;) + h(n&#39;)
+</code></pre><h3 id=example-romania-map-problem>Example: Romania Map Problem</h3><p><strong>h_SLD = Straight-line distance to Bucharest</strong></p><table><thead><tr><th>City</th><th>h_SLD</th></tr></thead><tbody><tr><td>Arad</td><td>366</td></tr><tr><td>Bucharest</td><td>0</td></tr><tr><td>Craiova</td><td>160</td></tr><tr><td>Fagaras</td><td>176</td></tr><tr><td>Sibiu</td><td>253</td></tr><tr><td>Zerind</td><td>374</td></tr></tbody></table><p>h_SLD is admissible because straight-line distance never overestimates road distance.</p><h2 id=greedy-best-first-search>Greedy Best-First Search</h2><p>Expands the node that appears closest to the goal based on h(n).</p><h3 id=algorithm>Algorithm</h3><pre tabindex=0><code>1. Initialize priority queue with initial state
+2. Evaluate f(n) = h(n) for each node
+3. Expand node with MINIMUM h(n)
+4. Repeat until goal found or failure
+</code></pre><h3 id=example>Example</h3><pre tabindex=0><code>Arad → Sibiu (h=253) → Fagaras (h=176) → Bucharest (h=0) ✓
+</code></pre><h3 id=properties>Properties</h3><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><strong>Complete?</strong></td><td>No (can get stuck in loops)</td></tr><tr><td><strong>Optimal?</strong></td><td>No</td></tr><tr><td><strong>Time Complexity</strong></td><td>O(b^m)</td></tr><tr><td><strong>Space Complexity</strong></td><td>O(b^m)</td></tr></tbody></table><p><strong>Problem:</strong> Greedy search ignores the actual cost already paid — can lead to suboptimal paths.</p><h2 id=a-search>A* Search</h2><p>Combines actual cost g(n) and heuristic estimate h(n):</p><pre tabindex=0><code>f(n) = g(n) + h(n)
+
+where:
+  g(n) = cost from start to n (actual)
+  h(n) = estimated cost from n to goal
+  f(n) = estimated total cost through n
+</code></pre><h3 id=algorithm-1>Algorithm</h3><pre tabindex=0><code>1. Initialize priority queue with initial state, f = h(start)
+2. Loop:
+   a. Pop node with MINIMUM f(n)
+   b. If GOAL → return solution
+   c. For each successor n&#39;:
+      g(n&#39;) = g(n) + step_cost
+      f(n&#39;) = g(n&#39;) + h(n&#39;)
+      Add n&#39; to queue
+</code></pre><h3 id=example--romania-map>Example — Romania Map</h3><p><strong>Finding path from Arad to Bucharest:</strong></p><table><thead><tr><th>Step</th><th>Node</th><th>g(n)</th><th>h(n)</th><th>f(n)</th></tr></thead><tbody><tr><td>1</td><td>Arad</td><td>0</td><td>366</td><td>366</td></tr><tr><td>2</td><td>Sibiu</td><td>140</td><td>253</td><td>393</td></tr><tr><td>3</td><td>Rimnicu</td><td>220</td><td>193</td><td>413</td></tr><tr><td>4</td><td>Fagaras</td><td>239</td><td>176</td><td>415</td></tr><tr><td>5</td><td>Pitesti</td><td>317</td><td>100</td><td>417</td></tr><tr><td>6</td><td><strong>Bucharest</strong></td><td>418</td><td>0</td><td><strong>418</strong></td></tr></tbody></table><p><strong>Optimal path:</strong> Arad → Sibiu → Rimnicu → Pitesti → Bucharest (418 km)</p><h3 id=properties-1>Properties</h3><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><strong>Complete?</strong></td><td>Yes</td></tr><tr><td><strong>Optimal?</strong></td><td>Yes (if h is admissible)</td></tr><tr><td><strong>Time Complexity</strong></td><td>Exponential O(b^d)</td></tr><tr><td><strong>Space Complexity</strong></td><td>O(b^d) — keeps all nodes</td></tr></tbody></table><h3 id=why-a-is-optimal>Why A* is Optimal</h3><p><strong>Theorem:</strong> If h(n) is admissible, A* is optimal.</p><p><strong>Proof sketch:</strong></p><ul><li>Suppose suboptimal goal G2 is in queue with f(G2) = g(G2) > C* (optimal cost)</li><li>Let n be a node on optimal path</li><li>f(n) = g(n) + h(n) ≤ C* (since h is admissible)</li><li>Therefore A* will expand n before G2 → finds optimal solution first</li></ul><h2 id=comparison-greedy-vs-a>Comparison: Greedy vs A*</h2><table><thead><tr><th>Aspect</th><th>Greedy Best-First</th><th>A*</th></tr></thead><tbody><tr><td>Evaluation</td><td>f(n) = h(n)</td><td>f(n) = g(n) + h(n)</td></tr><tr><td>Complete</td><td>No</td><td>Yes</td></tr><tr><td>Optimal</td><td>No</td><td>Yes (admissible h)</td></tr><tr><td>Speed</td><td>Faster</td><td>Slower</td></tr><tr><td>Memory</td><td>Less</td><td>More</td></tr></tbody></table><h2 id=designing-heuristics>Designing Heuristics</h2><h3 id=relaxed-problems>Relaxed Problems</h3><p>A relaxed problem has fewer restrictions than the original. The optimal solution cost of a relaxed problem is an admissible heuristic.</p><p><strong>Example — 8-puzzle:</strong></p><ul><li>Original: A tile can move to adjacent empty square</li><li>Relaxation 1: A tile can move anywhere → h = number of misplaced tiles</li><li>Relaxation 2: A tile can move to any adjacent square → h = Manhattan distance</li></ul><p><strong>Manhattan Distance:</strong></p><pre tabindex=0><code>h(n) = Σ |row_i - goal_row_i| + |col_i - goal_col_i|
+</code></pre><h3 id=8-puzzle-example>8-Puzzle Example</h3><pre tabindex=0><code>Current State:    Goal State:
+7  2  4           1  2  3
+5  0  6           4  5  6
+8  3  1           7  8  0
+
+Misplaced tiles h1 = 6 (tiles 7,2,5,6,8,3 are misplaced)
+
+Manhattan distance h2:
+  tile 7: |2-2| + |0-1| = 1
+  tile 2: |0-0| + |1-1| = 0
+  tile 4: |0-0| + |2-2| = 0
+  tile 5: |1-1| + |0-0| = 0  (wait, 5 is at wrong position)
+  ...
+  h2 = 18 (more accurate than h1)
+</code></pre><p><strong>h2 dominates h1:</strong> h2(n) ≥ h1(n) for all n → h2 is the better heuristic.</p><h2 id=practice-questions>Practice Questions</h2><p><strong>Short Answer (2 marks each)</strong></p><ol><li>What is a heuristic function? What properties should it have?</li><li>Define admissibility of a heuristic. Why is it important?</li><li>What is the evaluation function used in A* search?</li><li>Why is greedy best-first search not optimal?</li></ol><p><strong>Long Answer (8 marks each)</strong></p><ol><li>Explain A* search algorithm with a suitable example. Prove that A* is optimal when the heuristic is admissible.</li><li>Compare greedy best-first search and A* search with respect to completeness, optimality, time and space complexity.</li><li>What are relaxed problems? How are they used to design admissible heuristics? Illustrate with the 8-puzzle problem.</li></ol><p><strong>Think & Apply</strong></p><ol><li>For the following graph, apply A* search to find the optimal path from S to G:</li></ol><pre tabindex=0><code>S --1-- A --2-- G (h: S=5, A=3, G=0)
+|               |
+3               1
+|               |
+B ------2------ C (h: B=4, C=2)
+</code></pre><ol start=2><li>Given an 8-puzzle configuration, calculate h1 (misplaced tiles) and h2 (Manhattan distance). Which is a better heuristic and why?</li></ol><p><a href=/courses/paiml/unit1/uninformed-search/>← Uninformed Search</a> | <a href=/courses/paiml/unit2/>Next: Unit 2 →</a></p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 000-6 3 3 0 000 6"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/search/ rel=tag>search</a></li><li class=tags__item><a class="tags__link btn" href=/tags/heuristic/ rel=tag>heuristic</a></li><li class=tags__item><a class="tags__link btn" href=/tags/a-star/ rel=tag>a-star</a></li><li class=tags__item><a class="tags__link btn" href=/tags/greedy/ rel=tag>greedy</a></li><li class=tags__item><a class="tags__link btn" href=/tags/informed-search/ rel=tag>informed-search</a></li><li class=tags__item><a class="tags__link btn" href=/tags/mtech/ rel=tag>mtech</a></li></ul></div></footer></article></main></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><input class=widget-search__field type=search placeholder=Search… name=q aria-label=Search…>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=http://localhost:1313/></form></div><div class="widget-recent widget"><h4 class=widget__title>Recent Posts</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/india-ai-summit-2026/>India AI Impact Summit 2026: US Partnerships & AI Launches</a></li><li class=widget__item><a class=widget__link href=/posts/bitcoin-dip-accumulation-india-2026/>Bitcoin Crashed 48% From Peak: Is This the Time Indian Investors Should Buy?</a></li><li class=widget__item><a class=widget__link href=/posts/ai-proof-skills-freshers-2026/>5 Skills AI Cannot Replace: Career Survival Guide for 2026 Freshers</a></li><li class=widget__item><a class=widget__link href=/posts/anthropic-cowork-indian-it-stocks-crash/>Anthropic's AI Agent Just Crashed Indian IT Stocks 6%: What Cowork Can Do, What It Can't & Why TCS, Infosys Are Panicking</a></li><li class=widget__item><a class=widget__link href=/posts/gold-silver-crash-india-analysis/>Gold Crashed ₹50,000, Silver Down 39%: What Happened in Indian Markets & What to Do Now</a></li><li class=widget__item><a class=widget__link href=/posts/union-budget-2026-complete-guide/>Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Costlier & What It All Means for You</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Categories</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/careers/>Careers</a></li><li class=widget__item><a class=widget__link href=/categories/courses/>Courses</a></li><li class=widget__item><a class=widget__link href=/categories/finance/></a></li><li class=widget__item><a class=widget__link href=/categories/technology/></a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/a-star/ title=A-Star>A-Star</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/adversarial-search/ title=Adversarial-Search>Adversarial-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai/ title=Ai>Ai</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ai-impact/ title=Ai-Impact>Ai-Impact</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/alpha-beta/ title=Alpha-Beta>Alpha-Beta</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/anthropic-cowork/ title=Anthropic-Cowork>Anthropic-Cowork</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/backpropagation/ title=Backpropagation>Backpropagation</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayes-theorem/ title=Bayes-Theorem>Bayes-Theorem</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bayesian/ title=Bayesian>Bayesian</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bfs/ title=Bfs>Bfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bitcoin/ title=Bitcoin>Bitcoin</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/boosting/ title=Boosting>Boosting</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/budget-analysis/ title=Budget-Analysis>Budget-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/career/ title=Career>Career</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/classification/ title=Classification>Classification</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cnn/ title=Cnn>Cnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/convolutional/ title=Convolutional>Convolutional</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/course/ title=Course>Course</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cryptocurrency/ title=Cryptocurrency>Cryptocurrency</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/csp/ title=Csp>Csp</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/decision-trees/ title=Decision-Trees>Decision-Trees</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/deep-learning/ title=Deep-Learning>Deep-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dfs/ title=Dfs>Dfs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/em-algorithm/ title=Em-Algorithm>Em-Algorithm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ensemble/ title=Ensemble>Ensemble</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/finance-india/ title=Finance-India>Finance-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/foundations/ title=Foundations>Foundations</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/freshers/ title=Freshers>Freshers</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/games/ title=Games>Games</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gold-price-india/ title=Gold-Price-India>Gold-Price-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/greedy/ title=Greedy>Greedy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/heuristic/ title=Heuristic>Heuristic</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/id3/ title=Id3>Id3</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india/ title=India>India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/india-ai-summit/ title=India-Ai-Summit>India-Ai-Summit</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/indian-it-stocks/ title=Indian-It-Stocks>Indian-It-Stocks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/informed-search/ title=Informed-Search>Informed-Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/introduction/ title=Introduction>Introduction</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investment-strategy/ title=Investment-Strategy>Investment-Strategy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/investments/ title=Investments>Investments</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jobs/ title=Jobs>Jobs</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kernel/ title=Kernel>Kernel</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/machine-learning/ title=Machine-Learning>Machine-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/market-analysis/ title=Market-Analysis>Market-Analysis</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/markov/ title=Markov>Markov</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mcx-gold-silver/ title=Mcx-Gold-Silver>Mcx-Gold-Silver</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/minimax/ title=Minimax>Minimax</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mtech/ title=Mtech>Mtech</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/multilayer/ title=Multilayer>Multilayer</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/naive-bayes/ title=Naive-Bayes>Naive-Bayes</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/neural-networks/ title=Neural-Networks>Neural-Networks</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pac-learning/ title=Pac-Learning>Pac-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/perceptron/ title=Perceptron>Perceptron</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/precious-metals-india/ title=Precious-Metals-India>Precious-Metals-India</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/q-learning/ title=Q-Learning>Q-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/random-forest/ title=Random-Forest>Random-Forest</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/recurrent/ title=Recurrent>Recurrent</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/regression/ title=Regression>Regression</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement/ title=Reinforcement>Reinforcement</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reinforcement-learning/ title=Reinforcement-Learning>Reinforcement-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rnn/ title=Rnn>Rnn</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/saas-industry/ title=Saas-Industry>Saas-Industry</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/search/ title=Search>Search</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/silver-price-mcx/ title=Silver-Price-Mcx>Silver-Price-Mcx</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/skills/ title=Skills>Skills</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/students/ title=Students>Students</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/supervised-learning/ title=Supervised-Learning>Supervised-Learning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/svm/ title=Svm>Svm</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tax-planning/ title=Tax-Planning>Tax-Planning</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tcs-infosys-wipro/ title=Tcs-Infosys-Wipro>Tcs-Infosys-Wipro</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tech-news/ title=Tech-News>Tech-News</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/temporal-difference/ title=Temporal-Difference>Temporal-Difference</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/uniform-cost/ title=Uniform-Cost>Uniform-Cost</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/union-budget-2026/ title=Union-Budget-2026>Union-Budget-2026</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/unsupervised/ title=Unsupervised>Unsupervised</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vc-dimension/ title=Vc-Dimension>Vc-Dimension</a></div></div></aside></div><footer class=footer><span>© 2026 Chandra Shaker · <a href=/privacy-policy/>Privacy Policy</a> · <a href=/disclaimer/>Disclaimer</a> · <a href=/contact/>Contact</a></span></footer></div><script async defer src=/js/menu.js></script></body></html>
