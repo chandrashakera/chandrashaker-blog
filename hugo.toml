@@ -1,6 +1,6 @@
 baseURL = 'https://chandrashaker.in/'
 languageCode = 'en-in'
-title = 'Chandra Shaker - Tech, Finance & Career Insights'
+title = 'Chandras Edu | AI, Stock Market, Courses & Jobs India'
 theme = 'mainroad'
 enableRobotsTXT = true
 buildDrafts = false
@@ -22,8 +22,21 @@ copyright = "© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Di
     ID = 'G-BFT23S4QJ3'
 
 [params]
-  description = "Technology news, US stock market analysis, and engineering career guidance"
-  keywords = ["AI", "Machine Learning", "US Stocks", "Engineering Jobs", "IoT"]
+  description = "Latest AI and technology news, US stock market and Indian finance insights, free engineering courses, and tech, government & private sector job opportunities for Indian professionals and students."
+  keywords = [
+    "AI news India",
+    "stock market India",
+    "US stocks for Indians",
+    "engineering courses online",
+    "AI ML course India",
+    "tech jobs India",
+    "government jobs India",
+    "embedded systems course",
+    "Python course free",
+    "finance tips India",
+    "Indian IT stocks",
+    "cryptocurrency India"
+  ]
   author = "Chandra Shaker"
   dateformat = "January 2, 2006"
   opengraph = true
@@ -44,7 +57,7 @@ copyright = "© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Di
 
   # Logo
   [params.logo]
-    subtitle = "Tech · Finance · Careers"
+    subtitle = "Tech · Finance · Courses · Jobs"
 
   # Social links
   [params.social]
