@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Students on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
     <link>http://localhost:1313/tags/students/</link>
     <description>Recent content in Students on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
-    <image>
-      <title>Chandra Shaker - Tech, Finance &amp; Career Insights</title>
-      <url>http://localhost:1313/images/profile.jpg</url>
-      <link>http://localhost:1313/images/profile.jpg</link>
-    </image>
-    <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
-    <copyright>2026 Chandra Shaker · Privacy Policy · Disclaimer · Contact</copyright>
+    <generator>Hugo</generator>
+    <language>en-in</language>
+    <copyright>© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Disclaimer](/disclaimer/) · [Contact](/contact/)</copyright>
     <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/students/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,7 +14,7 @@
       <link>http://localhost:1313/posts/ai-proof-skills-freshers-2026/</link>
       <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/ai-proof-skills-freshers-2026/</guid>
-      <description>Entry-level jobs are disappearing to AI. Here are 5 skills that keep you employed, how to learn them in 90 days, and which courses actually work.</description>
+      <description>&lt;h2 id=&#34;the-job-market-just-flipped&#34;&gt;The Job Market Just Flipped&lt;/h2&gt;&#xA;&lt;p&gt;Last week, Anthropic released AI that drafts legal contracts, analyzes balance sheets, and writes production code. Cost? ₹16,000/month. That&amp;rsquo;s what companies paid ₹50,000/month employees to do.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What this means if you&amp;rsquo;re graduating in 2026:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Campus placements are already down 30-40% at top colleges. Companies aren&amp;rsquo;t hiring fewer people because they&amp;rsquo;re struggling—they&amp;rsquo;re hiring fewer because AI replaced the work.&lt;/p&gt;&#xA;&lt;p&gt;But here&amp;rsquo;s what most students miss: &lt;strong&gt;AI didn&amp;rsquo;t eliminate jobs. It eliminated tasks.&lt;/strong&gt; The companies still need people—just different skills.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

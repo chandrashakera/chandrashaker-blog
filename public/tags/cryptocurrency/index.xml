@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cryptocurrency on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
     <link>http://localhost:1313/tags/cryptocurrency/</link>
     <description>Recent content in Cryptocurrency on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
-    <image>
-      <title>Chandra Shaker - Tech, Finance &amp; Career Insights</title>
-      <url>http://localhost:1313/images/profile.jpg</url>
-      <link>http://localhost:1313/images/profile.jpg</link>
-    </image>
-    <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
-    <copyright>2026 Chandra Shaker · Privacy Policy · Disclaimer · Contact</copyright>
+    <generator>Hugo</generator>
+    <language>en-in</language>
+    <copyright>© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Disclaimer](/disclaimer/) · [Contact](/contact/)</copyright>
     <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/cryptocurrency/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,7 +14,7 @@
       <link>http://localhost:1313/posts/bitcoin-dip-accumulation-india-2026/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/bitcoin-dip-accumulation-india-2026/</guid>
-      <description>Bitcoin fell from $126,000 to $65,000. Panic or opportunity? Complete guide for Indian investors: tax rules, how Bitcoin compares to gold/equities, and where to buy safely.</description>
+      <description>&lt;p&gt;Bitcoin hit an all-time high of $126,080 in October 2025. Today it&amp;rsquo;s trading around $65,000 — a brutal 48% crash.&lt;/p&gt;&#xA;&lt;p&gt;Everyone who FOMOed at the top is now panicking. Everyone who missed out is asking: &amp;ldquo;Is it too late? Or is this my chance?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re an Indian investor wondering whether to buy Bitcoin during this dip, this post will help you decide. No hype, no predictions. Just facts about what Bitcoin actually is as an investment, how it compares to assets you already know, and what the real costs are in India.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

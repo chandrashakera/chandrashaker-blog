@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Silver-Price-Mcx on Chandra Shaker - Tech, Finance &amp; Career Insights</title>
     <link>http://localhost:1313/tags/silver-price-mcx/</link>
     <description>Recent content in Silver-Price-Mcx on Chandra Shaker - Tech, Finance &amp; Career Insights</description>
-    <image>
-      <title>Chandra Shaker - Tech, Finance &amp; Career Insights</title>
-      <url>http://localhost:1313/images/profile.jpg</url>
-      <link>http://localhost:1313/images/profile.jpg</link>
-    </image>
-    <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
-    <copyright>2026 Chandra Shaker · Privacy Policy · Disclaimer · Contact</copyright>
+    <generator>Hugo</generator>
+    <language>en-in</language>
+    <copyright>© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Disclaimer](/disclaimer/) · [Contact](/contact/)</copyright>
     <lastBuildDate>Tue, 03 Feb 2026 01:07:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/silver-price-mcx/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,7 +14,7 @@
       <link>http://localhost:1313/posts/gold-silver-crash-india-analysis/</link>
       <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
       <guid>http://localhost:1313/posts/gold-silver-crash-india-analysis/</guid>
-      <description>Gold fell ₹50,000 per 10g in 3 days. Silver crashed 39%. Here&amp;#39;s what triggered India&amp;#39;s biggest precious metals crash, why it happened despite Budget duty cut, and how to respond as an investor.</description>
+      <description>&lt;h2 id=&#34;thursday-gold-was-17885-per-gram-monday-15153&#34;&gt;Thursday: Gold Was ₹17,885 per Gram. Monday: ₹15,153.&lt;/h2&gt;&#xA;&lt;p&gt;That&amp;rsquo;s ₹2,732 gone per gram. In three trading days.&lt;/p&gt;&#xA;&lt;p&gt;If you bought 100 grams of gold last Thursday (₹17.8 lakh), by Monday it was worth ₹15.1 lakh. &lt;strong&gt;You just watched ₹2.7 lakh disappear.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Silver? Even more brutal. From ₹4.2 lakh per kg to ₹2.5 lakh per kg. &lt;strong&gt;Down ₹1.65 lakh per kilogram.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Let me explain what just happened in Indian gold and silver markets, why the Union Budget duty cut didn&amp;rsquo;t prevent this crash, and what you should do if you&amp;rsquo;re planning to buy or already holding.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

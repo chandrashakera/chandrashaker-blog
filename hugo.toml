@@ -1,16 +1,17 @@
 baseURL = 'https://chandrashaker.in/'
-languageCode = 'en-us'
+languageCode = 'en-in'
 title = 'Chandra Shaker - Tech, Finance & Career Insights'
-theme = 'PaperMod'
-
+theme = 'mainroad'
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
-enableEmoji = true
+enableEmoji = false
 googleAnalytics = 'G-BFT23S4QJ3'
 copyright = "© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Disclaimer](/disclaimer/) · [Contact](/contact/)"
 
+[pagination]
+  pagerSize = 10
 
 [minify]
   disableXML = true
@@ -21,96 +22,56 @@ copyright = "© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Di
     ID = 'G-BFT23S4QJ3'
 
 [params]
-  env = "production"
-  title = "Chandra Shaker"
   description = "Technology news, US stock market analysis, and engineering career guidance"
   keywords = ["AI", "Machine Learning", "US Stocks", "Engineering Jobs", "IoT"]
   author = "Chandra Shaker"
-  
-  # Analytics
-  googleAnalytics = "G-BFT23S4QJ3"  
-  
-  # Social
-  images = ["/images/profile.jpg"]
-  
-  # Blog settings
-  DateFormat = "January 2, 2006"
-  defaultTheme = "auto"
-  disableThemeToggle = false
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = true
-  UseHugoToc = true
-  disableSpecial1stPost = false
-  disableScrollToTop = false
-  comments = false
-  hidemeta = false
-  hideSummary = false
-  showtoc = true
-  tocopen = false
+  dateformat = "January 2, 2006"
+  opengraph = true
+  twitter_cards = true
+  readmore = true
+  authorbox = false
+  pager = true
+  post_meta = ["date", "categories"]
+  favicon = "/favicon.ico"
 
-  # Ad optimization
-  [params.assets]
-    disableHLJS = false
-    disableFingerprinting = false
-    favicon = "/favicon.ico"
-    favicon16x16 = "/favicon-16x16.png"
-    favicon32x32 = "/favicon-32x32.png"
-    apple_touch_icon = "/apple-touch-icon.png"
+  # Sidebar
+  [params.sidebar]
+    home = "right"
+    list = "right"
+    single = "right"
+    widgets = ["search", "recent", "categories", "taglist"]
 
-  # Home page info
-  [params.homeInfoParams]
-    Title = "Welcome to Tech & Finance Insights"
-    Content = """
-    Latest technology news, US stock market analysis for Indian investors, 
-    and career guidance for engineering students.
-    
-    📊 Weekly market updates | 🤖 AI advancements | 💼 Job opportunities
-    """
+  # Logo
+  [params.logo]
+    subtitle = "Tech · Finance · Careers"
 
   # Social links
-  [[params.socialIcons]]
-    name = "youtube"
-    url = "https://youtube.com/@chandrasedu"
-
-  [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://linkedin.com/in/chandrashaker"
-
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/chandrashakera"
+  [params.social]
+    youtube = "https://youtube.com/@chandrasedu"
+    linkedin = "https://linkedin.com/in/chandrashaker"
+    github = "https://github.com/chandrashakera"
 
 # Menu
-[menu]
-  [[menu.main]]
-    name = "Blog"
-    url = "/posts/"
-    weight = 10
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
 
-  [[menu.main]]
-    name = "Tech Upates"
-    url = "/tags/tech-news/"
-    weight = 20
+[[menu.main]]
+  name = "Blog"
+  url = "/posts/"
+  weight = 2
 
-  [[menu.main]]
-    name = "Finance"
-    url = "/tags/investments/"
-    weight = 30
+[[menu.main]]
+  name = "Courses"
+  url = "https://courses.chandrashaker.in"
+  weight = 3
 
-  [[menu.main]]
-    name = "Careers"
-    url = "/tags/jobs/"
-    weight = 40
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
 
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 50
 # Taxonomies
 [taxonomies]
   category = "categories"
@@ -126,8 +87,7 @@ copyright = "© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Di
 
 # Outputs
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
-
+  home = ["HTML", "RSS"]
 
 # Markup
 [markup]
@@ -140,4 +100,3 @@ copyright = "© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Di
     guessSyntax = false
     lineNos = true
     style = "monokai"
-
