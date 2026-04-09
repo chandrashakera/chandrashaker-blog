@@ -1,0 +1,140 @@
+/* Deep Blue & Amber Theme - Ad Optimized */
+
+/* Override Mainroad black navbar #2a2a2a */
+.menu__list,
+.menu__item,
+.menu__link,
+.menu__btn {
+  background: #1565c0 !important;
+  background-color: #1565c0 !important;
+}
+
+.menu__link:hover {
+  background: #ff8f00 !important;
+  background-color: #ff8f00 !important;
+  color: #ffffff !important;
+}
+
+.menu__item--active .menu__link {
+  background: #ff8f00 !important;
+  background-color: #ff8f00 !important;
+  color: #ffffff !important;
+}
+
+/* Navbar background only */
+.nav {
+  background-color: #1565c0 !important;
+}
+
+/* Menu links only */
+.nav__menu > li > a {
+  color: #ffffff !important;
+  background-color: #1565c0 !important;
+}
+
+/* Hover */
+.nav__menu > li > a:hover {
+  background-color: #ff8f00 !important;
+  color: #ffffff !important;
+}
+
+/* Active page */
+.nav__menu > li.active > a {
+  background-color: #ff8f00 !important;
+  color: #ffffff !important;
+}
+
+/* Logo title - keep on white background */
+.logo__title {
+  color: #1565c0 !important;
+  background-color: transparent !important;
+}
+
+.logo__tagline {
+  color: #ff8f00 !important;
+  background-color: transparent !important;
+}
+
+/* Post titles */
+.post__title a {
+  color: #1565c0 !important;
+}
+
+.post__title a:hover {
+  color: #ff8f00 !important;
+}
+
+/* Read more button */
+.btn {
+  background-color: #1565c0 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 4px !important;
+}
+
+.btn:hover {
+  background-color: #ff8f00 !important;
+  color: #ffffff !important;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f5f5f5 !important;
+  padding: 15px !important;
+}
+
+.widget__title {
+  border-color: #ff8f00 !important;
+  color: #1565c0 !important;
+}
+
+.widget__list a {
+  color: #1565c0 !important;
+}
+
+.widget__list a:hover {
+  color: #ff8f00 !important;
+}
+
+/* Content links */
+.post__content a {
+  color: #1565c0 !important;
+}
+
+.post__content a:hover {
+  color: #ff8f00 !important;
+}
+
+/* Body */
+body {
+  background-color: #ffffff !important;
+  color: #212121 !important;
+}
+
+/* Footer */
+.footer {
+  background-color: #1565c0 !important;
+  color: #ffffff !important;
+}
+
+.footer a {
+  color: #ff8f00 !important;
+}
+
+/* Selection */
+::selection {
+  background: #ff8f00 !important;
+  color: #ffffff !important;
+}
+
+/* Change red border below navbar to amber */
+.menu::after,
+.menu__list::after,
+.header::after {
+  background: #ff8f00 !important;
+}
+
+/* Target the red line directly */
+.body .menu {
+  border-bottom: 3px solid #ff8f00 !important;
+}
