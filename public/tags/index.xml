@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/profile.jpg</url>
       <link>http://localhost:1313/images/profile.jpg</link>
     </image>
-    <generator>Hugo -- 0.155.1</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
     <copyright>2026 Chandra Shaker · Privacy Policy · Disclaimer · Contact</copyright>
     <lastBuildDate>Sat, 21 Feb 2026 10:00:00 +0530</lastBuildDate>
@@ -47,6 +47,62 @@
       <link>http://localhost:1313/tags/tech-news/</link>
       <pubDate>Sat, 21 Feb 2026 10:00:00 +0530</pubDate>
       <guid>http://localhost:1313/tags/tech-news/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bitcoin</title>
+      <link>http://localhost:1313/tags/bitcoin/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bitcoin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cryptocurrency</title>
+      <link>http://localhost:1313/tags/cryptocurrency/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cryptocurrency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>India</title>
+      <link>http://localhost:1313/tags/india/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/india/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Investments</title>
+      <link>http://localhost:1313/tags/investments/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/investments/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Freshers</title>
+      <link>http://localhost:1313/tags/freshers/</link>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/freshers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jobs</title>
+      <link>http://localhost:1313/tags/jobs/</link>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/jobs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Skills</title>
+      <link>http://localhost:1313/tags/skills/</link>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/skills/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Students</title>
+      <link>http://localhost:1313/tags/students/</link>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/students/</guid>
       <description></description>
     </item>
     <item>
@@ -99,13 +155,6 @@
       <description></description>
     </item>
     <item>
-      <title>Investments</title>
-      <link>http://localhost:1313/tags/investments/</link>
-      <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
-      <guid>http://localhost:1313/tags/investments/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Mcx-Gold-Silver</title>
       <link>http://localhost:1313/tags/mcx-gold-silver/</link>
       <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
@@ -131,6 +180,27 @@
       <link>http://localhost:1313/tags/union-budget-2026/</link>
       <pubDate>Tue, 03 Feb 2026 01:07:00 +0530</pubDate>
       <guid>http://localhost:1313/tags/union-budget-2026/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Budget-Analysis</title>
+      <link>http://localhost:1313/tags/budget-analysis/</link>
+      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/budget-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Finance-India</title>
+      <link>http://localhost:1313/tags/finance-india/</link>
+      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/finance-india/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tax-Planning</title>
+      <link>http://localhost:1313/tags/tax-planning/</link>
+      <pubDate>Mon, 02 Feb 2026 15:52:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/tax-planning/</guid>
       <description></description>
     </item>
   </channel>

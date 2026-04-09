@@ -3,7 +3,7 @@ title: "Union Budget 2026 Explained: What's Getting Cheaper, What's Getting Cost
 date: 2026-02-02T15:52:00+05:30
 draft: false
 author: "Chandra Shaker"
-description: "Union Budget 2026 complete breakdown - cancer drugs free, phones cheaper, F\&O trading costlier. What does this budget mean for salaried employees, investors, students, and common people? Real analysis from an engineering professor."
+description: "Union Budget 2026 complete breakdown - cancer drugs free, phones cheaper, F&O trading costlier. What does this budget mean for salaried employees, investors, students, and common people? Real analysis from an engineering professor."
 categories: ["Finance"]
 tags: ["union-budget-2026", "budget-analysis", "finance-india", "tax-planning", "investments"]
 ShowToc: true
@@ -94,7 +94,7 @@ This is interesting. Customs duty on goods imported for personal use was cut fro
 
 ## What's Getting COSTLIER (The Not-So-Good Stuff)
 
-### 1\. F\&O Trading Just Got EXPENSIVE
+### 1\. F&O Trading Just Got EXPENSIVE
 
 Okay, this one hit me because I dabble in options occasionally (mostly US markets, but still). The Securities Transaction Tax (STT) has been increased dramatically:
 
@@ -104,9 +104,9 @@ Okay, this one hit me because I dabble in options occasionally (mostly US market
 |Options Premium|0.10%|0.15%|1.5x higher|
 |Options Exercise|0.125%|0.15%|1.2x higher|
 
-**Why'd they do this?** The government says F\&O trading volume is 500 times India's GDP. That's... insane. They're trying to curb excessive speculation.
+**Why'd they do this?** The government says F&O trading volume is 500 times India's GDP. That's... insane. They're trying to curb excessive speculation.
 
-**Impact on you:** If you're a frequent F\&O trader, your costs just jumped significantly. Time to rethink that intraday strategy.
+**Impact on you:** If you're a frequent F&O trader, your costs just jumped significantly. Time to rethink that intraday strategy.
 
 ### 2\. Cigarettes, Tobacco, Alcohol - Sin Taxes Up
 
@@ -228,7 +228,7 @@ The biggest disappointment. Middle class was hoping for:
 
 As someone earning ₹15-20 lakh annually, I see zero direct benefit in my paycheck. That stings.
 
-**2. F\&O Trading Costs**
+**2. F&O Trading Costs**
 I get why they did it (curb speculation), but 5x increase in STT on futures? That's harsh. Many retail traders will feel this pinch.
 
 **3. MGNREGA Slash**
@@ -278,7 +278,7 @@ Let me break this down by who you are:
 
 **Stock Market:**
 
-* ⚠️ F\&O traders: Rethink your strategy (costs up 5x)
+* ⚠️ F&O traders: Rethink your strategy (costs up 5x)
 * ✅ Long-term investors: Infrastructure spending is positive
 * ⚠️ Buyback tax changed (slightly negative)
 
@@ -454,7 +454,7 @@ Practical action steps:
 
 **Immediate:**
 
-* \[ ] Review F\&O strategy (if you trade derivatives)
+* \[ ] Review F&O strategy (if you trade derivatives)
 * \[ ] Research infrastructure stocks
 * \[ ] Check semiconductor sector opportunities
 * \[ ] Plan gold purchases (wait 2-3 weeks though)
@@ -487,7 +487,7 @@ Practical action steps:
 **Q: Should I buy gold right now?**  
 **A:** Not right this second. Prices are super volatile. Wait 2-4 weeks for things to settle, then start buying gradually if you need it for wedding or investment.
 
-**Q: Is F\&O trading dead now?**  
+**Q: Is F&O trading dead now?**  
 **A:** Not dead, but definitely more expensive. If you're a casual trader making a few trades a month, impact is manageable. If you're doing 50 trades a day, this hurts bad.
 
 **Q: Will phone prices actually drop?**  
@@ -538,7 +538,7 @@ Look, I'm not going to sugarcoat this. Union Budget 2026 is a growth and manufac
 **Today's pain points** remain:
 
 * No extra money in paycheck
-* F\&O trading more expensive
+* F&O trading more expensive
 * Rural employment concerns
 
 **My advice:** Don't get too excited or too disappointed. Budget is one piece of the economic puzzle. Focus on what you can control:
@@ -572,7 +572,7 @@ Okay, serious mode for a minute:
 * Yes, I invest in Indian stocks and mutual funds
 * Yes, I invest in US stocks via INDMoney
 * Yes, I hold some gold (ETFs + physical)
-* Yes, I understand F\&O trading
+* Yes, I understand F&O trading
 * BUT: Your situation is different from mine
 
 **What this article is:** My personal analysis of Budget 2026 based on official documents and my understanding.
