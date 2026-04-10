@@ -6,22 +6,9 @@ author: "Chandra Shaker"
 description: "India AI Impact Summit 2026: TCS-OpenAI, Infosys-Anthropic partnerships + Sarvam Kaze smartglasses launch. What it means for Indian tech jobs."
 categories: ["Technology"]
 tags: ["tech-news", "ai", "indian-it-stocks", "career", "india-ai-summit"]
+thumbnail: "/images/india-ai-summit-2026.jpg"
 ShowToc: true
 TocOpen: false
-hidemeta: false
-comments: true
-disableShare: false
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-cover:
-    image: "/images/india-ai-summit-2026.jpg"
-    alt: "India AI Impact Summit 2026 group photo with PM Modi and global leaders at Bharat Mandapam New Delhi"
-    caption: "World leaders and AI CEOs at India AI Impact Summit 2026, February 16-20, New Delhi | Photo: PIB"
-    relative: false
 ---
 
 The world's largest AI conference just wrapped up in New Delhi with over 300,000 attendees, and it delivered on three fronts: major US-India partnerships, indigenous AI product launches, and a clear signal about where tech jobs are heading.
