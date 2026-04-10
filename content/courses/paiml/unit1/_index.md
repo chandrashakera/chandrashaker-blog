@@ -3,7 +3,7 @@ title: "Unit 1: AI Foundations and Search Strategies"
 date: 2026-02-01
 description: "Introduction to AI, uninformed and informed search strategies for M.Tech PAIML Unit 1."
 categories: ["Courses"]
-_build:
+build:
   list: never
   render: always
 ---

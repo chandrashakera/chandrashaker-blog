@@ -4,7 +4,7 @@ date: 2026-02-01
 description: "Optimal decisions in games, minimax algorithm, alpha-beta pruning and constraint satisfaction problems for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["adversarial-search", "minimax", "alpha-beta", "csp", "games", "mtech"]
-_build:
+build:
   list: never
   render: always
 ---

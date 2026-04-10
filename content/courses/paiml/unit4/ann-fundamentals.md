@@ -4,7 +4,7 @@ date: 2026-02-01
 description: "Perceptrons, multilayer networks, backpropagation algorithm with face recognition example for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["neural-networks", "perceptron", "backpropagation", "multilayer", "mtech"]
-_build:
+build:
   list: never
   render: always
 ---

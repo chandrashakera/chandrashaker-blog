@@ -4,7 +4,7 @@ date: 2026-02-01
 description: "Error functions, recurrent neural networks, convolutional neural networks for image processing - M.Tech PAIML Unit 4."
 categories: ["Courses"]
 tags: ["cnn", "rnn", "deep-learning", "convolutional", "recurrent", "mtech"]
-_build:
+build:
   list: never
   render: always
 ---

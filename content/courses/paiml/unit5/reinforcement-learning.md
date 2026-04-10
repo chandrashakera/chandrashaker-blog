@@ -4,7 +4,7 @@ date: 2026-02-01
 description: "Reinforcement learning, Q-learning, temporal difference learning and dynamic programming for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["reinforcement-learning", "q-learning", "temporal-difference", "markov", "mtech"]
-_build:
+build:
   list: never
   render: always
 ---

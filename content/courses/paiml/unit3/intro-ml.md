@@ -4,7 +4,7 @@ date: 2026-02-01
 description: "Machine learning applications, types of learning - classification, regression, unsupervised and reinforcement learning for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["machine-learning", "classification", "regression", "unsupervised", "reinforcement", "mtech"]
-_build:
+build:
   list: never
   render: always
 ---

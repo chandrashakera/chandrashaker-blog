@@ -4,7 +4,7 @@ date: 2026-02-01
 description: "Complete notes on informed search - heuristic functions, greedy best-first search and A* search with examples for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["search", "heuristic", "a-star", "greedy", "informed-search", "mtech"]
-_build:
+build:
   list: never
   render: always
 ---

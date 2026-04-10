@@ -5,7 +5,7 @@ description: "Complete course on AI and ML for M.Tech students. Covers search st
 categories: ["Courses"]
 tags: ["ai", "machine-learning", "mtech", "course"]
 thumbnail: "/images/paiml-course.jpg"
-_build:
+build:
   list: never
   render: always
 ---

@@ -4,7 +4,7 @@ date: 2026-02-01
 description: "Supervised learning concepts - VC dimension, PAC learning, SVM, kernel tricks and model generalization for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["supervised-learning", "svm", "vc-dimension", "pac-learning", "kernel", "mtech"]
-_build:
+build:
   list: never
   render: always
 ---

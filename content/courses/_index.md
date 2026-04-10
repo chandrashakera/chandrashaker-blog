@@ -2,7 +2,7 @@
 title: "Courses"
 date: 2026-02-01
 description: "Free engineering courses by Prof. Chandra Shaker."
-_build:
+build:
   list: never
   render: always
 ---

@@ -3,7 +3,7 @@ title: "Unit 3: Introduction to ML and Supervised Learning"
 date: 2026-02-01
 description: "Machine learning types, SVM, PAC learning and VC dimension for M.Tech PAIML Unit 3."
 categories: ["Courses"]
-_build:
+build:
   list: never
   render: always
 ---

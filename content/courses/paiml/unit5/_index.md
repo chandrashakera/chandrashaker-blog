@@ -3,7 +3,7 @@ title: "Unit 5: Decision Trees and Reinforcement Learning"
 date: 2026-02-01
 description: "ID3, random forests, ensemble methods and Q-learning for M.Tech PAIML Unit 5."
 categories: ["Courses"]
-_build:
+build:
   list: never
   render: always
 ---

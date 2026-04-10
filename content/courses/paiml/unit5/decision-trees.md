@@ -4,7 +4,7 @@ date: 2026-02-01
 description: "Decision trees, ID3 algorithm, pruning, rule extraction, random forests and ensemble methods for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["decision-trees", "id3", "random-forest", "ensemble", "boosting", "mtech"]
-_build:
+build:
   list: never
   render: always
 ---

@@ -4,7 +4,7 @@ date: 2026-02-01
 description: "Learn the definitions, foundations and subareas of Artificial Intelligence. Complete notes for M.Tech PAIML Unit 1."
 categories: ["Courses"]
 tags: ["ai", "introduction", "foundations", "mtech"]
-_build:
+build:
   list: never
   render: always
 ---

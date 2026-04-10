@@ -4,7 +4,7 @@ date: 2026-02-01
 description: "Bayes theorem, concept learning, maximum likelihood, Naive Bayes classifier, Bayesian Belief Networks and EM algorithm for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["bayesian", "naive-bayes", "bayes-theorem", "em-algorithm", "machine-learning", "mtech"]
-_build:
+build:
   list: never
   render: always
 ---
@@ -90,10 +90,10 @@ Practical approximation of Bayes optimal classifier:
 3. Expected error ≤ 2 × Bayes optimal error
 
 ---
-_build:
+build:
   list: never
   render: always
-_build:
+build:
   list: never
   render: always
 

@@ -3,7 +3,7 @@ title: "Unit 4: Artificial Neural Networks"
 date: 2026-02-01
 description: "Perceptrons, backpropagation, CNNs and recurrent networks for M.Tech PAIML Unit 4."
 categories: ["Courses"]
-_build:
+build:
   list: never
   render: always
 ---
