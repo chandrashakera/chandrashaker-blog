@@ -1,6 +1,7 @@
 ---
 title: "5.2 Reinforcement Learning"
 date: 2026-02-01
+sidebar: false
 description: "Reinforcement learning, Q-learning, temporal difference learning and dynamic programming for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["reinforcement-learning", "q-learning", "temporal-difference", "markov", "mtech"]

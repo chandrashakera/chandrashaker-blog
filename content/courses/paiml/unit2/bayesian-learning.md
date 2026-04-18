@@ -1,6 +1,7 @@
 ---
 title: "2.2 Bayesian Learning"
 date: 2026-02-01
+sidebar: false
 description: "Bayes theorem, concept learning, maximum likelihood, Naive Bayes classifier, Bayesian Belief Networks and EM algorithm for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["bayesian", "naive-bayes", "bayes-theorem", "em-algorithm", "machine-learning", "mtech"]

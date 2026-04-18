@@ -1,6 +1,8 @@
 ---
 title: "About"
 url: "/about/"
+type: "page"
+sidebar: false
 summary: "Professor, Researcher, Investor"
 ShowReadingTime: false
 ShowBreadCrumbs: false

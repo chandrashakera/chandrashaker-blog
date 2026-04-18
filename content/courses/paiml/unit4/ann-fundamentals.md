@@ -1,6 +1,7 @@
 ---
 title: "4.1 Neural Networks Fundamentals"
 date: 2026-02-01
+sidebar: false
 description: "Perceptrons, multilayer networks, backpropagation algorithm with face recognition example for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["neural-networks", "perceptron", "backpropagation", "multilayer", "mtech"]

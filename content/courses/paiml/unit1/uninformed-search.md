@@ -1,6 +1,7 @@
 ---
 title: "1.2 Uninformed Search Strategies"
 date: 2026-02-01
+sidebar: false
 description: "Complete notes on uninformed search strategies - BFS, DFS, Uniform-cost search with examples and practice questions for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["search", "bfs", "dfs", "uniform-cost", "ai", "mtech"]

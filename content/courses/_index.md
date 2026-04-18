@@ -1,6 +1,7 @@
 ---
 title: "Courses"
 date: 2026-02-01
+sidebar: false
 description: "Free engineering courses by Prof. Chandra Shaker."
 build:
   list: never

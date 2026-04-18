@@ -1,6 +1,7 @@
 ---
 title: "1.1 Introduction to Artificial Intelligence"
 date: 2026-02-01
+sidebar: false
 description: "Learn the definitions, foundations and subareas of Artificial Intelligence. Complete notes for M.Tech PAIML Unit 1."
 categories: ["Courses"]
 tags: ["ai", "introduction", "foundations", "mtech"]

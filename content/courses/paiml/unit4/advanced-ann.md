@@ -1,6 +1,7 @@
 ---
 title: "4.2 Advanced Neural Networks — CNNs & Recurrent Networks"
 date: 2026-02-01
+sidebar: false
 description: "Error functions, recurrent neural networks, convolutional neural networks for image processing - M.Tech PAIML Unit 4."
 categories: ["Courses"]
 tags: ["cnn", "rnn", "deep-learning", "convolutional", "recurrent", "mtech"]

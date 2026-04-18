@@ -1,6 +1,7 @@
 ---
 title: "Unit 2: Adversarial Search and Bayesian Learning"
 date: 2026-02-01
+sidebar: false
 description: "Minimax, Alpha-Beta pruning, Bayesian learning and Naive Bayes classifier for M.Tech PAIML Unit 2."
 categories: ["Courses"]
 build:

@@ -1,6 +1,7 @@
 ---
 title: "1.3 Informed Search Strategies"
 date: 2026-02-01
+sidebar: false
 description: "Complete notes on informed search - heuristic functions, greedy best-first search and A* search with examples for M.Tech PAIML."
 categories: ["Courses"]
 tags: ["search", "heuristic", "a-star", "greedy", "informed-search", "mtech"]
