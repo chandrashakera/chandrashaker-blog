@@ -2,28 +2,15 @@
 title: "Courses"
 date: 2026-02-01
 sidebar: false
-description: "Free engineering courses by Prof. Chandra Shaker."
+description: "Free engineering courses by Mr. Chandra Shaker."
 build:
   list: never
   render: always
 ---
 
-## Available Courses
+[Principles of Artificial Intelligence and Machine Learning](/courses/paiml/) — M.Tech II Semester
 
-### Postgraduate Courses (M.Tech)
-
-
-
-| Course | Level | Units | Status |
-
-|--------|-------|-------|--------|
-
-| [Principles of AI \& Machine Learning](/courses/paiml/) | M.Tech II Sem | 5 Units | ✅ Available |
-
-
-### Undergraduate Courses (B.Tech)
-
-*Coming Soon*
+*More courses coming soon*
 
 ---
 
