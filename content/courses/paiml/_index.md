@@ -11,12 +11,13 @@ build:
   render: always
 ---
 
+## Exam Resources
+
+[I Mid-Term Preparation Guide](/courses/paiml/midterm-preparation-guide/) — Complete topic guide, sample questions & exam strategy
+
 ## Course Overview
 
-**Course Code:** 532CP  
 **Program:** M.Tech (Wireless and Mobile Communications) — I Year, II Semester  
-**Credits:** L:3 | T:0 | P:0 | C:3  
-**Prerequisite:** NIL
 
 ## Course Objectives
 
