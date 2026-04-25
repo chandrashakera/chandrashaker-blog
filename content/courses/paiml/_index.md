@@ -13,7 +13,8 @@ build:
 
 ## Exam Resources
 
-[I Mid-Term Preparation Guide](/courses/paiml/midterm-preparation-guide/) — Complete topic guide, sample questions & exam strategy
+[I Mid-Term Preparation Guide](/courses/paiml/midterm-preparation-guide/) 
+[I Mid-Term Solution Manual](/courses/paiml/midterm-solution-manual/)
 
 ## Course Overview
 
