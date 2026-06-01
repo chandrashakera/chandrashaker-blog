@@ -40,6 +40,7 @@ copyright = "© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Di
   author = "Chandra Shaker"
   dateformat = "January 2, 2006"
   opengraph = true
+  math = true
   twitter_cards = true
   readmore = true
   authorbox = false
