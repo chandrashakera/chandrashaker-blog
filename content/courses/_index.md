@@ -2,19 +2,30 @@
 title: "Courses"
 date: 2026-02-01
 sidebar: false
-description: "Free engineering courses by Mr. Chandra Shaker."
+description: "Free engineering and professional courses by Mr. Chandra Shaker."
 build:
   list: never
   render: always
 ---
 
+## Engineering Courses
+
 [Principles of Artificial Intelligence and Machine Learning](/courses/paiml/) — M.Tech II Semester
 
-*More courses coming soon*
+*Course content based on syllabus. Includes theory notes, examples, and practice questions.*
+
+---
+
+## Professional Courses
+
+[Generative AI for Indian IT Professionals](/courses/genai-it/) — Free · Beginner · 5 Units · 20 Modules
+
+*Learn Generative AI and Prompt Engineering from scratch — practical, jargon-free, designed for Indian software engineers, analysts, and managers.*
 
 ---
 
 ## About These Courses
 
-All course content is based on the course syllabus and taught by Mr. Chandra Shaker. Each topic includes Theory Notes, Examples, and Practice Questions.
+All course content is created and taught by Mr. Chandra Shaker. Each topic includes theory notes, examples, and practice questions. Engineering courses follow the official university syllabus. Professional courses are designed for working professionals and students looking to upskill in emerging technologies.
 
+*More courses coming soon.*
