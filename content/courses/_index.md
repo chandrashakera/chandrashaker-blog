@@ -18,9 +18,9 @@ build:
 
 ## Professional Courses
 
-[Generative AI for Indian IT Professionals](/courses/genai-it/) — Free · Beginner · 5 Units · 20 Modules
+[Generative AI: Zero to Job-Ready](/courses/genai/) — Free · Beginner · 5 Units · 20 Modules
 
-*Learn Generative AI and Prompt Engineering from scratch — practical, jargon-free, designed for Indian software engineers, analysts, and managers.*
+*Learn Generative AI and Prompt Engineering from scratch — practical, jargon-free, designed for Indian engineering students and freshers entering the IT industry.*
 
 ---
 
