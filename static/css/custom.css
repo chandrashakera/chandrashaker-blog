@@ -138,3 +138,55 @@ body {
 .body .menu {
   border-bottom: 3px solid #ff8f00 !important;
 }
+/* ═══════════════════════════════════════════════════════════════
+   BODY TEXT READABILITY — blog posts and course modules
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Blog post running text */
+.post__content p,
+.post__content li,
+.post__content td,
+.post__content blockquote {
+  font-size: 16px !important;
+  color: #111111 !important;
+  line-height: 1.85 !important;
+  font-weight: 450;
+}
+
+.post__content p {
+  margin-bottom: 1.1em;
+}
+
+/* Headings — darken slightly for contrast */
+.post__content h2,
+.post__content h3,
+.post__content h4 {
+  color: #111111 !important;
+}
+
+/* Blockquotes */
+.post__content blockquote {
+  border-left: 4px solid #ff8f00 !important;
+  padding-left: 16px;
+  color: #333 !important;
+  font-style: italic;
+}
+
+/* Inline code */
+.post__content code {
+  font-size: 14px;
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #c62828;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .post__content p,
+  .post__content li,
+  .post__content td {
+    font-size: 16px !important;
+    line-height: 1.9 !important;
+  }
+}

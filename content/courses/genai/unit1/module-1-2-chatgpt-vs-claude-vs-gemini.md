@@ -72,7 +72,11 @@ tags: ["chatgpt", "claude", "gemini", "ai-tools", "india", "comparison", "genera
 .mod-blog-links a:last-child{border-bottom:none}
 .mod-blog-links a:hover{color:#FF8C00;text-decoration:underline}
 /* ── Body text readability ───────────────────────────────────── */
-.mod-wrap p,.mod-wrap li,.mod-wrap td{font-size:15px;color:#222;line-height:1.8}
+.mod-wrap p,.mod-wrap li,.mod-wrap td{font-size:16px !important;color:#111111 !important;line-height:1.85 !important;font-weight:450}
+.mod-wrap p{margin-bottom:1.1em}
+@media(max-width:600px){
+.mod-wrap p,.mod-wrap li,.mod-wrap td{font-size:16px !important;line-height:1.9 !important}
+}
 .mod-wrap h2{font-size:20px;color:#111;margin-top:32px;margin-bottom:12px}
 .mod-wrap h3{font-size:17px;color:#111;margin-top:24px;margin-bottom:8px}
 .mod-wrap strong{color:#111;font-weight:600}
