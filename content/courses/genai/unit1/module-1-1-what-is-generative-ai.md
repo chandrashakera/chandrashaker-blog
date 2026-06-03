@@ -208,26 +208,20 @@ Importantly, the industry has also learned that *efficiency matters as much as s
 <defs><marker id="tl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#ccc" stroke-width="1.5"/></marker></defs>
 <rect x="0" y="0" width="640" height="160" rx="6" fill="#f9f9f9" stroke="#e0e0e0" stroke-width="1"/>
 <text x="320" y="22" text-anchor="middle" font-size="11" font-weight="700" fill="#1565C0" font-family="sans-serif">LLM SCALE GROWTH — bubble size = relative parameters</text>
-<!-- Timeline axis at y=90 giving room above for labels and below for sublabels -->
 <line x1="40" y1="90" x2="608" y2="90" stroke="#ccc" stroke-width="1.5"/>
 <line x1="600" y1="90" x2="614" y2="90" stroke="#ccc" stroke-width="1.5" marker-end="url(#tl)"/>
-<!-- GPT-2: r=5, label above, sublabel below -->
 <text x="80"  y="44" text-anchor="middle" font-size="11" font-weight="600" fill="#333" font-family="sans-serif">GPT-2</text>
 <circle cx="80"  cy="90" r="5"  fill="#FF8C00"/>
 <text x="80"  y="114" text-anchor="middle" font-size="10" fill="#888" font-family="sans-serif">1.5B · 2019</text>
-<!-- GPT-3: r=9 -->
 <text x="190" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="#333" font-family="sans-serif">GPT-3</text>
 <circle cx="190" cy="90" r="9"  fill="#FF8C00"/>
 <text x="190" y="114" text-anchor="middle" font-size="10" fill="#888" font-family="sans-serif">175B · 2020</text>
-<!-- PaLM: r=13 — label y adjusted to clear bubble top (90-13=77, so label at y=60) -->
 <text x="310" y="54" text-anchor="middle" font-size="11" font-weight="600" fill="#333" font-family="sans-serif">PaLM</text>
 <circle cx="310" cy="90" r="13" fill="#1565C0"/>
 <text x="310" y="118" text-anchor="middle" font-size="10" fill="#888" font-family="sans-serif">540B · 2022</text>
-<!-- GPT-4: r=17 — label y must clear bubble top (90-17=73, label at y=50) -->
 <text x="430" y="46" text-anchor="middle" font-size="11" font-weight="600" fill="#333" font-family="sans-serif">GPT-4</text>
 <circle cx="430" cy="90" r="17" fill="#1565C0"/>
 <text x="430" y="122" text-anchor="middle" font-size="10" fill="#888" font-family="sans-serif">~1T+ · 2023</text>
-<!-- Efficient era: r=11 -->
 <text x="555" y="50" text-anchor="middle" font-size="11" font-weight="600" fill="#333" font-family="sans-serif">Efficient era</text>
 <circle cx="555" cy="90" r="11" fill="#0d47a1"/>
 <text x="555" y="116" text-anchor="middle" font-size="10" fill="#888" font-family="sans-serif">Smaller + smarter · 2024–</text>
@@ -458,6 +452,6 @@ Developers who can write effective prompts, use AI coding tools, and understand 
       <tr><td>India hiring chart</td><td>Inline Chart.js — original</td><td>CC0 (Naukri data)</td><td>Cite Naukri as data source</td></tr>
     </tbody>
   </table>
-</div>
 </details>
+
 </div>

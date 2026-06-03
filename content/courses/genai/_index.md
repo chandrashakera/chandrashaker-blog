@@ -106,8 +106,8 @@ toc: false
   </a>
 </div>
 
-<div class="cc-progress-label">Your progress &mdash; 1 of 20 modules complete</div>
-<div class="cc-bar-bg"><div class="cc-bar-fill" style="width:5%"></div></div>
+<div class="cc-progress-label">Your progress &mdash; 4 of 20 modules complete</div>
+<div class="cc-bar-bg"><div class="cc-bar-fill" style="width:20%"></div></div>
 
 <div class="cc-unit">
   <div class="cc-unit-header">
@@ -123,18 +123,18 @@ toc: false
       <span class="cc-mnum">1.1</span>
       <span class="cc-mlabel">What is Generative AI</span>
     </a>
-    <a class="cc-tile" href="/courses/genai/unit1/module-1-2-chatgpt-vs-claude-vs-gemini/">
-      <div class="cc-box"></div>
+    <a class="cc-tile cc-done" href="/courses/genai/unit1/module-1-2-chatgpt-vs-claude-vs-gemini/">
+      <div class="cc-box cc-checked">&#10003;</div>
       <span class="cc-mnum">1.2</span>
       <span class="cc-mlabel">ChatGPT vs Claude vs Gemini</span>
     </a>
-    <a class="cc-tile" href="/courses/genai/unit1/module-1-3-how-indian-companies-use-genai/">
-      <div class="cc-box"></div>
+    <a class="cc-tile cc-done" href="/courses/genai/unit1/module-1-3-how-indian-companies-use-genai/">
+      <div class="cc-box cc-checked">&#10003;</div>
       <span class="cc-mnum">1.3</span>
       <span class="cc-mlabel">How Indian companies use GenAI</span>
     </a>
-    <a class="cc-tile" href="/courses/genai/unit1/module-1-4-risks-and-responsible-use/">
-      <div class="cc-box"></div>
+    <a class="cc-tile cc-done" href="/courses/genai/unit1/module-1-4-risks-and-responsible-use/">
+      <div class="cc-box cc-checked">&#10003;</div>
       <span class="cc-mnum">1.4</span>
       <span class="cc-mlabel">Risks and responsible use</span>
     </a>
