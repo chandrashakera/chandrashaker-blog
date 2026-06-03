@@ -382,7 +382,7 @@ Indian IT companies deploying GenAI at scale are desperately looking for people 
     <li><strong>Document what you find</strong> — how many of the AI's specific claims were correct? How many were partially correct? How many were completely fabricated?</li>
     <li><strong>Write 3 sentences</strong> describing what you found and what it tells you about how to use AI responsibly in your work going forward.</li>
   </ol>
-  <p>This assignment completes Unit 1. You now have a foundational understanding of what GenAI is, which tools to use, how Indian companies are using it, and how to use it responsibly. Unit 2 builds on all of this — you will start writing prompts that actually work.</p>
+  <p>Save your findings in a document called "My AI Learning Journal" — you will add to this throughout the course. This assignment completes Unit 1. You now have a foundational understanding of what GenAI is, which tools to use, how Indian companies are using it, and how to use it responsibly.</p> <p>Unit 2 starts with prompt engineering: the skill that directly reduces the hallucination rate you just experienced. Better prompts give the model more context, which reduces the probability of fabrication. You will see the difference immediately in Module 2.1.</p>
 </div>
 
 <div class="mod-blog-links">

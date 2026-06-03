@@ -355,7 +355,16 @@ This is what matters most as a fresher: which roles are most affected and what w
         <li>Which role you could play in a project like this</li>
       </ul>
     </li>
-    <li><strong>Save this as your "Company AI Research" document.</strong> You will add to it as you complete the course. In Module 5.2 you will use it to tailor your resume and LinkedIn profile.</li>
+    <li><strong>Save this as your "Company AI Research" document.</strong> Use this exact template for your document:
+      <ul>
+        <li>Company: [Name]</li>
+        <li>Project/Initiative: [Name or brief description]</li>
+        <li>What it does: [1 sentence]</li>
+	<li>Business problem it solves: [1 sentence]</li>
+	<li>Role I could play: [1 sentence]</li>
+	<li>Source: [URL or publication name]</li>
+      </ul>
+You will add one entry per company you research across the course. In Module 5.2 you will use it to tailor your resume and LinkedIn profile.</li>
   </ol>
   <p>Interviewers at these companies are consistently impressed when a fresher references a real, recent project by name. It signals you are genuinely engaged — not just attending placement drives to collect offers.</p>
 </div>
