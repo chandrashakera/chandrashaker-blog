@@ -97,7 +97,7 @@ toc: false
   <div>
     <div class="cc-coursetitle">Generative AI: Zero to Job-Ready</div>
     <div class="cc-pills">
-      <span class="cc-pill">5 units</span>
+      <span class="cc-pill">5 Modules</span>
       <span class="cc-pill">20 modules</span>
       <span class="cc-pill">4 weeks</span>
       <span class="cc-pill">Free</span>
