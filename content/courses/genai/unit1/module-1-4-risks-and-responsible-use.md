@@ -99,6 +99,12 @@ tags: ["ai-risks", "hallucinations", "responsible-ai", "dpdp-act", "india", "gen
 .mod-wrap strong{color:#111;font-weight:600}
 .mod-wrap em{color:#333}
 .mod-wrap code{font-size:14px;background:#f0f0f0;padding:2px 6px;border-radius:3px;color:#c62828}
+.mod-unit-summary{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:20px 0}
+.mod-unit-card{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:14px 16px}
+.mod-unit-card-num{font-size:11px;font-weight:700;color:#888;letter-spacing:0.05em;margin-bottom:4px}
+.mod-unit-card-title{font-size:14px;font-weight:700;color:#1565C0;margin:0 0 6px}
+.mod-unit-card-summary{font-size:13px;color:#444;line-height:1.6;margin:0}
+@media(max-width:520px){.mod-unit-summary{grid-template-columns:1fr}}
 .mod-credits{font-size:12px;color:#888;margin-top:32px;padding-top:12px;border-top:1px solid #e0e0e0}
 .mod-credits summary{cursor:pointer;font-size:12px;color:#aaa;list-style:none}
 .mod-credits summary:hover{color:#888}
@@ -391,6 +397,34 @@ Indian IT companies deploying GenAI at scale are desperately looking for people 
     <li><strong>Responsible use is a career advantage</strong> — the most valued AI practitioners are not the ones who use AI most, but the ones who combine AI capability with the judgement to catch its failures. That human-in-the-loop role is what Indian IT companies are actively hiring for right now.</li>
   </ol>
 </div>
+
+## Module 1 — What you have learned
+
+<div class="mod-unit-summary">
+  <div class="mod-unit-card">
+    <div class="mod-unit-card-num">MODULE 1.1</div>
+    <div class="mod-unit-card-title">What is Generative AI</div>
+    <div class="mod-unit-card-summary">LLMs predict the next word at massive scale. They can hallucinate. Context is everything. Understanding the mechanism is the foundation for everything that follows.</div>
+  </div>
+  <div class="mod-unit-card">
+    <div class="mod-unit-card-num">MODULE 1.2</div>
+    <div class="mod-unit-card-title">ChatGPT vs Claude vs Gemini</div>
+    <div class="mod-unit-card-summary">ChatGPT for everyday tasks and UPI-friendly pricing. Claude for code and long documents. Gemini for research and Google Workspace. Start with zero-shot on all three — free.</div>
+  </div>
+  <div class="mod-unit-card">
+    <div class="mod-unit-card-num">MODULE 1.3</div>
+    <div class="mod-unit-card-title">How Indian Companies Use GenAI</div>
+    <div class="mod-unit-card-summary">TCS, Infosys, Wipro, and HCL are deploying GenAI in production at scale. AI skills are a baseline expectation. Frame your knowledge in terms of business outcomes, not tool names.</div>
+  </div>
+  <div class="mod-unit-card">
+    <div class="mod-unit-card-num">MODULE 1.4</div>
+    <div class="mod-unit-card-title">Risks and Responsible Use</div>
+    <div class="mod-unit-card-summary">Hallucination is structural. Data privacy has legal teeth under the DPDP Act. Responsible use is a career advantage — the human-in-the-loop role is what Indian IT companies are actively hiring for.</div>
+  </div>
+</div>
+
+Unit 2 builds directly on this foundation — you will start writing prompts that actually work, and the hallucination rate you experience in Assignment 1.4 will drop noticeably as your prompts improve.
+
 
 ---
 

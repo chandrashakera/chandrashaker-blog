@@ -468,9 +468,9 @@ Print this. Stick it next to your monitor. Use it for the next two weeks until i
 
 ---
 
-## Unit 2 — What you have learned
+## Module 2 — What you have learned
 
-This is the last module of Unit 2. Here is a quick summary of what you now know:
+This is the last module of Module 2. Here is a quick summary of what you now know:
 
 <div class="mod-unit-summary">
   <div class="mod-unit-card">
@@ -495,7 +495,7 @@ This is the last module of Unit 2. Here is a quick summary of what you now know:
   </div>
 </div>
 
-Unit 3 is where all of this becomes practical for your actual job. You will apply these techniques to real developer, analyst, and manager workflows — with specific examples from Indian IT contexts.
+Module 3 is where all of this becomes practical for your actual job. You will apply these techniques to real developer, analyst, and manager workflows — with specific examples from Indian IT contexts.
 
 ---
 
@@ -517,11 +517,11 @@ Unit 3 is where all of this becomes practical for your actual job. You will appl
     <span class="mod-assignment-icon">&#9998;</span>
     <h3 class="mod-assignment-title">Assignment 2.4 — Rewrite 3 Weak Prompts Using the Full Unit 2 Toolkit</h3>
   </div>
-  <p>This is the Unit 2 capstone assignment. It applies everything from all four modules.</p>
+  <p>This is the Module 2 capstone assignment. It applies everything from all four modules.</p>
   <ol>
     <li><strong>Find 3 prompts you have written in the past</strong> that gave you a disappointing output — or write 3 new weak prompts from scratch. Use real tasks you actually need to complete.</li>
     <li><strong>Diagnose each prompt</strong> using the symptom-to-fix guide in this module. Identify exactly which component was missing or wrong.</li>
-    <li><strong>Rewrite each prompt</strong> applying the full Unit 2 toolkit:
+    <li><strong>Rewrite each prompt</strong> applying the full Module 2 toolkit:
       <ul>
         <li>Six components from Module 2.1 — role, task, context, format, examples, constraints</li>
         <li>Correct technique from Module 2.2 — zero-shot, few-shot, or CoT as appropriate</li>
