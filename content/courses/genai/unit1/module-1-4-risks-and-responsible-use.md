@@ -3,6 +3,7 @@ title: "Module 1.4: Risks, Hallucinations, and Responsible Use of GenAI"
 description: "Understand AI hallucinations, bias, data privacy risks, and India's AI governance framework — practical responsible use guidelines for Indian students and IT professionals."
 weight: 4
 sidebar: false
+mainroad_aside: false
 tags: ["ai-risks", "hallucinations", "responsible-ai", "dpdp-act", "india", "generative-ai", "ai-ethics"]
 ---
 
@@ -115,15 +116,15 @@ tags: ["ai-risks", "hallucinations", "responsible-ai", "dpdp-act", "india", "gen
     <a href="/courses/genai/" style="font-size:12px;color:#1565C0;text-decoration:none;font-weight:600">&#8592; Course home</a>
   </div>
   <div class="mod-progress-bg">
-    <div class="mod-progress-fill" style="width:20%"></div>
+    <div class="mod-progress-fill" style="width:15%"></div>
   </div>
-  <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">4 of 20 modules complete</div>
+  <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">3 of 20 modules complete</div>
   <div class="mod-progress-units">
-    <a class="mod-progress-unit current" href="/courses/genai/unit1/">Unit 1 — current</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit2/">Unit 2</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit3/">Unit 3</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit4/">Unit 4</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit5/">Unit 5</a>
+    <a class="mod-progress-unit current" href="/courses/genai/#module-1">Module 1 — current</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-2">Module 2</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-3">Module 3</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-4">Module 4</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-5">Module 5</a>
   </div>
 </div>
 

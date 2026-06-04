@@ -3,6 +3,7 @@ title: "Module 2.2: Zero-Shot, Few-Shot, and Chain-of-Thought Prompting"
 description: "Master the three most powerful prompt engineering techniques — zero-shot, few-shot, and chain-of-thought — with practical examples for Indian students and IT professionals."
 weight: 2
 sidebar: false
+mainroad_aside: false
 tags: ["prompt-engineering", "zero-shot", "few-shot", "chain-of-thought", "india", "generative-ai"]
 ---
 
@@ -124,15 +125,15 @@ tags: ["prompt-engineering", "zero-shot", "few-shot", "chain-of-thought", "india
     <a href="/courses/genai/" style="font-size:12px;color:#1565C0;text-decoration:none;font-weight:600">&#8592; Course home</a>
   </div>
   <div class="mod-progress-bg">
-    <div class="mod-progress-fill" style="width:30%"></div>
+    <div class="mod-progress-fill" style="width:25%"></div>
   </div>
-  <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">6 of 20 modules complete</div>
+  <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">5 of 20 modules complete</div>
   <div class="mod-progress-units">
-    <a class="mod-progress-unit done" href="/courses/genai/unit1/">Unit 1 ✓</a>
-    <a class="mod-progress-unit current" href="/courses/genai/unit2/">Unit 2 — current</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit3/">Unit 3</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit4/">Unit 4</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit5/">Unit 5</a>
+    <a class="mod-progress-unit done" href="/courses/genai/#module-1">Module 1 ✓</a>
+    <a class="mod-progress-unit current" href="/courses/genai/#module-2">Module 2 — current</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-3">Module 3</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-4">Module 4</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-5">Module 5</a>
   </div>
 </div>
 

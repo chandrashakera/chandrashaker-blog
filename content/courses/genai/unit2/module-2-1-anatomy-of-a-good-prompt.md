@@ -3,6 +3,7 @@ title: "Module 2.1: Anatomy of a Good Prompt"
 description: "Learn the six components of a well-structured prompt and why most AI prompts fail — practical prompt engineering for Indian students and IT professionals using ChatGPT, Claude, and Gemini."
 weight: 1
 sidebar: false
+mainroad_aside: false
 tags: ["prompt-engineering", "chatgpt", "claude", "gemini", "india", "generative-ai", "beginners"]
 ---
 
@@ -104,15 +105,15 @@ tags: ["prompt-engineering", "chatgpt", "claude", "gemini", "india", "generative
     <a href="/courses/genai/" style="font-size:12px;color:#1565C0;text-decoration:none;font-weight:600">&#8592; Course home</a>
   </div>
   <div class="mod-progress-bg">
-    <div class="mod-progress-fill" style="width:25%"></div>
+    <div class="mod-progress-fill" style="width:20%"></div>
   </div>
-  <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">5 of 20 modules complete</div>
+  <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">4 of 20 modules complete</div>
   <div class="mod-progress-units">
-    <a class="mod-progress-unit done" href="/courses/genai/unit1/">Unit 1 ✓</a>
-    <a class="mod-progress-unit current" href="/courses/genai/unit2/">Unit 2 — current</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit3/">Unit 3</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit4/">Unit 4</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit5/">Unit 5</a>
+    <a class="mod-progress-unit done" href="/courses/genai/#module-1">Module 1 ✓</a>
+    <a class="mod-progress-unit current" href="/courses/genai/#module-2">Module 2 — current</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-3">Module 3</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-4">Module 4</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-5">Module 5</a>
   </div>
 </div>
 

@@ -3,6 +3,7 @@ title: "Module 1.3: How Indian Companies Are Using GenAI — TCS, Infosys, Wipro
 description: "Real GenAI projects at TCS, Infosys, Wipro, and HCL in 2025–26 — what they are building, which roles are involved, and what this means for your career as an Indian IT fresher."
 weight: 3
 sidebar: false
+mainroad_aside: false
 tags: ["tcs", "infosys", "wipro", "hcl", "genai-india", "it-careers", "india", "generative-ai"]
 ---
 
@@ -99,15 +100,15 @@ tags: ["tcs", "infosys", "wipro", "hcl", "genai-india", "it-careers", "india", "
     <a href="/courses/genai/" style="font-size:12px;color:#1565C0;text-decoration:none;font-weight:600">&#8592; Course home</a>
   </div>
   <div class="mod-progress-bg">
-    <div class="mod-progress-fill" style="width:15%"></div>
+    <div class="mod-progress-fill" style="width:10%"></div>
   </div>
-  <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">3 of 20 modules complete</div>
+  <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">2 of 20 modules complete</div>
   <div class="mod-progress-units">
-    <a class="mod-progress-unit current" href="/courses/genai/unit1/">Unit 1 — current</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit2/">Unit 2</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit3/">Unit 3</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit4/">Unit 4</a>
-    <a class="mod-progress-unit upcoming" href="/courses/genai/unit5/">Unit 5</a>
+    <a class="mod-progress-unit current" href="/courses/genai/#module-1">Module 1 — current</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-2">Module 2</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-3">Module 3</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-4">Module 4</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/#module-5">Module 5</a>
   </div>
 </div>
 
