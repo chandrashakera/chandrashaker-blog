@@ -7,6 +7,17 @@ tags: ["tcs", "infosys", "wipro", "hcl", "genai-india", "it-careers", "india", "
 ---
 
 <style>
+/* ── Module progress bar ─────────────────────────────────────── */
+.mod-progress-wrap{background:#f9f9f9;border:1px solid #e0e0e0;border-radius:8px;padding:12px 16px;margin-bottom:20px}
+.mod-progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:6px}
+.mod-progress-title{font-size:12px;font-weight:700;color:#555;letter-spacing:0.04em}
+.mod-progress-bg{height:6px;background:#e0e0e0;border-radius:3px;margin-bottom:10px}
+.mod-progress-fill{height:6px;border-radius:3px;background:#FF8C00;transition:width 0.3s ease}
+.mod-progress-units{display:flex;gap:6px;flex-wrap:wrap}
+.mod-progress-unit{font-size:11px;padding:3px 10px;border-radius:20px;text-decoration:none;font-weight:500;border:1px solid}
+.mod-progress-unit.done{background:#e8f5e9;color:#2e7d32;border-color:#a5d6a7}
+.mod-progress-unit.current{background:#1565C0;color:#fff;border-color:#1565C0}
+.mod-progress-unit.upcoming{background:#f5f5f4;color:#999;border-color:#e0e0e0}
 .mod-header{background:#1565C0;border-radius:6px;padding:14px 18px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .mod-header-left{display:flex;flex-direction:column;gap:4px}
 .mod-breadcrumb{font-size:11px;color:rgba(255,255,255,0.75);letter-spacing:0.03em}
@@ -65,11 +76,7 @@ tags: ["tcs", "infosys", "wipro", "hcl", "genai-india", "it-careers", "india", "
 .mod-blog-links a{display:block;font-size:13px;color:#1565C0;text-decoration:none;padding:3px 0;border-bottom:1px solid #f0f0f0}
 .mod-blog-links a:last-child{border-bottom:none}
 .mod-blog-links a:hover{color:#FF8C00;text-decoration:underline}
-.mod-wrap p,.mod-wrap li,.mod-wrap td{font-size:16px !important;color:#111111 !important;line-height:1.85 !important;font-weight:450}
-.mod-wrap p{margin-bottom:1.1em}
-@media(max-width:600px){
-.mod-wrap p,.mod-wrap li,.mod-wrap td{font-size:16px !important;line-height:1.9 !important}
-}
+.mod-wrap p,.mod-wrap li,.mod-wrap td{font-size:15px;color:#222;line-height:1.8}
 .mod-wrap h2{font-size:20px;color:#111;margin-top:32px;margin-bottom:12px}
 .mod-wrap h3{font-size:17px;color:#111;margin-top:24px;margin-bottom:8px}
 .mod-wrap strong{color:#111;font-weight:600}
@@ -85,6 +92,25 @@ tags: ["tcs", "infosys", "wipro", "hcl", "genai-india", "it-careers", "india", "
 </style>
 
 <div class="mod-wrap">
+
+<div class="mod-progress-wrap">
+  <div class="mod-progress-header">
+    <span class="mod-progress-title">YOUR PROGRESS — GENERATIVE AI: ZERO TO JOB-READY</span>
+    <a href="/courses/genai/" style="font-size:12px;color:#1565C0;text-decoration:none;font-weight:600">&#8592; Course home</a>
+  </div>
+  <div class="mod-progress-bg">
+    <div class="mod-progress-fill" style="width:15%"></div>
+  </div>
+  <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">3 of 20 modules complete</div>
+  <div class="mod-progress-units">
+    <a class="mod-progress-unit current" href="/courses/genai/unit1/">Unit 1 — current</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/unit2/">Unit 2</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/unit3/">Unit 3</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/unit4/">Unit 4</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/unit5/">Unit 5</a>
+  </div>
+</div>
+
 <div class="mod-header">
   <div class="mod-header-left">
     <span class="mod-breadcrumb">GENERATIVE AI: ZERO TO JOB-READY &nbsp;›&nbsp; UNIT 1 &nbsp;›&nbsp; MODULE 3 OF 4</span>
@@ -359,16 +385,7 @@ This is what matters most as a fresher: which roles are most affected and what w
         <li>Which role you could play in a project like this</li>
       </ul>
     </li>
-    <li><strong>Save this as your "Company AI Research" document.</strong> Use this exact template for your document:
-      <ul>
-        <li>Company: [Name]</li>
-        <li>Project/Initiative: [Name or brief description]</li>
-        <li>What it does: [1 sentence]</li>
-	<li>Business problem it solves: [1 sentence]</li>
-	<li>Role I could play: [1 sentence]</li>
-	<li>Source: [URL or publication name]</li>
-      </ul>
-You will add one entry per company you research across the course. In Module 5.2 you will use it to tailor your resume and LinkedIn profile.</li>
+    <li><strong>Save this as your "Company AI Research" document.</strong> You will add to it as you complete the course. In Module 5.2 you will use it to tailor your resume and LinkedIn profile.</li>
   </ol>
   <p>Interviewers at these companies are consistently impressed when a fresher references a real, recent project by name. It signals you are genuinely engaged — not just attending placement drives to collect offers.</p>
 </div>

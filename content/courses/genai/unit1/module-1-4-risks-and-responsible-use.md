@@ -7,6 +7,17 @@ tags: ["ai-risks", "hallucinations", "responsible-ai", "dpdp-act", "india", "gen
 ---
 
 <style>
+/* ── Module progress bar ─────────────────────────────────────── */
+.mod-progress-wrap{background:#f9f9f9;border:1px solid #e0e0e0;border-radius:8px;padding:12px 16px;margin-bottom:20px}
+.mod-progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:6px}
+.mod-progress-title{font-size:12px;font-weight:700;color:#555;letter-spacing:0.04em}
+.mod-progress-bg{height:6px;background:#e0e0e0;border-radius:3px;margin-bottom:10px}
+.mod-progress-fill{height:6px;border-radius:3px;background:#FF8C00;transition:width 0.3s ease}
+.mod-progress-units{display:flex;gap:6px;flex-wrap:wrap}
+.mod-progress-unit{font-size:11px;padding:3px 10px;border-radius:20px;text-decoration:none;font-weight:500;border:1px solid}
+.mod-progress-unit.done{background:#e8f5e9;color:#2e7d32;border-color:#a5d6a7}
+.mod-progress-unit.current{background:#1565C0;color:#fff;border-color:#1565C0}
+.mod-progress-unit.upcoming{background:#f5f5f4;color:#999;border-color:#e0e0e0}
 .mod-header{background:#1565C0;border-radius:6px;padding:14px 18px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .mod-header-left{display:flex;flex-direction:column;gap:4px}
 .mod-breadcrumb{font-size:11px;color:rgba(255,255,255,0.75);letter-spacing:0.03em}
@@ -81,11 +92,7 @@ tags: ["ai-risks", "hallucinations", "responsible-ai", "dpdp-act", "india", "gen
 .mod-blog-links a{display:block;font-size:13px;color:#1565C0;text-decoration:none;padding:3px 0;border-bottom:1px solid #f0f0f0}
 .mod-blog-links a:last-child{border-bottom:none}
 .mod-blog-links a:hover{color:#FF8C00;text-decoration:underline}
-.mod-wrap p,.mod-wrap li,.mod-wrap td{font-size:16px !important;color:#111111 !important;line-height:1.85 !important;font-weight:450}
-.mod-wrap p{margin-bottom:1.1em}
-@media(max-width:600px){
-.mod-wrap p,.mod-wrap li,.mod-wrap td{font-size:16px !important;line-height:1.9 !important}
-}
+.mod-wrap p,.mod-wrap li,.mod-wrap td{font-size:15px;color:#222;line-height:1.8}
 .mod-wrap h2{font-size:20px;color:#111;margin-top:32px;margin-bottom:12px}
 .mod-wrap h3{font-size:17px;color:#111;margin-top:24px;margin-bottom:8px}
 .mod-wrap strong{color:#111;font-weight:600}
@@ -101,6 +108,25 @@ tags: ["ai-risks", "hallucinations", "responsible-ai", "dpdp-act", "india", "gen
 </style>
 
 <div class="mod-wrap">
+
+<div class="mod-progress-wrap">
+  <div class="mod-progress-header">
+    <span class="mod-progress-title">YOUR PROGRESS — GENERATIVE AI: ZERO TO JOB-READY</span>
+    <a href="/courses/genai/" style="font-size:12px;color:#1565C0;text-decoration:none;font-weight:600">&#8592; Course home</a>
+  </div>
+  <div class="mod-progress-bg">
+    <div class="mod-progress-fill" style="width:20%"></div>
+  </div>
+  <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">4 of 20 modules complete</div>
+  <div class="mod-progress-units">
+    <a class="mod-progress-unit current" href="/courses/genai/unit1/">Unit 1 — current</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/unit2/">Unit 2</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/unit3/">Unit 3</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/unit4/">Unit 4</a>
+    <a class="mod-progress-unit upcoming" href="/courses/genai/unit5/">Unit 5</a>
+  </div>
+</div>
+
 <div class="mod-header">
   <div class="mod-header-left">
     <span class="mod-breadcrumb">GENERATIVE AI: ZERO TO JOB-READY &nbsp;›&nbsp; UNIT 1 &nbsp;›&nbsp; MODULE 4 OF 4</span>
@@ -386,7 +412,7 @@ Indian IT companies deploying GenAI at scale are desperately looking for people 
     <li><strong>Document what you find</strong> — how many of the AI's specific claims were correct? How many were partially correct? How many were completely fabricated?</li>
     <li><strong>Write 3 sentences</strong> describing what you found and what it tells you about how to use AI responsibly in your work going forward.</li>
   </ol>
-  <p>Save your findings in a document called "My AI Learning Journal" — you will add to this throughout the course. This assignment completes Unit 1. You now have a foundational understanding of what GenAI is, which tools to use, how Indian companies are using it, and how to use it responsibly.</p> <p>Unit 2 starts with prompt engineering: the skill that directly reduces the hallucination rate you just experienced. Better prompts give the model more context, which reduces the probability of fabrication. You will see the difference immediately in Module 2.1.</p>
+  <p>This assignment completes Unit 1. You now have a foundational understanding of what GenAI is, which tools to use, how Indian companies are using it, and how to use it responsibly. Unit 2 builds on all of this — you will start writing prompts that actually work.</p>
 </div>
 
 <div class="mod-blog-links">
