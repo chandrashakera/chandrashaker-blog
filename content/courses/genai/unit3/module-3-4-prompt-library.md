@@ -550,7 +550,7 @@ A prompt library that is not maintained quickly becomes a graveyard of prompts y
 
 ---
 
-## Module 3 — What you have learned
+## Unit 3 — What you have learned
 
 <div class="mod-unit-summary">
   <div class="mod-unit-card">
@@ -575,7 +575,7 @@ A prompt library that is not maintained quickly becomes a graveyard of prompts y
   </div>
 </div>
 
-Module 4 goes deeper — into RAG, AI agents, and automation workflows. The prompt library you build today will be extended with advanced technique prompts after Module 4.
+Unit 4 goes deeper — into RAG, AI agents, and automation workflows. The prompt library you build today will be extended with advanced technique prompts after Unit 4.
 
 ---
 
@@ -597,13 +597,13 @@ Module 4 goes deeper — into RAG, AI agents, and automation workflows. The prom
     <span class="mod-assignment-icon">&#9998;</span>
     <h3 class="mod-assignment-title">Assignment 3.4 — Build Your 10-Prompt Starter Library</h3>
   </div>
-  <p>This is the Module 3 capstone assignment. It consolidates everything from Modules 3.1, 3.2, and 3.3 into a single deliverable you will actually use.</p>
+  <p>This is the Unit 3 capstone assignment. It consolidates everything from Modules 3.1, 3.2, and 3.3 into a single deliverable you will actually use.</p>
   <ol>
     <li><strong>Choose your storage tool</strong> — Notion, Google Docs, or Obsidian. Create a new document or database called "My Prompt Library." Set up the standard entry format from this module.</li>
     <li><strong>Add the 10 starter prompts from this module</strong> — customise every [PLACEHOLDER] for your specific context: your role, your tech stack, your target company, your domain. A prompt that still has generic placeholders is not in your library — it is a template.</li>
     <li><strong>Add your best prompts from Modules 3.1, 3.2, and 3.3 assignments</strong> — each assignment asked you to save prompts in your AI Learning Journal. Transfer the best ones to your library using the standard format. Test each one and rate it High / Medium / Low.</li>
     <li><strong>Identify 3 gaps</strong> — using the role checklist in this module, identify 3 prompt categories you need but do not yet have. Write those prompts from scratch, test them, and add them to the library.</li>
-    <li><strong>Target: 15 prompts minimum by the end of Module 3.</strong> By Module 5, you will extend this to 25+ prompts covering your full workflow.</li>
+    <li><strong>Target: 15 prompts minimum by the end of Unit 3.</strong> By Unit 5, you will extend this to 25+ prompts covering your full workflow.</li>
   </ol>
   <p>Your prompt library is a living document. The most important habit is adding to it immediately when something works — before the next meeting, the next task, the next distraction takes over. Start that habit today with this assignment.</p>
 </div>

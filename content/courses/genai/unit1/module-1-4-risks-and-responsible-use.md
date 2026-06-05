@@ -398,7 +398,7 @@ Indian IT companies deploying GenAI at scale are desperately looking for people 
   </ol>
 </div>
 
-## Module 1 — What you have learned
+## Unit 1 — What you have learned
 
 <div class="mod-unit-summary">
   <div class="mod-unit-card">
