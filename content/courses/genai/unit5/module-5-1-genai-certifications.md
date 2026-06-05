@@ -113,11 +113,11 @@ tags: ["certifications", "google", "coursera", "microsoft", "deeplearning-ai", "
   </div>
   <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">16 of 20 modules complete</div>
   <div class="mod-progress-units">
-    <a class="mod-progress-unit done" href="/courses/genai/#module-1">Module 1 ✓</a>
-    <a class="mod-progress-unit done" href="/courses/genai/#module-2">Module 2 ✓</a>
-    <a class="mod-progress-unit done" href="/courses/genai/#module-3">Module 3 ✓</a>
-    <a class="mod-progress-unit done" href="/courses/genai/#module-4">Module 4 ✓</a>
-    <a class="mod-progress-unit current" href="/courses/genai/#module-5">Module 5 — current</a>
+    <a class="mod-progress-unit done" href="/courses/genai/#module-1">Understanding GenAI ✓</a>
+    <a class="mod-progress-unit done" href="/courses/genai/#module-2">Prompt Engineering ✓</a>
+    <a class="mod-progress-unit done" href="/courses/genai/#module-3">GenAI for Your Job ✓</a>
+    <a class="mod-progress-unit done" href="/courses/genai/#module-4">Advanced Techniques ✓</a>
+    <a class="mod-progress-unit current" href="/courses/genai/#module-5">Career & India</a>
   </div>
 </div>
 
@@ -477,8 +477,8 @@ This route gives you the same certificate as anyone who paid full price. No mark
 
 <div class="mod-blog-links">
   <div class="mod-blog-title">FURTHER READING ON THE BLOG</div>
-  <a href="/posts/ai-resistant-skills-india/">AI-Resistant Skills: What to Learn to Stay Relevant — chandrashaker.in</a>
-  <a href="/posts/ai-impact-indian-it-jobs/">How AI is Affecting Indian IT Jobs in 2026 — chandrashaker.in</a>
+  <a href="/posts/ai-resistant-skills-india/">AI-Resistant Skills: What to Learn to Stay Relevant — CHANDRAS EDU (chandrashaker.in)</a>
+  <a href="/posts/ai-impact-indian-it-jobs/">How AI is Affecting Indian IT Jobs in 2026 — CHANDRAS EDU (chandrashaker.in)</a>
 </div>
 
 <div class="mod-nav">

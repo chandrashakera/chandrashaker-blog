@@ -111,11 +111,11 @@ tags: ["final-project", "ai-toolkit", "portfolio", "india", "career", "generativ
   </div>
   <div style="font-size:12px;color:#FF8C00;font-weight:600;margin-bottom:10px">19 of 20 modules complete — final module</div>
   <div class="mod-progress-units">
-    <a class="mod-progress-unit done" href="/courses/genai/#module-1">Module 1 ✓</a>
-    <a class="mod-progress-unit done" href="/courses/genai/#module-2">Module 2 ✓</a>
-    <a class="mod-progress-unit done" href="/courses/genai/#module-3">Module 3 ✓</a>
-    <a class="mod-progress-unit done" href="/courses/genai/#module-4">Module 4 ✓</a>
-    <a class="mod-progress-unit current" href="/courses/genai/#module-5">Module 5 — current</a>
+    <a class="mod-progress-unit done" href="/courses/genai/#module-1">Understanding GenAI ✓</a>
+    <a class="mod-progress-unit done" href="/courses/genai/#module-2">Prompt Engineering ✓</a>
+    <a class="mod-progress-unit done" href="/courses/genai/#module-3">GenAI for Your Job ✓</a>
+    <a class="mod-progress-unit done" href="/courses/genai/#module-4">Advanced Techniques ✓</a>
+    <a class="mod-progress-unit current" href="/courses/genai/#module-5">Career & India</a>
   </div>
 </div>
 
@@ -442,7 +442,7 @@ Target: [specific goal — first interview, first client, first offer]</div>
     <div class="mod-complete-stat"><div class="mod-complete-num">15+</div><div class="mod-complete-label">Prompts in your library</div></div>
     <div class="mod-complete-stat"><div class="mod-complete-num">1</div><div class="mod-complete-label">Live automation workflow</div></div>
   </div>
-  <div class="mod-complete-sub" style="margin:0">This course was free. The knowledge is yours. The Toolkit compounds in value every week you use it.<br>Stay current at <a href="https://chandrashaker.in" style="color:#1565C0;font-weight:600">chandrashaker.in</a> — new posts on AI, careers, and investing every week.</div>
+  <div class="mod-complete-sub" style="margin:0">This course was free. The knowledge is yours. The Toolkit compounds in value every week you use it.<br>Stay current at <a href="https://chandrashaker.in" target="_blank" rel="noopener"><strong>CHANDRAS EDU</strong></a> — new posts on AI, careers, and investing every week.</div>
 </div>
 
 ---
@@ -468,21 +468,21 @@ Target: [specific goal — first interview, first client, first offer]</div>
     </li>
     <li><strong>Generate a public sharing link</strong> from Notion or Google Docs.</li>
     <li><strong>Add the link to your LinkedIn Featured section</strong> — this makes your Toolkit visible to every recruiter who views your profile.</li>
-    <li><strong>Optional but strongly recommended:</strong> Share your completed Toolkit link in a LinkedIn post explaining what the course covered and what you built. Tag <a href="https://www.linkedin.com/in/chandra-shaker" target="_blank" rel="noopener">Chandra Shaker</a> and use the hashtag #GenAIZeroToJobReady. The act of sharing publicly commits you to the 90-day plan in Section 7.</li>
+    <li><strong>Optional but strongly recommended:</strong> Share your completed Toolkit link in a LinkedIn post explaining what the course covered and what you built. Tag <a href="https://www.linkedin.com/in/chandra-shaker-arrabotu/" target="_blank" rel="noopener">Chandra Shaker</a> and use the hashtag #GenAIZeroToJobReady. The act of sharing publicly commits you to the 90-day plan in Section 7.</li>
   </ol>
   <p>Your Toolkit is now your primary career asset for AI-related work. Update it quarterly. Add to your prompt library every week. Revisit the company research before every interview. The course ends here — the Toolkit does not.</p>
 </div>
 
 <div class="mod-success">
 <strong>Thank you for completing this course.</strong> It was designed specifically for Indian engineering students and IT professionals who want to move from understanding AI to using it effectively in their careers. Everything in it — the examples, the company data, the pricing, the legal context — was built for India in 2026. I hope it serves you well for years beyond that.<br><br>
-Stay connected at <a href="https://chandrashaker.in" style="color:#2e7d32;font-weight:600">chandrashaker.in</a> — new content on AI, careers, and investing every week. — <strong>Chandra Shaker</strong>
+Stay connected at <a href="https://chandrashaker.in" target="_blank" rel="noopener"><strong>CHANDRAS EDU</strong></a> — new content on AI, careers, and investing every week. — <strong>Chandra Shaker</strong>
 </div>
 
 <div class="mod-blog-links">
   <div class="mod-blog-title">CONTINUE LEARNING ON THE BLOG</div>
-  <a href="/posts/ai-impact-indian-it-jobs/">How AI is Affecting Indian IT Jobs in 2026 — chandrashaker.in</a>
-  <a href="/posts/ai-resistant-skills-india/">AI-Resistant Skills: What to Learn to Stay Relevant — chandrashaker.in</a>
-  <a href="https://chandrashaker.in">More posts on AI, careers, and investing → chandrashaker.in</a>
+  <a href="/posts/ai-impact-indian-it-jobs/">How AI is Affecting Indian IT Jobs in 2026 — CHANDRAS EDU (chandrashaker.in)</a>
+  <a href="/posts/ai-resistant-skills-india/">AI-Resistant Skills: What to Learn to Stay Relevant — CHANDRAS EDU (chandrashaker.in)</a>
+  <a href="https://chandrashaker.in">More posts on AI, careers, and investing → CHANDRAS EDU (chandrashaker.in)</a>
 </div>
 
 <div class="mod-nav">
@@ -496,7 +496,7 @@ Stay connected at <a href="https://chandrashaker.in" style="color:#2e7d32;font-w
     <thead><tr><th>Item</th><th>Detail</th></tr></thead>
     <tbody>
       <tr><td>Course title</td><td>Generative AI: Zero to Job-Ready</td></tr>
-      <tr><td>Instructor</td><td>Chandra Shaker — chandrashaker.in</td></tr>
+      <tr><td>Instructor</td><td>Chandra Shaker — CHANDRAS EDU (chandrashaker.in)</td></tr>
       <tr><td>Units</td><td>5 units, 20 modules</td></tr>
       <tr><td>Target audience</td><td>Indian engineering students and IT freshers</td></tr>
       <tr><td>Prerequisites</td><td>None — no prior AI or coding experience required</td></tr>

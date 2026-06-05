@@ -14,7 +14,7 @@ toc: false
   "@type": "Course",
   "name": "Generative AI: Zero to Job-Ready",
   "description": "Free course covering Generative AI, Prompt Engineering, LLMs, AI agents and career guidance — designed for Indian engineering students and freshers entering the IT industry.",
-  "url": "https://courses.chandrashaker.in/courses/genai/",
+  "url": "https://courses.CHANDRAS EDU (chandrashaker.in)/courses/genai/",
   "provider": { "@type": "Person", "name": "Chandra Shaker", "url": "https://chandrashaker.in" },
   "isAccessibleForFree": true,
   "educationalLevel": "Beginner",
@@ -473,7 +473,7 @@ toc: false
   </div>
   <div class="cc-faq-item">
     <div class="cc-faq-q">Will I get a certificate?</div>
-    <div class="cc-faq-a">A completion certificate is in development. Subscribe at <a href="https://chandrashaker.in">chandrashaker.in</a> to be notified when it launches.</div>
+    <div class="cc-faq-a">A completion certificate is in development. Subscribe at <a href="https://chandrashaker.in" target="_blank" rel="noopener"><strong>CHANDRAS EDU</strong></a> to be notified when it launches.</div>
   </div>
 </div>
 </div>
@@ -481,7 +481,7 @@ toc: false
 <div class="cc-section">
 <h2>About the instructor</h2>
 <div class="cc-instructor">
-  <strong>Chandra Shaker</strong> is an Electronics and Communication Engineering faculty member with industry experience and a focus on AI/ML education for students. He writes about AI, careers, and investing for Indian audiences at <a href="https://chandrashaker.in">chandrashaker.in</a>.
+  <strong>Chandra Shaker</strong> is an Electronics and Communication Engineering faculty member with industry experience and a focus on AI/ML education for students. He writes about AI, careers, and investing for Indian audiences at <a href="https://chandrashaker.in" target="_blank" rel="noopener"><strong>CHANDRAS EDU</strong></a>.
 </div>
 </div>
 
