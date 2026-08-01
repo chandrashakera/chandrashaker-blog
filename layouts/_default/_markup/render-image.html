@@ -1,0 +1,13 @@
+{{- $u := urls.Parse .Destination -}}
+{{- $img := "" -}}
+{{- if not $u.Scheme -}}
+	{{- $img = resources.Get (strings.TrimPrefix "/" .Destination) -}}
+{{- end -}}
+{{- if $img -}}
+	{{- $targetWidth := 1000 -}}
+	{{- if lt $img.Width $targetWidth }}{{ $targetWidth = $img.Width }}{{ end -}}
+	{{- $resized := $img.Resize (printf "%dx webp q85" $targetWidth) -}}
+	<img src="{{ $resized.RelPermalink }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- else -}}
+	<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">
+{{- end -}}

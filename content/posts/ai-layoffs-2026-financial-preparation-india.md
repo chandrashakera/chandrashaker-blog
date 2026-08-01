@@ -24,11 +24,15 @@ If you work in Indian IT, this affects you whether or not you've felt it yet. He
 
 The numbers are no longer speculative. Roughly 1.28 lakh tech jobs were cut globally in just the first half of 2026, and India accounted for about 7% of that — the second-highest share of any country after the US. TCS, India's largest software exporter, posted a net reduction of more than 23,000 employees in FY26 alone. Across the top five IT firms — TCS, Infosys, HCLTech, Wipro, and Tech Mahindra — combined headcount fell by roughly 7,400 in the same year.
 
+![India's Big Tech IT Headcount Cuts — FY26: TCS cut deepest at 23,000, while the top 5 IT firms combined saw a net reduction of 7,389](/images/india-it-headcount-cuts-fy26.png)
+
 Staffing firms TeamLease and CIEL HR separately estimate that somewhere between 25,000 and 35,000 technology jobs will be cut in India through 2026 — and most of it through what's being called "silent layoffs": performance-linked exits and quiet restructuring rather than public announcements. That matters for your planning, because a silent layoff gives you far less warning than a headline-making one.
 
 ## The paradox: fewer conventional jobs, more AI hiring {#the-paradox}
 
 Here's the part worth sitting with. While general IT hiring in India has actually declined slightly year-on-year, recruitment specifically for AI-related roles has grown by double digits over the same period. Companies aren't hiring fewer people because business is bad — several are reporting strong results. They're hiring *different* people, with different skills.
+
+![The 2026 AI Hiring Paradox in Indian IT: overall IT hiring down 3% year-over-year, while AI-specific hiring is up 16%](/images/ai-hiring-paradox-2026.png)
 
 This lines up with what I wrote in [5 Skills AI Cannot Replace](https://chandrashaker.in/posts/ai-proof-skills-freshers-2026/): AI isn't eliminating jobs wholesale, it's eliminating specific tasks, and the roles most exposed are the ones built entirely around those tasks. If your role sits squarely in that zone, this isn't a "might happen" — it's a "when." Plan your finances accordingly, and separately, start reskilling now rather than after the fact.
 
