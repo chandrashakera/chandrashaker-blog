@@ -9,8 +9,6 @@ tags: ["us-stocks", "investments", "india", "indmoney", "us-investing", "global-
 thumbnail: "/images/us-stocks-india-investing.jpg"
 ---
 
-Let me be honest with you.
-
 For years, I told myself Indian markets were enough. Then two things changed my thinking completely.
 
 First, Nifty 50 has delivered close to **zero real returns** for investors who entered in late 2024. The index touched 26,000, corrected sharply — touching a low near 22,200, and has struggled to recover. Midcap and smallcap indices — where the "wealth creation stories" were loudest — have corrected 25–35% from peaks. Meanwhile, anyone with US exposure watched their portfolio quietly compound.

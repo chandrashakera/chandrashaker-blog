@@ -6,8 +6,6 @@ categories: ["Finance", "Careers"]
 tags: ["ai-impact", "layoffs", "job-loss", "emergency-fund", "epf", "personal-finance", "india", "it-professionals", "investment-strategy"]
 ---
 
-Let me be honest with you.
-
 A few years ago, "job loss" conversations in Indian IT meant recession fears borrowed from the US — Twitter layoffs, Amazon layoffs, a headline that felt far away. That's not what 2026 looks like. This year's job losses aren't announced in press releases. They're happening quietly, one performance review at a time, and the reason isn't a slowing economy — it's AI.
 
 If you work in Indian IT, this affects you whether or not you've felt it yet. Here's the actual data, and a concrete plan for what to do about it.
