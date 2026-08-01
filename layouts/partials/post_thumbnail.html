@@ -1,0 +1,28 @@
+{{- if $thumbnail := .page.Params.thumbnail }}
+	{{- $class := .class }}
+	{{- $visibility := .page.Site.Params.thumbnail.visibility | default (slice "list" "post") }}
+
+	{{- $valueType := printf "%T" $thumbnail -}}
+	{{- $isMap := in $valueType "map" -}}
+	{{- if $isMap }}
+		{{ $visibility = default (slice "list" "post") (default .page.Site.Params.thumbnail.visibility $thumbnail.visibility) }}
+		{{ $thumbnail = $thumbnail.src }}
+	{{- end }}
+
+	{{- if in $visibility $class }}
+	{{- $img := resources.Get (strings.TrimPrefix "/" $thumbnail) }}
+	<figure class="{{ with $class }}{{ . }}__thumbnail {{ end }}thumbnail">
+		{{ if eq $class "list" }}<a class="thumbnail__link" href="{{ .page.RelPermalink }}">{{ end }}
+		{{- if $img }}
+			{{- $targetWidth := 470 }}
+			{{- if eq $class "post" }}{{ $targetWidth = 1200 }}{{ end }}
+			{{- if lt $img.Width $targetWidth }}{{ $targetWidth = $img.Width }}{{ end }}
+			{{- $resized := $img.Resize (printf "%dx webp q75" $targetWidth) }}
+			<img class="thumbnail__image" src="{{ $resized.RelPermalink }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}" alt="{{ .page.Title }}" decoding="async" {{ if eq $class "list" }}loading="lazy"{{ else }}fetchpriority="high"{{ end }}>
+		{{- else }}
+			<img class="thumbnail__image" src="{{ $thumbnail | relURL }}" alt="{{ .page.Title }}" decoding="async" {{ if eq $class "list" }}loading="lazy"{{ end }}>
+		{{- end }}
+		{{ if eq $class "list" }}</a>{{ end }}
+	</figure>
+	{{- end }}
+{{- end }}

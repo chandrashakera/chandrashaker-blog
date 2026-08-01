@@ -5,7 +5,6 @@ sidebar: false
 description: "Complete course on AI and ML for M.Tech students. Covers search strategies, Bayesian learning, supervised learning, neural networks, decision trees and reinforcement learning."
 categories: ["Courses"]
 tags: ["ai", "machine-learning", "mtech", "course"]
-thumbnail: "/images/paiml-course.jpg"
 build:
   list: never
   render: always
