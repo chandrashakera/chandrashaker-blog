@@ -14,7 +14,7 @@ summary: "Disclaimer for chandrashaker.in - Important legal information"
 
 ## General Information Disclaimer
 
-The information provided by **Chandras Edu** (chandrashaker.in) ("the Website") is for general informational and educational purposes only. All content is provided in good faith, but we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Website.
+The information provided by **ChandraS Edu** (chandrashaker.in) ("the Website") is for general informational and educational purposes only. All content is provided in good faith, but we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Website.
 
 **Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the Website or reliance on any information provided on the Website. Your use of the Website and your reliance on any information is solely at your own risk.**
 

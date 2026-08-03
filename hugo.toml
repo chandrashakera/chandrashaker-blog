@@ -1,6 +1,6 @@
 baseURL = 'https://chandrashaker.in/'
 languageCode = 'en-in'
-title = 'Chandras Edu | AI, US Stocks, Courses & Jobs India'
+title = 'ChandraS Edu | AI, US Stocks, Courses & Jobs India'
 theme = 'mainroad'
 enableRobotsTXT = true
 buildDrafts = false
