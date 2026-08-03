@@ -16,7 +16,7 @@ summary: "Privacy Policy for chandrashaker.in - How we collect, use, and protect
 
 ## Introduction
 
-Welcome to **ChandraS Edu** (chandrashaker.in) ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our website.
+Welcome to **ChandraS EDU** (chandrashaker.in) ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our website.
 
 By accessing or using chandrashaker.in, you agree to this Privacy Policy. If you do not agree with this policy, please do not use our website.
 
@@ -354,7 +354,7 @@ By using chandrashaker.in, you consent to this Privacy Policy and agree to its t
 
 ---
 
-**Thank you for trusting ChandraS Edu with your information!**
+**Thank you for trusting ChandraS EDU with your information!**
 
 ---
 

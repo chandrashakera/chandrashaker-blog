@@ -200,7 +200,7 @@ Your feedback helps me improve! Let me know:
 
 ## 🙏 Thank You
 
-Thank you for visiting ChandraS Edu and for taking the time to reach out. I look forward to hearing from you!
+Thank you for visiting ChandraS EDU and for taking the time to reach out. I look forward to hearing from you!
 
 ---
 
