@@ -1,0 +1,6 @@
+{{- $adsense := .Site.Params.adsense }}
+{{- if and $adsense.enabled $adsense.client (index $adsense.slots "sidebar") }}
+<div class="widget-ads widget">
+	{{ partial "ad-slot.html" (dict "slot" "sidebar" "page" .) }}
+</div>
+{{- end }}
