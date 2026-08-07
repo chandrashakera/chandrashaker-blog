@@ -97,8 +97,8 @@ Cookies are small text files stored on your device when you visit a website. The
 - Help us understand how visitors use our site
 - Can be disabled via browser settings
 
-**Advertising Cookies (Future):**
-- We may use Google AdSense in the future, which uses cookies for personalized advertising
+**Advertising Cookies:**
+- We use Google AdSense, which uses cookies for personalized advertising
 - You can control ad personalization through [Google Ads Settings](https://adssettings.google.com/)
 
 ### Managing Cookies:
@@ -127,11 +127,11 @@ We use third-party services that may collect information:
 - Purpose: Website hosting, CDN, security
 - Privacy Policy: https://www.cloudflare.com/privacypolicy/
 
-### Future Services (Not Yet Active):
-
-**Google AdSense** (When monetization begins)
+**Google AdSense** (Alphabet Inc.)
 - Purpose: Display advertisements
 - Privacy Policy: https://policies.google.com/privacy
+
+### Future Services (Not Yet Active):
 
 **Affiliate Programs** (Amazon, Flipkart, etc.)
 - Purpose: Earn commissions on product recommendations
@@ -145,9 +145,9 @@ We use third-party services that may collect information:
 
 ## 6. Advertising and Monetization
 
-### 6.1 Google AdSense (Future)
+### 6.1 Google AdSense
 
-We plan to display advertisements through Google AdSense. When active:
+We display advertisements through Google AdSense:
 
 - Google and its partners may use cookies to display personalized ads based on your browsing history
 - You can opt out of personalized advertising at [Google Ads Settings](https://adssettings.google.com/)
