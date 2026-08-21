@@ -7,6 +7,7 @@ categories: ["Careers"]
 description: "India's IT hiring bounced back to 109,000 openings in August after a 28-month low in June, but entry-level roles are down 44% year-on-year. Here's what the Xpheno and Naukri data actually shows, and what it means if you're job hunting."
 slug: "india-it-hiring-rebound-august-2026"
 thumbnail: "/images/india-it-hiring-rebound-aug-2026.png"
+canonicalURL: "https://chandrashaker.com/posts/india-it-hiring-rebound-august-2026/"
 ---
 
 A few months ago, the mood around Indian IT hiring was grim: layoff headlines, hiring freezes, and a real sense that AI was quietly eating entry-level jobs. I covered some of that in [AI Is Cutting Indian IT Jobs in 2026](/posts/ai-layoffs-2026-financial-preparation-india/), where the same hiring paradox was already showing up, with fewer conventional roles even as AI-specific hiring grew.

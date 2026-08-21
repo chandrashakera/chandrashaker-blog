@@ -8,6 +8,7 @@ categories: ["Finance"]
 tags: ["union-budget-2026", "budget-analysis", "finance-india", "tax-planning", "investments"]
 ShowToc: true
 TocOpen: false
+canonicalURL: "https://chandrashaker.com/posts/union-budget-2026-complete-guide/"
 ---
 
 ## So... Budget 2026 Happened. Here's What You Need to Know.

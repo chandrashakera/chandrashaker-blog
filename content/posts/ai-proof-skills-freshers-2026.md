@@ -8,6 +8,7 @@ categories: ["Careers"]
 tags: ["jobs", "skills", "ai", "freshers", "students"]
 ShowToc: true
 TocOpen: false
+canonicalURL: "https://chandrashaker.com/posts/ai-proof-skills-freshers-2026/"
 ---
 
 ## The Job Market Just Flipped

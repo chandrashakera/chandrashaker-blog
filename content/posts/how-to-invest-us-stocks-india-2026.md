@@ -7,6 +7,7 @@ description: "Indian markets near zero returns + AI revolution concentrated in U
 categories: ["Finance"]
 tags: ["us-stocks", "investments", "india", "indmoney", "us-investing", "global-investing", "portfolio-diversification"]
 thumbnail: "/images/us-stocks-india-investing.jpg"
+canonicalURL: "https://chandrashaker.com/posts/how-to-invest-us-stocks-india-2026/"
 ---
 
 For years, I told myself Indian markets were enough. Then two things changed my thinking completely.

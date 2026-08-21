@@ -4,6 +4,7 @@ date: 2026-07-25
 description: "Silent layoffs are up in Indian IT in 2026. Here's the real data on AI-driven job cuts, and a practical, India-specific plan for your emergency fund, EPF, health cover, and investments."
 categories: ["Finance", "Careers"]
 tags: ["ai-impact", "layoffs", "job-loss", "emergency-fund", "epf", "personal-finance", "india", "it-professionals", "investment-strategy"]
+canonicalURL: "https://chandrashaker.com/posts/ai-layoffs-2026-financial-preparation-india/"
 ---
 
 A few years ago, "job loss" conversations in Indian IT meant recession fears borrowed from the US — Twitter layoffs, Amazon layoffs, a headline that felt far away. That's not what 2026 looks like. This year's job losses aren't announced in press releases. They're happening quietly, one performance review at a time, and the reason isn't a slowing economy — it's AI.

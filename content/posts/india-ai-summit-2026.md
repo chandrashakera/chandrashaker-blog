@@ -9,6 +9,7 @@ tags: ["tech-news", "ai", "indian-it-stocks", "career", "india-ai-summit"]
 thumbnail: "/images/india-ai-summit-2026.jpg"
 ShowToc: true
 TocOpen: false
+canonicalURL: "https://chandrashaker.com/posts/india-ai-summit-2026/"
 ---
 
 The world's largest AI conference just wrapped up in New Delhi with over 300,000 attendees, and it delivered on three fronts: major US-India partnerships, indigenous AI product launches, and a clear signal about where tech jobs are heading.

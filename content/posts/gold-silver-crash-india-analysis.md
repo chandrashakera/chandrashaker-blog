@@ -8,6 +8,7 @@ categories: ["Finance"]
 tags: ["gold-price-india", "silver-price-mcx", "investment-strategy", "mcx-gold-silver", "precious-metals-india", "union-budget-2026", "investments"]
 ShowToc: true
 TocOpen: false
+canonicalURL: "https://chandrashaker.com/posts/gold-silver-crash-india-analysis/"
 ---
 
 ## Thursday: Gold Was ₹17,885 per Gram. Monday: ₹15,153.

@@ -8,6 +8,7 @@ categories: ["Finance"]
 tags: ["investments", "bitcoin", "cryptocurrency", "india"]
 ShowToc: true
 TocOpen: false
+canonicalURL: "https://chandrashaker.com/posts/bitcoin-dip-accumulation-india-2026/"
 ---
 
 Bitcoin hit an all-time high of $126,080 in October 2025. Today it's trading around $65,000 — a brutal 48% crash.

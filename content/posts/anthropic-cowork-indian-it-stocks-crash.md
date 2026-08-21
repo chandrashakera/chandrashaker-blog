@@ -8,6 +8,7 @@ categories: ["Technology"]
 tags: ["tech-news", "ai", "indian-it-stocks", "anthropic-cowork", "ai-impact", "tcs-infosys-wipro", "saas-industry", "market-analysis"]
 ShowToc: true
 TocOpen: false
+canonicalURL: "https://chandrashaker.com/posts/anthropic-cowork-indian-it-stocks-crash/"
 ---
 
 ## Today Was Brutal for Indian IT Stocks
