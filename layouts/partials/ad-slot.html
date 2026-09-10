@@ -1,5 +1,5 @@
 {{- $adsense := .page.Site.Params.adsense }}
-{{- if and $adsense.enabled $adsense.client }}
+{{- if and $adsense.enabled $adsense.client (not .page.Params.canonicalURL) }}
 	{{- $slotID := "" }}
 	{{- with $adsense.slots }}{{ $slotID = index . $.slot }}{{ end }}
 	{{- if $slotID }}
