@@ -16,7 +16,7 @@ summary: "Privacy Policy for chandrashaker.in - How we collect, use, and protect
 
 ## Introduction
 
-Welcome to **ChandraS EDU** (chandrashaker.in) ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our website.
+Welcome to **Chandra Shaker** (chandrashaker.in) ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our website.
 
 By accessing or using chandrashaker.in, you agree to this Privacy Policy. If you do not agree with this policy, please do not use our website.
 
@@ -98,8 +98,8 @@ Cookies are small text files stored on your device when you visit a website. The
 - Can be disabled via browser settings
 
 **Advertising Cookies:**
-- We use Google AdSense, which uses cookies for personalized advertising
-- You can control ad personalization through [Google Ads Settings](https://adssettings.google.com/)
+- We may use third-party advertising networks, which use cookies for personalized advertising
+- You can control ad personalization through your browser's privacy settings or your device's ad preferences
 
 ### Managing Cookies:
 
@@ -127,11 +127,11 @@ We use third-party services that may collect information:
 - Purpose: Website hosting, CDN, security
 - Privacy Policy: https://www.cloudflare.com/privacypolicy/
 
-**Google AdSense** (Alphabet Inc.)
-- Purpose: Display advertisements
-- Privacy Policy: https://policies.google.com/privacy
-
 ### Future Services (Not Yet Active):
+
+**Advertising Networks** (third-party)
+- Purpose: Display advertisements
+- Specific providers and their privacy policies will be listed here once active
 
 **Affiliate Programs** (Amazon, Flipkart, etc.)
 - Purpose: Earn commissions on product recommendations
@@ -145,13 +145,13 @@ We use third-party services that may collect information:
 
 ## 6. Advertising and Monetization
 
-### 6.1 Google AdSense
+### 6.1 Third-Party Advertising
 
-We display advertisements through Google AdSense:
+We may display advertisements through third-party advertising networks:
 
-- Google and its partners may use cookies to display personalized ads based on your browsing history
-- You can opt out of personalized advertising at [Google Ads Settings](https://adssettings.google.com/)
-- Non-personalized ads will still be shown if you opt out
+- These networks and their partners may use cookies to display personalized ads based on your browsing history
+- You can control ad personalization through your browser or device settings
+- Non-personalized ads may still be shown if you opt out
 
 ### 6.2 Affiliate Marketing
 
@@ -180,7 +180,8 @@ We may publish sponsored posts or product reviews paid for by companies. All spo
 We may share information in these situations:
 
 **With Service Providers:**
-- Google (Analytics, AdSense)
+- Google (Analytics)
+- Third-party advertising networks (if/when active)
 - Cloudflare (Hosting)
 - Email service providers (when newsletter is active)
 
@@ -354,7 +355,7 @@ By using chandrashaker.in, you consent to this Privacy Policy and agree to its t
 
 ---
 
-**Thank you for trusting ChandraS EDU with your information!**
+**Thank you for trusting Chandra Shaker with your information!**
 
 ---
 

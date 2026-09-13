@@ -1,6 +1,6 @@
 baseURL = 'https://chandrashaker.in/'
 languageCode = 'en-in'
-title = 'ChandraS EDU | AI, US Stocks, Courses & Jobs India'
+title = 'Chandra Shaker | Where Teaching Meets Building'
 theme = 'mainroad'
 enableRobotsTXT = true
 buildDrafts = false
@@ -8,7 +8,7 @@ buildFuture = false
 buildExpired = false
 enableEmoji = false
 googleAnalytics = 'G-BFT23S4QJ3'
-copyright = "© 2026 ChandraS EDU · [Privacy Policy](/privacy-policy/) · [Disclaimer](/disclaimer/) · [Contact](/contact/)"
+copyright = "© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Disclaimer](/disclaimer/) · [Contact](/contact/)"
 
 [pagination]
   pagerSize = 10
@@ -78,7 +78,8 @@ copyright = "© 2026 ChandraS EDU · [Privacy Policy](/privacy-policy/) · [Disc
 
   # Logo
   [params.logo]
-    subtitle = "Tech · Finance · Courses · Jobs"
+    title = "Chandra Shaker"
+    subtitle = "Where teaching meets building"
 
   # Social links
   [params.social]
