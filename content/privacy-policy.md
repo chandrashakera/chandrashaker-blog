@@ -330,6 +330,12 @@ By using chandrashaker.in, you consent to this Privacy Policy and agree to its t
 
 ---
 
+## 19. Other Properties
+
+chandrashaker.in links to other tools I've built (currently at apps.chandrashaker.in), which collect different information for different purposes, such as student certificate or exam data, and have their own separate privacy notice. This policy covers chandrashaker.in only.
+
+---
+
 ## Summary
 
 **What We Collect:**
