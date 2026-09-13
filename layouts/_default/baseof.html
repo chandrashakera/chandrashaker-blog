@@ -37,6 +37,7 @@
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
 
+	<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
 	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 	{{- $server := "" }}
 	{{- if gt (int (index (split hugo.Version ".") 1)) "120" }}
