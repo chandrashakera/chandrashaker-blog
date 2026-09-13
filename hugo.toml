@@ -99,8 +99,8 @@ copyright = "© 2026 Chandra Shaker · [Privacy Policy](/privacy-policy/) · [Di
   weight = 2
 
 [[menu.main]]
-  name = "Courses"
-  url = "https://courses.chandrashaker.in"
+  name = "Apps"
+  url = "https://apps.chandrashaker.in"
   weight = 3
 
 [[menu.main]]
