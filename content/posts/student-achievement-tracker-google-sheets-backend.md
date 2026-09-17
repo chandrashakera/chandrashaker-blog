@@ -2,7 +2,7 @@
 title: "How I Built a Free Student Certificate Tracker Using Google Sheets"
 slug: "student-achievement-tracker-google-sheets-backend"
 date: 2026-09-17
-description: "How I built a zero-cost student certificate tracker using Google Sheets, Apps Script, and Gemini's vision API instead of Firebase — full stack breakdown, schema, and the OCR decision that didn't work."
+description: "How I built a zero-cost student certificate tracker using Google Sheets, Apps Script, and Gemini's vision API — full stack breakdown, schema, and the OCR decision that didn't work."
 tags: ["app-dev-log", "google-apps-script", "google-sheets", "gemini-api", "edtech"]
 categories: ["Dev Logs"]
 thumbnail: "/images/student-tracker-hero.png"
@@ -11,7 +11,7 @@ draft: false
 
 Every semester, students used to submit their certificates for participation in workshops, courses, extracurricular activities, and competition wins through a Google Form, attaching scans, phone photos, or PDFs of the certificate itself. The form answers were never something I could just take and directly submit as a report. Students picked the wrong certificate type, mislabeled the category, or got the event name wrong, so I ended up opening every attachment or hard copy of the certificate myself and checking it against what was submitted, certificate by certificate. That manual verification alone used to take 1-2 months each cycle.
 
-This project exists to close that gap. Meet the **Student Achievement Tracker**, live at [a.chandrashaker.in](https://a.chandrashaker.in) - zero backend cost, zero manual re-typing, zero Firebase.
+This project exists to close that gap. Meet the **Student Achievement Tracker**, live at [a.chandrashaker.in](https://a.chandrashaker.in) - zero backend cost, zero manual re-typing.
 
 ![Certificate in, spreadsheet out: the Student Achievement Tracker turns a submitted certificate straight into a structured Google Sheets row](/images/student-tracker-hero.png "Certificate in, spreadsheet out")
 
