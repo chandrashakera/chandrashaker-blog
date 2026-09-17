@@ -17,7 +17,7 @@ This project exists to close that gap. Meet the **Student Achievement Tracker**,
 
 ## The stack
 
-Nothing exotic. That was the point.
+Nothing here is exotic. That's deliberate.
 
 - **Frontend:** a static, installable PWA, hosted on Cloudflare Pages
 - **PDF text:** `pdf.js`, extracted entirely client-side
