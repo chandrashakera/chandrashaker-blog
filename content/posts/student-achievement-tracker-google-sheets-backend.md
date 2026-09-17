@@ -9,9 +9,11 @@ thumbnail: "/images/student-tracker-workflow.png"
 draft: false
 ---
 
-Every semester, students hand in certificates for participation, workshops, and competition wins - scans, phone photos, PDFs, whatever they've got. And every semester, someone sat down and manually re-typed every single one into a spreadsheet.
+Every semester, students used to submit their certificates for participation, workshops, courses, extracurricular activities, and competition wins through a Google Form, attaching scans, phone photos, or PDFs of the certificate itself. The form answers were never something I could just trust. Students picked the wrong certificate type, mislabeled the category, or got the event name wrong, so I ended up opening every attachment myself and checking it against what was submitted, certificate by certificate. That manual verification alone used to take 1-2 months each cycle.
 
 That's the part I killed. Meet the **Student Achievement Tracker**, live at [a.chandrashaker.in](https://a.chandrashaker.in) - zero backend cost, zero manual re-typing, zero Firebase.
+
+![Student Achievement Tracker home screen showing the roll number field and Scan Certificate / Upload Certificate buttons](/images/student-tracker-home-screen.jpg "Student Achievement Tracker home screen")
 
 ## The stack
 
@@ -44,6 +46,8 @@ Two fields got deliberate rules, not just whatever the model felt like returning
 - **Certificate Type** allows free text beyond the fixed set (Participation/Appreciation/Merit) - whatever follows "Certificate of ___" gets stored as written.
 - **Position/Rank** is left blank unless a rank is *explicitly printed* on the certificate, never inferred, even when the Type comes back "Merit." A blank field is honest. A confidently wrong "Winner" is a data-integrity bug wearing a UI's clothes.
 
+![Editable confirmation screen showing extracted certificate fields, student name and roll number redacted for privacy](/images/student-tracker-confirmation-screen-redacted.png "Confirmation screen with extracted fields, name and roll number redacted")
+
 That confirmation screen is doing more work than it looks like. Extraction is good, not perfect - the review step is what keeps the sheet trustworthy.
 
 ## Why not Firebase
@@ -51,6 +55,10 @@ That confirmation screen is doing more work than it looks like. Extraction is go
 Firebase would have meant a project to provision, security rules to write and keep correct, and a pricing tier to eventually think about. For one department's certificate log, that's infrastructure sized for a problem I didn't actually have.
 
 Google Sheets already *is* the database non-technical staff already know how to open, filter, and export from - no admin panel needed. The trade-off is real: Sheets doesn't scale like a proper database, and Apps Script has hard quota limits. For this scope, that ceiling isn't close to a concern.
+
+![Resulting Google Sheet row after a certificate submission, student name and roll number redacted for privacy](/images/student-tracker-sheet-row-redacted.png "A submitted certificate landing as a row in Google Sheets, name and roll number redacted")
+
+This is what "no manual re-typing" actually looks like: one row, every column filled, no month-long backlog behind it.
 
 ---
 
