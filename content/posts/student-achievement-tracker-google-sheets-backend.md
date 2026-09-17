@@ -1,5 +1,5 @@
 ---
-title: "How I Built a Free Student Certificate Tracker Using Google Sheets (No Firebase)"
+title: "How I Built a Free Student Certificate Tracker Using Google Sheets"
 slug: "student-achievement-tracker-google-sheets-backend"
 date: 2026-09-17
 description: "How I built a zero-cost student certificate tracker using Google Sheets, Apps Script, and Gemini's vision API instead of Firebase — full stack breakdown, schema, and the OCR decision that didn't work."
