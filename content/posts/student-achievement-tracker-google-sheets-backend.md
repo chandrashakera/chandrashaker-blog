@@ -9,9 +9,9 @@ thumbnail: "/images/student-tracker-workflow.png"
 draft: false
 ---
 
-Every semester, students used to submit their certificates for participation, workshops, courses, extracurricular activities, and competition wins through a Google Form, attaching scans, phone photos, or PDFs of the certificate itself. The form answers were never something I could just trust. Students picked the wrong certificate type, mislabeled the category, or got the event name wrong, so I ended up opening every attachment myself and checking it against what was submitted, certificate by certificate. That manual verification alone used to take 1-2 months each cycle.
+Every semester, students used to submit their certificates for participation in workshops, courses, extracurricular activities, and competition wins through a Google Form, attaching scans, phone photos, or PDFs of the certificate itself. The form answers were never something I could just take and directly submit as a report. Students picked the wrong certificate type, mislabeled the category, or got the event name wrong, so I ended up opening every attachment or hard copy of the certificate myself and checking it against what was submitted, certificate by certificate. That manual verification alone used to take 1-2 months each cycle.
 
-That's the part I killed. Meet the **Student Achievement Tracker**, live at [a.chandrashaker.in](https://a.chandrashaker.in) - zero backend cost, zero manual re-typing, zero Firebase.
+This project exists to close that gap. Meet the **Student Achievement Tracker**, live at [a.chandrashaker.in](https://a.chandrashaker.in) - zero backend cost, zero manual re-typing, zero Firebase.
 
 ![Student Achievement Tracker home screen showing the roll number field and Scan Certificate / Upload Certificate buttons](/images/student-tracker-home-screen.jpg "Student Achievement Tracker home screen")
 
@@ -50,11 +50,11 @@ Two fields got deliberate rules, not just whatever the model felt like returning
 
 That confirmation screen is doing more work than it looks like. Extraction is good, not perfect - the review step is what keeps the sheet trustworthy.
 
-## Why not Firebase
+## Why no login system
 
-Firebase would have meant a project to provision, security rules to write and keep correct, and a pricing tier to eventually think about. For one department's certificate log, that's infrastructure sized for a problem I didn't actually have.
+Building a full authentication layer, accounts, passwords, session handling, would have been solving a problem the tracker didn't actually have. The one identifier that matters here is a student's own roll number, so that's the only gate: entered fresh on every submission, no account to create, no password to reset, no session to expire.
 
-Google Sheets already *is* the database non-technical staff already know how to open, filter, and export from - no admin panel needed. The trade-off is real: Sheets doesn't scale like a proper database, and Apps Script has hard quota limits. For this scope, that ceiling isn't close to a concern.
+The trade-off is real. There's no way for a student to look back at their own submission history, and nothing technically stops someone from typing in a roll number that isn't theirs. For a one-way form that a faculty member reviews against a Google Sheet anyway, that's a risk worth taking. It wouldn't be for anything handling payments or private records.
 
 ![Resulting Google Sheet row after a certificate submission, student name and roll number redacted for privacy](/images/student-tracker-sheet-row-redacted.png "A submitted certificate landing as a row in Google Sheets, name and roll number redacted")
 
