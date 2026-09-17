@@ -5,7 +5,7 @@ date: 2026-09-17
 description: "How I built a zero-cost student certificate tracker using Google Sheets, Apps Script, and Gemini's vision API instead of Firebase — full stack breakdown, schema, and the OCR decision that didn't work."
 tags: ["app-dev-log", "google-apps-script", "google-sheets", "gemini-api", "edtech"]
 categories: ["Dev Logs"]
-thumbnail: "/images/student-tracker-workflow.png"
+thumbnail: "/images/student-tracker-hero.png"
 draft: false
 ---
 
@@ -13,7 +13,7 @@ Every semester, students used to submit their certificates for participation in 
 
 This project exists to close that gap. Meet the **Student Achievement Tracker**, live at [a.chandrashaker.in](https://a.chandrashaker.in) - zero backend cost, zero manual re-typing, zero Firebase.
 
-![Student Achievement Tracker home screen showing the roll number field and Scan Certificate / Upload Certificate buttons](/images/student-tracker-home-screen.jpg "Student Achievement Tracker home screen")
+![Certificate in, spreadsheet out: the Student Achievement Tracker turns a submitted certificate straight into a structured Google Sheets row](/images/student-tracker-hero.png "Certificate in, spreadsheet out")
 
 ## The stack
 
@@ -25,7 +25,9 @@ Nothing exotic. That was the point.
 - **Field structuring:** Gemini free tier, turning raw text or an image straight into structured data
 - **Storage:** Google Apps Script writing to Google Sheets, with files archived to Google Drive
 
-No servers. No database to provision. No auth system. Just a Google account most departments already have, doing the job of a backend.
+No servers. No database to provision. No auth system. Just a Google account doing the job of a backend.
+
+![Student Achievement Tracker home screen showing the roll number field and Scan Certificate / Upload Certificate buttons](/images/student-tracker-home-screen.jpg "Student Achievement Tracker home screen")
 
 ![Workflow diagram: certificate scan or upload flows through Gemini Vision and pdf.js extraction into an editable confirmation screen, then into Google Sheets and Drive](/images/student-tracker-workflow.png "Student Achievement Tracker workflow, from certificate to Google Sheets")
 
